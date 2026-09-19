@@ -1,0 +1,36 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.netrc
+# Python and tooling
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+# Large or private artifacts
+checkpoints/
+outputs/
+logs/
+wandb/
+.cache/
+hf_cache/
+data/
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.bin
+events.out.tfevents.*
+# Local OS/editor state
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+

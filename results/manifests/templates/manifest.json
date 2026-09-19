@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "status": "template_not_a_result",
+  "run_id": null,
+  "method": "AIM-ZO",
+  "original_method_label": null,
+  "model": {
+    "id": null,
+    "revision": null
+  },
+  "task": null,
+  "seed": null,
+  "code": {
+    "release_commit": null,
+    "source_mapping_id": null
+  },
+  "training": {
+    "lr": null,
+    "eps": null,
+    "batch_size": null,
+    "planned_steps": null,
+    "completed_steps": null,
+    "precision": null
+  },
+  "budget": {
+    "centre_forward_evaluations_per_step": null,
+    "perturbed_forward_evaluations_per_step": null,
+    "total_training_forward_evaluations": null,
+    "validation_forward_evaluations": null
+  },
+  "hardware": {
+    "gpu_model": null,
+    "gpu_count": null,
+    "elapsed_seconds": null
+  },
+  "selection": {
+    "split": null,
+    "rule": null,
+    "selected_step": null
+  },
+  "evaluation": {
+    "split": null,
+    "sample_count": null
+  },
+  "evidence": []
+}
+

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "status": "template_not_a_result",
+  "run_id": null,
+  "split": null,
+  "metrics": [
+    {
+      "name": null,
+      "value": null,
+      "unit": null,
+      "sample_count": null
+    }
+  ]
+}
+
