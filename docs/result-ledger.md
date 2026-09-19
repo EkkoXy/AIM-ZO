@@ -1,31 +1,29 @@
-# Official result registry and artifact contract
+# Result records
 
-Status: empty. No verified results have been imported.
+Experimental results have not yet been added. Format templates are provided under `results/manifests/templates/`.
 
-## Unit
+## Directory layout
 
-`results/<main|baselines|ablations|diagnostics>/<model>/<task>/<method>/seed<seed>/`
+`results/<category>/<model>/<task>/<method>/seed<seed>/`
 
-Each unit contains:
-- `config.yaml`: exact effective configuration, including overrides.
-- `manifest.json`: identity, provenance, code revision, budget, hardware and evidence references.
-- `metrics.json`: normalised metrics with explicit units and split.
-- `official_eval.json`: compact official-evaluation evidence.
-- `training_summary.json`: completed steps, best dev checkpoint, stopping status and elapsed time.
+Categories are main experiments, baselines, ablations, and diagnostics.
 
-Templates are in `results/manifests/templates/`, outside result directories. Null means unknown, never zero. Do not use templates as table inputs.
+## Record format
 
-## Provenance and anonymisation
+| File | Contents |
+| --- | --- |
+| `config.yaml` | Effective experiment configuration |
+| `manifest.json` | Run identity, code revision, evaluation budget, hardware, and artifact references |
+| `metrics.json` | Metrics, units, and evaluation split |
+| `official_eval.json` | Official-evaluation output |
+| `training_summary.json` | Completed steps, selected checkpoint, stopping status, and elapsed time |
 
-Record both the internal source revision and the released implementation revision through an internal mapping. Public manifests should contain only an anonymity-reviewed revision/reference. Do not publish an internal repository URL or commit reference that reveals authorship.
+A null value denotes unavailable information, not zero. Template files are not inputs to result tables.
 
-Keep raw evidence immutable internally. Export redacted copies where needed and hash the actual distributed evidence. If both raw and redacted hashes are retained, label them separately. SHA-256 alone is not a substitute for accessible evidence.
+## Reporting conventions
 
-## Aggregation
+Results are grouped by configuration, evaluation protocol, and checkpoint-selection rule. Mean scores are accompanied by the number of seeds and, when at least two seeds are available, the sample standard deviation.
 
-A future exporter must validate matching configurations and evaluation protocols, reject duplicates, and group by explicit run identity. Export CSV and LaTeX from the same registry.
+Percentage-point differences are distinguished from relative percentage changes. Uncertainty for a cross-task average requires aligned per-seed results and is not obtained by averaging task standard deviations.
 
-Use sample standard deviation (ddof=1); n=1 has no estimated sample standard deviation. Keep percentage points distinct from relative percentages. Calculate standard deviation of a cross-task average from aligned per-seed aggregates, not by averaging task standard deviations.
-
-Every table must identify its included run IDs and metric definitions. Unknown and unverified records must not silently enter official tables.
-
+Artifact references and checksums identify the evidence associated with each reported run.

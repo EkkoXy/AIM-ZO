@@ -1,2 +1,1 @@
-# Populate verified optional diagnostic and plotting dependencies after code import.
-
+# Optional diagnostic and plotting dependencies will accompany the implementation.

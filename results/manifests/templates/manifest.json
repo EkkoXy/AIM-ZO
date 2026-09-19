@@ -3,7 +3,6 @@
   "status": "template_not_a_result",
   "run_id": null,
   "method": "AIM-ZO",
-  "original_method_label": null,
   "model": {
     "id": null,
     "revision": null
@@ -11,8 +10,7 @@
   "task": null,
   "seed": null,
   "code": {
-    "release_commit": null,
-    "source_mapping_id": null
+    "release_commit": null
   },
   "training": {
     "lr": null,
@@ -44,4 +42,3 @@
   },
   "evidence": []
 }
-

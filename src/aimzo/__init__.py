@@ -1,2 +1,1 @@
-"""AIM-ZO submission scaffold. Algorithm implementation is not included yet."""
-
+"""AIM-ZO. Implementation forthcoming."""
