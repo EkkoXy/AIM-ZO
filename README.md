@@ -53,7 +53,7 @@ Evaluate a classification checkpoint:
 ```bash
 CUDA_VISIBLE_DEVICES=0 aimzo-eval \
   --config configs/aimzo/opt-2.7b/rte.yaml \
-  --checkpoint outputs/aimzo/opt-2.7b/rte/seed42/checkpoints/step_2500
+  --checkpoint outputs/aimzo/opt-2.7b/rte/seed42/checkpoints/best
 ```
 
 For SQuAD and DROP generated-answer F1/EM:
@@ -61,7 +61,7 @@ For SQuAD and DROP generated-answer F1/EM:
 ```bash
 CUDA_VISIBLE_DEVICES=0 aimzo-qa-eval \
   --config configs/aimzo/opt-2.7b/squad.yaml \
-  --checkpoint outputs/aimzo/opt-2.7b/squad/seed42/checkpoints/step_20000
+  --checkpoint outputs/aimzo/opt-2.7b/squad/seed42/checkpoints/best
 ```
 
 ## Default estimator

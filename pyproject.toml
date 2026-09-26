@@ -7,6 +7,8 @@ name = "aim-zo"
 version = "0.1.0"
 description = "Activation-Informed Subspace Maintenance for Zeroth-Order LLM Fine-Tuning"
 readme = "README.md"
+authors = [{ name = "AIM-ZO Authors" }]
+license = { file = "LICENSE" }
 requires-python = ">=3.10,<3.14"
 dependencies = [
     "torch==2.10.0",
@@ -22,6 +24,10 @@ dependencies = [
     "tensorboard==2.21.0",
     "sentencepiece==0.2.2",
 ]
+
+[project.urls]
+Repository = "https://github.com/EkkoXy/AIM-ZO"
+Issues = "https://github.com/EkkoXy/AIM-ZO/issues"
 
 [project.optional-dependencies]
 dev = ["pytest", "ruff"]

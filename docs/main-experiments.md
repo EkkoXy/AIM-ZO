@@ -62,8 +62,9 @@ MultiRC reports grouped F1a/EM over all answer rows. Generation tasks report
 F1/EM. Aggregation uses the sample standard deviation. Deterministic zero-shot
 evaluation is run once rather than once per training seed.
 
-OPT-13B MeZO SQuAD is excluded from the normal full-parameter generation-CE
-matrix because its source-paper protocol uses five prefix tokens and directly
-optimizes generated-answer F1. The local full-parameter recovery run therefore
-cannot be presented as that MeZO protocol. Large-model evaluation-only settings
-are in `configs/supplemental/large-model-evaluation.yaml`.
+The released OPT-13B table uses one uniform full-parameter, generation-CE
+protocol for SQuAD across methods. This differs from the original MeZO SQuAD
+source protocol, which uses five prefix tokens and a generated-answer F1
+objective; the result ledger labels this distinction explicitly. Large-model
+evaluation-only settings are in
+`configs/supplemental/large-model-evaluation.yaml`.

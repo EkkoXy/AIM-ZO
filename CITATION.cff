@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper."
+type: software
+title: "AIM-ZO: Activation-Informed Subspace Maintenance for Zeroth-Order LLM Fine-Tuning"
+version: 0.1.0
+date-released: 2026-09-26
+license: MIT
+authors:
+  - family-names: "Anonymous Authors"
+repository-code: "https://github.com/EkkoXy/AIM-ZO"

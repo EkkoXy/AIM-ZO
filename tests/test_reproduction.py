@@ -47,7 +47,14 @@ def test_task_specific_parameters_and_seed_counts() -> None:
 
 def test_generation_uses_loss_checkpoint_selection() -> None:
     registry = load_experiment_registry(REGISTRY)
-    _, squad = next(iter(iter_experiments(registry, protocol_ids=["opt13-aimzo-fill"], tasks=["squad"], seeds=[42])))
+    _, squad = next(iter(iter_experiments(registry, protocol_ids=["opt13-aimzo"], tasks=["squad"], seeds=[42])))
     assert squad["objective"]["name"] == "zoregular_generation_ce"
     assert squad["trainer"]["best_checkpoint_metric"] == "loss"
     assert squad["trainer"]["best_checkpoint_mode"] == "min"
+
+def test_opt13_mezo_and_aimzo_cover_six_paper_tasks() -> None:
+    registry = load_experiment_registry(REGISTRY)
+    expected = {"rte", "boolq", "sst2", "wic", "wsc", "squad"}
+    by_id = {row["id"]: row for row in registry["protocols"]}
+    assert set(by_id["opt13-mezo"]["tasks"]) == expected
+    assert set(by_id["opt13-aimzo"]["tasks"]) == expected
