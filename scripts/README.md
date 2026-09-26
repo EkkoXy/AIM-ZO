@@ -1,3 +1,12 @@
 # Experiment scripts
 
-Training, evaluation, diagnostic, and table-generation scripts will be added with the implementation. No executable experiment entry points are available yet.
+The package installs four command-line entry points:
+
+- `aimzo-prepare-data`
+- `aimzo-train`
+- `aimzo-eval`
+- `aimzo-qa-eval`
+
+`train.sh` and `evaluate.sh` are minimal shell wrappers. The Python entry
+points write resolved configs, manifests, histories, checkpoint records, and
+evaluation JSON files under the configured output directory.

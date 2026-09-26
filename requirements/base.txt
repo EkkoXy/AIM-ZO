@@ -1,2 +1,12 @@
-# Populate from the validated core training environment; currently no dependencies are specified.
-
+torch==2.10.0
+transformers==4.56.1
+accelerate==1.15.0
+peft==0.21.0
+datasets==5.0.1
+numpy==2.5.3
+pandas==3.0.6
+pyarrow==25.0.1
+pyyaml==6.0.3
+tqdm==4.70.1
+tensorboard==2.21.0
+sentencepiece==0.2.2

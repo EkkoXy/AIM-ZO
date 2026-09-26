@@ -1,1 +1,2 @@
-# Optional diagnostic and plotting dependencies will accompany the implementation.
+pytest
+ruff

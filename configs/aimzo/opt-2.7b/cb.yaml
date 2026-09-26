@@ -1,0 +1,73 @@
+data:
+  task: cb
+  data_root: data/dataset
+  max_train_samples: 150
+  max_eval_samples: 100
+  seed: 42
+  zoregular_sampling_policy: mezo_train_dev
+  zoregular_batch_sampler_policy: accelerate_seedable
+
+backend:
+  name: hf
+  model_name: data/model/OPT-2.7B
+  dtype: bfloat16
+
+objective:
+  name: zoregular_classification_ce
+
+zo:
+  method: aimzo
+  eps: 8.0e-5
+  eps_schedule: cosine_decay
+  eps_schedule_min_ratio: 0.25
+  learning_rate: 1.5e-3
+  lr_schedule: constant
+  parameter_scope: full_parameters
+  seed: 42
+  seed_mode: aimzo_step
+  noise_backend: gpu_seeded
+  restore_strategy: seed_replay
+  aimzo:
+    rank: 1
+    target_module_regex: ".*"
+    fallback: gaussian
+    max_activation_tokens: 128
+    estimator_mode: loren_population
+    subspace_backend: power_iteration
+    power_iterations: 5
+    basis_seed_mode: ambient
+    perturbation_form: abh_oja
+    abh_normalization: layer_fro
+    abh_layer_fro_scale: 1.0
+    abh_right_rank: 64
+    abh_oja_wide_right_rank: 128
+    abh_oja_active_top_count: 48
+    abh_oja_active_tail_count: 16
+    abh_oja_active_resample_per_probe: true
+    abh_oja_eta: 0.3
+    abh_oja_update_interval: 10
+    abh_oja_q_update_rule: qr_oja
+    abh_noise_cache: none
+    abh_num_noise: 15
+    abh_left_factor: gaussian_ab_random
+    abh_a_seed_mode: block
+    abh_loren_population_divide_by_eps: false
+    abh_multi_update_weighting: uniform
+    abh_population_summary_last_only: true
+    abh_population_deferred_update_trace: true
+    abh_population_cache_restore_factors: true
+    abh_population_fused_shared_q_update: false
+
+trainer:
+  output_dir: outputs/aimzo/opt-2.7b/cb/seed42
+  train_batch_size: 16
+  eval_batch_size: 16
+  max_steps: 2500
+  eval_every: 500
+  save_every: 500
+  max_periodic_checkpoints: 5
+  best_checkpoint_metric: accuracy
+  best_checkpoint_mode: max
+
+logging:
+  tensorboard: false

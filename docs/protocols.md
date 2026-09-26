@@ -1,12 +1,18 @@
-# Experiment protocols
+# Evaluation protocol
 
-Status: pending confirmation against the actual training code and official artifacts.
+A run is defined by its model revision, task, split construction, prompt and
+verbalizer, train/dev sample counts, seed, dtype, method parameters, forward
+budget, and checkpoint-selection rule.
 
-For every experiment group, freeze model revision, task and split, preprocessing, training and evaluation sample counts, seeds, optimizer settings, perturbation parameters, numerical precision, budget, and checkpoint-selection rule.
+The main protocol uses seeds 42, 142, and 242. Training data is split into a
+1,000-example train subset and a disjoint 500-example development subset when
+the task provides enough examples. Five uniformly spaced checkpoints are
+evaluated on this train-derived development set. The selected checkpoint is
+then evaluated once on the official validation split.
 
-Count unperturbed centre evaluations separately from perturbed evaluations, and state whether reported totals include validation. Use **forward evaluations** for budgets and **directions/perturbations** for sampled objects.
+Classification tasks report accuracy. MultiRC additionally reports grouped F1a
+and exact match. SQuAD and DROP report generated-answer F1 and exact match.
 
-Publish dev-selected official metrics separately from final-checkpoint metrics. Do not pool runs across different configurations, budgets, or selection rules. Different seed counts and task metrics may appear in one clearly labelled comparison table, but must not be represented as identical protocols.
-
-Incomplete or early-stopped runs require explicit provenance and a documented inclusion decision. Do not silently replace a run by a more favourable configuration.
-
+Forward budgets count every objective evaluation. AIM-ZO uses one center plus
+fifteen probes per optimization step. Configurations retain the exact step and
+forward-call budgets used for each experiment.

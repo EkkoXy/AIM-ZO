@@ -2,29 +2,76 @@
 
 **Activation-Informed Subspace Maintenance for Zeroth-Order LLM Fine-Tuning**
 
-AIM-ZO uses forward activation information to maintain an evolving candidate subspace. Each perturbation operates within a smaller active subspace formed from shared and sampled basis directions.
+AIM-ZO maintains a wide right subspace from forward activations with an online
+Oja update. At each optimization step, it combines a shared high-score prefix
+with sampled tail directions, draws rank-one Gaussian probes in the active
+subspace, and aggregates a population of forward-only objective evaluations.
 
-## Availability
+## Included code
 
-Code and reproduction materials are being prepared. This repository currently contains the directory structure and result-format templates; a runnable implementation is not yet available.
+- `src/aimzo/zo/methods/aimzo.py`: AIM-ZO update and subspace maintenance.
+- `src/aimzo/zo/methods/aimzo_subspace.py`: Oja updates and active-basis selection.
+- `src/aimzo/zo/methods/aimzo_perturbation.py`: structured probe construction.
+- `src/aimzo/zo/methods/aimzo_population.py`: centered population estimator.
+- `src/aimzo/trainers/hf_zoregular.py`: Hugging Face training and checkpointing.
+- `configs/aimzo/`: runnable AIM-ZO configurations.
+- `tests/`: deterministic unit tests for the core estimator.
 
-## Repository structure
+Baseline implementations used by the same trainer are included under
+`src/aimzo/zo/methods/` for protocol comparison.
 
-| Directory | Purpose |
-| --- | --- |
-| `src/aimzo/` | Method implementations and training utilities |
-| `configs/` | Experiment configurations |
-| `scripts/` | Training, evaluation, and analysis entry points |
-| `results/` | Evaluation records and metadata |
-| `figures/` | Paper figures |
-| `tests/` | Tests |
-| `docs/` | Reproduction and evaluation documentation |
-| `requirements/` | Environment dependencies |
+## Installation
 
-## Reproduction
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -e ".[dev]"
+```
 
-Installation instructions and experiment commands will accompany the code release. See [reproduction](docs/reproduction.md) and [evaluation protocols](docs/protocols.md).
+Model weights and datasets are not included.
 
-## Results
+## Prepare a task
 
-The planned result format is described in [result records](docs/result-ledger.md). Files under `results/manifests/templates/` are examples of the format, not experimental results.
+```bash
+aimzo-prepare-data --task rte
+```
+
+Datasets are written under `data/dataset/<task>`. Supported paper tasks include
+RTE, BoolQ, SST-2, WiC, WSC, MultiRC, COPA, ReCoRD, SQuAD, and DROP.
+
+## Run AIM-ZO
+
+Edit `backend.model_name` in the selected YAML so that it points to a local
+Hugging Face model or a model identifier, then run:
+
+```bash
+CUDA_VISIBLE_DEVICES=0 aimzo-train configs/aimzo/opt-2.7b/rte.yaml
+```
+
+Evaluate a classification checkpoint:
+
+```bash
+CUDA_VISIBLE_DEVICES=0 aimzo-eval \
+  --config configs/aimzo/opt-2.7b/rte.yaml \
+  --checkpoint outputs/aimzo/opt-2.7b/rte/seed42/checkpoints/step_2500
+```
+
+For SQuAD and DROP generated-answer F1/EM:
+
+```bash
+CUDA_VISIBLE_DEVICES=0 aimzo-qa-eval \
+  --config configs/aimzo/opt-2.7b/squad.yaml \
+  --checkpoint outputs/aimzo/opt-2.7b/squad/seed42/checkpoints/step_20000
+```
+
+## Default estimator
+
+The released default uses a wide maintained basis of width `K=128`, an active
+basis with `h=48` shared columns and `k-h=16` sampled tail columns, `N=15`
+rank-one probes, layer-Frobenius normalization, and a centered one-sided
+population estimate. The YAML files record model-specific learning rates,
+perturbation schedules, precision, step budgets, and checkpoint intervals.
+
+See [implementation notes](docs/implementation-notes.md),
+[protocols](docs/protocols.md), [reproduction](docs/reproduction.md), and the
+[release smoke test](docs/smoke-test.md).
