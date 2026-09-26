@@ -1,0 +1,17 @@
+model,dataset,metric,value,num_examples,evaluation_scope,state,provenance_status
+Qwen3-8B-Base,RTE,accuracy,0.8628158844765343,277,full_official,complete,verified_synchronized_ledger
+Qwen3-8B-Base,BoolQ,accuracy,0.746,1000,fixed_1000_official_subset,complete,verified_synchronized_ledger
+Qwen3-8B-Base,SST-2,accuracy,0.5848623853211009,872,full_official,complete,verified_synchronized_ledger
+Qwen3-8B-Base,WiC,accuracy,0.6567398119122257,638,full_official,complete,verified_synchronized_ledger
+Qwen3-8B-Base,MultiRC,answer_accuracy,0.7277227722772277,4848,full_official,complete,verified_synchronized_ledger
+Qwen3-8B-Base,MultiRC,f1a,0.5470144131777626,4848,full_official,complete,verified_synchronized_ledger
+Qwen3-8B-Base,MultiRC,em,0.28226652675760755,953,full_official,complete,verified_synchronized_ledger
+Qwen3-8B-Base,SQuAD,f1,0.8367033357766686,1000,fixed_1000_official_subset,complete,verified_synchronized_ledger
+Qwen3-8B-Base,SQuAD,em,0.724,1000,fixed_1000_official_subset,complete,verified_synchronized_ledger
+OPT-30B,RTE,accuracy,0.5379061371841155,277,full_official,complete,verified_synchronized_ledger
+OPT-30B,BoolQ,accuracy,0.409,1000,fixed_1000_official_subset,complete,verified_synchronized_ledger
+OPT-30B,SST-2,accuracy,0.588302752293578,872,full_official,complete,verified_synchronized_ledger
+OPT-30B,WiC,accuracy,0.5297805642633229,638,full_official,complete,verified_synchronized_ledger
+OPT-30B,WSC,accuracy,0.375,104,full_official,complete,verified_synchronized_ledger
+OPT-30B,SQuAD,f1,0.4647770592775342,1000,fixed_1000_official_subset,complete,verified_synchronized_ledger
+OPT-30B,SQuAD,em,0.305,1000,fixed_1000_official_subset,complete,verified_synchronized_ledger

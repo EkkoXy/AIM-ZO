@@ -7,6 +7,9 @@ Paper-facing results are included under `results/main/`. Metric values are in
 | --- | --- | --- | --- |
 | OPT-13B | [`paper-main.csv`](../results/main/opt13b/paper-main.csv) | [`official-by-seed.csv`](../results/main/opt13b/official-by-seed.csv) | 49 paper metrics; 123 numeric seed/metric rows |
 | Qwen3-0.6B-Base | [`paper-main.csv`](../results/main/qwen3-0.6b/paper-main.csv) | [`official-by-seed.csv`](../results/main/qwen3-0.6b/official-by-seed.csv) | 18 aggregate metrics; 58 numeric seed/metric rows |
+| Qwen3-8B-Base | [`paper-main.csv`](../results/main/qwen3-8b/paper-main.csv) | [`official-by-seed.csv`](../results/main/qwen3-8b/official-by-seed.csv) | 24 paper metrics; 27 AGZO seed/metric rows |
+| OPT-30B | [`paper-main.csv`](../results/main/opt30b/paper-main.csv) | Not synchronized | 18 paper metrics; zero-shot records available separately |
+| Large-model zero-shot | [`large-model-zero-shot.csv`](../results/main/large-model-zero-shot.csv) | Deterministic single evaluations | 16 metric rows across Qwen3-8B and OPT-30B |
 | Qwen3-8B / OPT-30B runtime | [`by-run.csv`](../results/main/large-model-runtime/by-run.csv) | Six seed-42 run records | 10 real BF16 update steps per model/method cell |
 
 [`results/main/manifest.csv`](../results/main/manifest.csv) records each public
@@ -17,8 +20,10 @@ CSV's SHA-256 checksum, row count, and corresponding release code revision.
 The following aggregate scores complete the main-text comparison for the
 models not covered by the CSVs above. They are transcribed from the paper's
 main tables, in percent. Values after `±` are the reported sample standard
-deviations; `Avg.` is the paper's unweighted six-task mean. These tables do
-not supply per-seed evaluation records or artifact-level provenance.
+deviations; `Avg.` is the paper's unweighted six-task mean. Their machine-readable versions are linked above. Qwen3-8B AGZO is backed by
+three synchronized seed records per task. The other trained large-model rows
+still lack per-seed evaluation payloads; the exact status of every cell is in
+[`large-model-coverage.csv`](../results/main/large-model-coverage.csv).
 
 ### OPT-2.7B
 
@@ -70,6 +75,13 @@ and reports F1 and EM. Qwen3-0.6B MultiRC uses all 4,848 answer rows grouped
 into 953 questions and reports F1a and EM, with answer accuracy retained as a
 supplementary metric.
 
+
+The large-model protocol matrix is now present in
+`configs/main/experiments.yaml`: Qwen3-8B MeZO, AGZO, and AIM-ZO plus OPT-30B
+MeZO and AIM-ZO each cover all six paper tasks and seeds 42/142/242. A
+generated configuration is a runnable reproduction target; it is not evidence
+that the corresponding historical run artifact was synchronized.
+
 ## Large-model runtime records
 
 The Qwen3-8B-Base and OPT-30B table contains six individual run records: MeZO,
@@ -93,6 +105,14 @@ Qwen3-0.6B MultiRC F1a/EM are available as five-seed aggregates. The shared
 ledger contains per-seed answer accuracy but not the five individual grouped
 F1a/EM payloads, so those aggregate rows are marked
 `aggregate_only_grouped_metric`.
+
+
+For Qwen3-8B, all 18 AGZO task/seed runs are synchronized; MeZO and AIM-ZO
+have paper aggregates and released protocols but no synchronized per-seed
+evaluation payloads. For OPT-30B, zero-shot values are synchronized. The
+shared ledger contains resolved RTE configurations for three AIM-ZO seeds and
+two MeZO seeds, but no per-seed official metric payloads; the other trained
+cells currently have paper aggregates and released protocols only.
 
 OPT-13B MeZO SQuAD uses the table's uniform full-parameter generation-CE
 protocol. It is not the original MeZO prefix-tuning protocol and is labeled by

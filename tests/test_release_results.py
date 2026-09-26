@@ -13,12 +13,12 @@ def _rows(path: Path) -> list[dict[str, str]]:
 
 def test_release_manifest_checksums_and_revision() -> None:
     manifest = _rows(RESULTS / "manifest.csv")
-    assert len(manifest) == 5
+    assert len(manifest) == 10
     for row in manifest:
         path = ROOT / row["file"]
         assert hashlib.sha256(path.read_bytes()).hexdigest() == row["sha256"]
         assert len(_rows(path)) == int(row["rows"])
-        assert row["release_code_revision"] in {"50779c6", "d8c80d1"}
+        assert row["release_code_revision"] in {"50779c6", "dd3d001", "83b5b59"}
 
 
 def test_result_rows_have_public_config_provenance() -> None:
@@ -58,4 +58,24 @@ def test_large_model_runtime_rows_are_individual_runs() -> None:
         )
         assert len(row["executed_config_sha256"]) == 64
         assert len(row["release_config_sha256"]) == 64
-        assert row["release_code_revision"] == "d8c80d1"
+        assert row["release_code_revision"] == "dd3d001"
+
+
+def test_large_model_result_and_gap_coverage() -> None:
+    qwen_seed = _rows(RESULTS / "qwen3-8b" / "official-by-seed.csv")
+    qwen_paper = _rows(RESULTS / "qwen3-8b" / "paper-main.csv")
+    opt_paper = _rows(RESULTS / "opt30b" / "paper-main.csv")
+    coverage = _rows(RESULTS / "large-model-coverage.csv")
+    zero_shot = _rows(RESULTS / "large-model-zero-shot.csv")
+    assert len(qwen_seed) == 27
+    assert len(qwen_paper) == 24
+    assert len(opt_paper) == 18
+    assert len(coverage) == 42
+    assert len(zero_shot) == 16
+    assert {row["method"] for row in qwen_seed} == {"AGZO"}
+    assert all(row["release_code_revision"] == "83b5b59" for row in qwen_seed)
+    assert len([row for row in coverage if row["reproduction_status"] == "complete"]) == 18
+    assert len([row for row in coverage if row["reproduction_status"] != "complete"]) == 24
+    multirc = [row for row in qwen_seed if row["dataset"] == "MultiRC"]
+    assert {row["metric"] for row in multirc} == {"answer_accuracy", "f1a", "em"}
+    assert {row["evaluation_scope"] for row in multirc} == {"full_official"}

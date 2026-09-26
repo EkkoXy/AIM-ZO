@@ -79,7 +79,7 @@ See [implementation notes](docs/implementation-notes.md),
 Paper-facing aggregate and per-seed official results are indexed in the
 [result ledger](docs/result-ledger.md).
 
-The complete paper matrix and deterministic config generator are described in
+The complete runnable protocol matrix and deterministic config generator are described in
 [main experiments](docs/main-experiments.md). Mechanism diagnostics and the
 offline-artifact release policy are described in
 [offline experiments](docs/offline-experiments.md).

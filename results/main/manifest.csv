@@ -3,4 +3,9 @@ results/main/opt13b/paper-main.csv,c4fa10aab862076ce7c67162aa227b7a326a40ac98438
 results/main/opt13b/official-by-seed.csv,2e0f024a1f0ba49f85f621d92f6a222bec824236c56acd694fa548d8b9cc095a,123,50779c6
 results/main/qwen3-0.6b/paper-main.csv,919f41ab566ef35198516f3eb7bb14d2aa8062b938335d88f668e127ed526f2c,18,50779c6
 results/main/qwen3-0.6b/official-by-seed.csv,97dd24af01ef0df783ec779351a13b88892f101e28b3f64940f292a67b8265e5,58,50779c6
-results/main/large-model-runtime/by-run.csv,4badb7ac42f59c6624bf3a5b434410f9616370b27219de01508ca696d01f6961,6,d8c80d1
+results/main/large-model-runtime/by-run.csv,0b50eb2c399c8b067a16a644d85f93f9377c7873fca9590e9782e8e3b01a36bb,6,dd3d001
+results/main/qwen3-8b/paper-main.csv,1eefbc5603a062e5e26b9b4647c57d00303234ec36a8f54d8921c7750b0a511d,24,83b5b59
+results/main/qwen3-8b/official-by-seed.csv,38670ae8c2fced1f698150c38082cf4bc52c0ec2d32adfdba72607c3106af2cb,27,83b5b59
+results/main/opt30b/paper-main.csv,745e178b7ab709c04e09d338643727bd51f16cd02dbb701f221f5b7b30cd1084,18,83b5b59
+results/main/large-model-zero-shot.csv,b926da66a4babf7c1e096f938adbe18f4904897e7070e1aec0abb44503489be7,16,83b5b59
+results/main/large-model-coverage.csv,a284c28ca2b9814e6278ce4305498b3913c44e87a781a1ec47f7d24bb7d74fa6,42,83b5b59
