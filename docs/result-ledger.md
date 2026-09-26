@@ -7,6 +7,7 @@ Paper-facing results are included under `results/main/`. Metric values are in
 | --- | --- | --- | --- |
 | OPT-13B | [`paper-main.csv`](../results/main/opt13b/paper-main.csv) | [`official-by-seed.csv`](../results/main/opt13b/official-by-seed.csv) | 49 paper metrics; 123 numeric seed/metric rows |
 | Qwen3-0.6B-Base | [`paper-main.csv`](../results/main/qwen3-0.6b/paper-main.csv) | [`official-by-seed.csv`](../results/main/qwen3-0.6b/official-by-seed.csv) | 18 aggregate metrics; 58 numeric seed/metric rows |
+| Qwen3-8B / OPT-30B runtime | [`by-run.csv`](../results/main/large-model-runtime/by-run.csv) | Six seed-42 run records | 10 real BF16 update steps per model/method cell |
 
 [`results/main/manifest.csv`](../results/main/manifest.csv) records each public
 CSV's SHA-256 checksum, row count, and corresponding release code revision.
@@ -68,6 +69,15 @@ official validation split. SQuAD uses the fixed 1,000-example official subset
 and reports F1 and EM. Qwen3-0.6B MultiRC uses all 4,848 answer rows grouped
 into 953 questions and reports F1a and EM, with answer accuracy retained as a
 supplementary metric.
+
+## Large-model runtime records
+
+The Qwen3-8B-Base and OPT-30B table contains six individual run records: MeZO,
+AIM-ZO, and AGZO on RTE seed 42 for each model. Each row includes the executed
+config checksum, public resolved-config checksum, first-batch checksum, actual
+objective-call count, steady step/call timing, and peak allocated/reserved GPU
+memory. Evaluation was disabled. These are runtime/memory records rather than
+accuracy aggregates.
 
 ## Known provenance limits
 
