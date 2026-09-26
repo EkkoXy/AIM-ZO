@@ -1,4 +1,6 @@
 file,sha256,rows,release_code_revision
+results/main/opt-2.7b/paper-main.csv,f6f75bc4d900c1f648b24d9939b695be2db352bbca79bdd934a268b71909fd70,14,a9ac64d
+results/main/opt-2.7b/official-by-seed.csv,1e34862e2aaec894d98322bee6d0e465cef2a97f5398a1ff728ddfa884762014,70,a9ac64d
 results/main/opt13b/paper-main.csv,c4fa10aab862076ce7c67162aa227b7a326a40ac984383d7da97ff4c997c295f,49,50779c6
 results/main/opt13b/official-by-seed.csv,2e0f024a1f0ba49f85f621d92f6a222bec824236c56acd694fa548d8b9cc095a,123,50779c6
 results/main/qwen3-0.6b/paper-main.csv,919f41ab566ef35198516f3eb7bb14d2aa8062b938335d88f668e127ed526f2c,18,50779c6

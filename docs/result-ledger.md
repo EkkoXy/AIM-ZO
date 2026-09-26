@@ -7,6 +7,7 @@ the results reported in the paper.
 
 | Model | Aggregate table | Per-seed official metrics | Coverage |
 | --- | --- | --- | --- |
+| OPT-2.7B | [`paper-main.csv`](../results/main/opt-2.7b/paper-main.csv) | [`official-by-seed.csv`](../results/main/opt-2.7b/official-by-seed.csv) | Six paper tasks; 70 verified seed/metric rows |
 | OPT-13B | [`paper-main.csv`](../results/main/opt13b/paper-main.csv) | [`official-by-seed.csv`](../results/main/opt13b/official-by-seed.csv) | 49 paper metrics; 123 numeric seed/metric rows |
 | Qwen3-0.6B-Base | [`paper-main.csv`](../results/main/qwen3-0.6b/paper-main.csv) | [`official-by-seed.csv`](../results/main/qwen3-0.6b/official-by-seed.csv) | 18 aggregate metrics; 58 numeric seed/metric rows |
 | Qwen3-8B-Base | [`paper-main.csv`](../results/main/qwen3-8b/paper-main.csv) | [`official-by-seed.csv`](../results/main/qwen3-8b/official-by-seed.csv) | 24 paper metrics; 27 AGZO seed/metric rows |
@@ -17,14 +18,16 @@ the results reported in the paper.
 [`results/main/manifest.csv`](../results/main/manifest.csv) records each public
 CSV's SHA-256 checksum, row count, and corresponding release code revision.
 
-## Remaining main-text results
+## Main-text summaries
 
-The following aggregate scores complete the main-text comparison for the
-models not covered by the CSVs above. They are transcribed from the paper's
-main tables, in percent. Values after `±` are the reported sample standard
-deviations; `Avg.` is the paper's unweighted six-task mean. Their machine-readable versions are linked above. Qwen3-8B AGZO is backed by
-three synchronized seed records per task. The other trained large-model rows
-still lack per-seed evaluation payloads; the exact status of every cell is in
+The following scores reproduce the paper's main tables in percent. Values
+after `±` are sample standard deviations; `Avg.` is the paper's unweighted
+six-task mean. Their machine-readable versions are linked above. OPT-2.7B
+MeZO and AIM-ZO are recomputed from five local official payloads per cell,
+with artifact and evaluation-payload checksums retained in the seed table.
+Qwen3-8B AGZO is backed by three synchronized seed records per task. The
+other trained large-model rows still lack per-seed evaluation payloads; the
+exact status of every cell is in
 [`large-model-coverage.csv`](../results/main/large-model-coverage.csv).
 
 ### OPT-2.7B

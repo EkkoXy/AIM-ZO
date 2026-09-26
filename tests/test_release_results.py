@@ -13,29 +13,56 @@ def _rows(path: Path) -> list[dict[str, str]]:
 
 def test_release_manifest_checksums_and_revision() -> None:
     manifest = _rows(RESULTS / "manifest.csv")
-    assert len(manifest) == 10
+    assert len(manifest) == 12
     for row in manifest:
         path = ROOT / row["file"]
         assert hashlib.sha256(path.read_bytes()).hexdigest() == row["sha256"]
         assert len(_rows(path)) == int(row["rows"])
-        assert row["release_code_revision"] in {"50779c6", "dd3d001", "83b5b59"}
+        assert row["release_code_revision"] in {
+            "50779c6",
+            "dd3d001",
+            "83b5b59",
+            "a9ac64d",
+        }
 
 
 def test_result_rows_have_public_config_provenance() -> None:
     seed_files = [
+        RESULTS / "opt-2.7b" / "official-by-seed.csv",
         RESULTS / "opt13b" / "official-by-seed.csv",
         RESULTS / "qwen3-0.6b" / "official-by-seed.csv",
     ]
     for path in seed_files:
         for row in _rows(path):
             assert len(row["release_config_sha256"]) == 64
-            assert row["release_code_revision"] == "50779c6"
-            assert not any(token in " ".join(row.values()).lower() for token in ("/home/", "/media/", "/public_data/", "myzo", "oszo", "zo4llm"))
+            expected_revision = (
+                "a9ac64d" if path.parent.name == "opt-2.7b" else "50779c6"
+            )
+            assert row["release_code_revision"] == expected_revision
+            assert not any(
+                token in " ".join(row.values()).lower()
+                for token in (
+                    "/home/",
+                    "/media/",
+                    "/public_data/",
+                    "myzo",
+                    "oszo",
+                    "zo4llm",
+                )
+            )
 
 
 def test_paper_metric_coverage_and_disclosures() -> None:
+    opt27 = _rows(RESULTS / "opt-2.7b" / "paper-main.csv")
     opt = _rows(RESULTS / "opt13b" / "paper-main.csv")
     qwen = _rows(RESULTS / "qwen3-0.6b" / "paper-main.csv")
+    assert len(opt27) == 14
+    assert {row["method"] for row in opt27} == {"MeZO", "AIM-ZO"}
+    assert all(row["num_seeds"] == "5" for row in opt27)
+    assert all(
+        row["provenance_status"] == "aggregate_from_verified_seed_rows"
+        for row in opt27
+    )
     assert len(opt) == 49
     assert len([row for row in opt if row["provenance_status"] == "historical_aggregate_without_seed_payload"]) == 8
     grouped = {(row["method"], row["metric"]) for row in qwen if row["dataset"] == "MultiRC"}
