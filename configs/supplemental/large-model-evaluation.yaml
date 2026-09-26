@@ -1,24 +1,37 @@
-schema_version: 1
+schema_version: 2
 experiments:
   - model: qwen3-8b-base
     model_path: data/model/Qwen3-8B-Base
-    scope: supplemental
-    methods: [zero-shot, agzo]
-    tasks: [rte, boolq, sst2, wic, multirc, squad]
-    dtype: bfloat16
-    seeds: [42, 142, 242]
-    agzo:
-      steps: 13333
-      calls_per_step: 3
-      learning_rate: 1.0e-7
-      epsilon: 1.0e-4
-      checkpoints: [2667, 5333, 8000, 10666, 13333]
+    evaluation:
+      methods: [zero-shot, agzo]
+      tasks: [rte, boolq, sst2, wic, multirc, squad]
+      dtype: bfloat16
+      agzo_seeds: [42, 142, 242]
+      agzo:
+        steps: 13333
+        calls_per_step: 3
+        learning_rate: 1.0e-7
+        epsilon: 1.0e-4
+        checkpoints: [2667, 5333, 8000, 10666, 13333]
+    paper_runtime:
+      task: rte
+      seed: 42
+      dtype: bfloat16
+      steps: 10
+      protocols: [qwen8-runtime-mezo, qwen8-runtime-aimzo, qwen8-runtime-agzo]
   - model: opt-30b
     model_path: data/model/OPT-30B
-    scope: supplemental
-    methods: [zero-shot]
-    tasks: [rte, boolq, sst2, wic, wsc, squad]
-    dtype: bfloat16
+    evaluation:
+      methods: [zero-shot]
+      tasks: [rte, boolq, sst2, wic, wsc, squad]
+      dtype: bfloat16
+    paper_runtime:
+      task: rte
+      seed: 42
+      dtype: bfloat16
+      steps: 10
+      protocols: [opt30-runtime-mezo, opt30-runtime-aimzo, opt30-runtime-agzo]
 
-# Ten-step MeZO/AIM-ZO/AGZO measurements are runtime and memory diagnostics,
-# not task-performance runs, and remain outside the main registry.
+# Runtime protocols are defined in configs/main/experiments.yaml so the normal
+# generator and runner can resolve them. They measure real parameter-updating
+# steps, wall time, and peak memory; they are not 40K-call accuracy runs.

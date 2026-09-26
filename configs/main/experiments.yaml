@@ -4,6 +4,8 @@ models:
   qwen3-4b-base: data/model/Qwen3-4B-Base
   qwen3-0.6b-base: data/model/Qwen3-0.6B-Base
   opt-13b: data/model/OPT-13B
+  qwen3-8b-base: data/model/Qwen3-8B-Base
+  opt-30b: data/model/OPT-30B
 tasks:
   rte:
     train: 1000
@@ -606,3 +608,127 @@ protocols:
   learning_rate: 1.0e-07
   epsilon: 0.001
   eval_every: 4000
+- id: qwen8-runtime-mezo
+  scope: paper_runtime
+  budget_policy: short_runtime
+  model: qwen3-8b-base
+  method: mezo
+  tasks:
+  - rte
+  seeds:
+  - 42
+  dtype: bfloat16
+  context: 2048
+  steps: 10
+  calls_per_step: 2
+  learning_rate: 1.0e-07
+  epsilon: 0.001
+  eval_every: 0
+  checkpoint_policy: disabled
+  source_update_order: true
+  source_compatibility_profile: mezo_source
+- id: qwen8-runtime-aimzo
+  scope: paper_runtime
+  budget_policy: short_runtime
+  model: qwen3-8b-base
+  method: aimzo
+  tasks:
+  - rte
+  seeds:
+  - 42
+  dtype: bfloat16
+  context: 2048
+  steps: 10
+  calls_per_step: 16
+  learning_rate: 0.001
+  epsilon: 8.0e-05
+  epsilon_schedule: cosine_decay
+  epsilon_min_ratio: 0.25
+  epsilon_total_steps: 2500
+  eval_every: 0
+  checkpoint_policy: disabled
+  aimzo_refresh: 1
+  aimzo_fused_varied_q: true
+- id: qwen8-runtime-agzo
+  scope: paper_runtime
+  budget_policy: short_runtime
+  model: qwen3-8b-base
+  method: agzo
+  tasks:
+  - rte
+  seeds:
+  - 42
+  dtype: bfloat16
+  context: 2048
+  steps: 10
+  calls_per_step: 3
+  learning_rate: 1.0e-07
+  epsilon: 0.0001
+  eval_every: 0
+  checkpoint_policy: disabled
+  source_update_order: true
+  source_compatibility_profile: agzo_source_and_paper_gap
+  agzo_basis_seed_mode: ambient
+  agzo_max_activation_tokens: 0
+- id: opt30-runtime-mezo
+  scope: paper_runtime
+  budget_policy: short_runtime
+  model: opt-30b
+  method: mezo
+  tasks:
+  - rte
+  seeds:
+  - 42
+  dtype: bfloat16
+  context: 2048
+  steps: 10
+  calls_per_step: 2
+  learning_rate: 1.0e-07
+  epsilon: 0.001
+  eval_every: 0
+  checkpoint_policy: disabled
+  source_update_order: true
+  source_compatibility_profile: mezo_source
+- id: opt30-runtime-aimzo
+  scope: paper_runtime
+  budget_policy: short_runtime
+  model: opt-30b
+  method: aimzo
+  tasks:
+  - rte
+  seeds:
+  - 42
+  dtype: bfloat16
+  context: 2048
+  steps: 10
+  calls_per_step: 16
+  learning_rate: 0.0005
+  epsilon: 6.0e-05
+  epsilon_schedule: cosine_decay
+  epsilon_min_ratio: 0.25
+  epsilon_total_steps: 2500
+  eval_every: 0
+  checkpoint_policy: disabled
+  aimzo_refresh: 10
+  aimzo_fused_varied_q: true
+- id: opt30-runtime-agzo
+  scope: paper_runtime
+  budget_policy: short_runtime
+  model: opt-30b
+  method: agzo
+  tasks:
+  - rte
+  seeds:
+  - 42
+  dtype: bfloat16
+  context: 2048
+  steps: 10
+  calls_per_step: 3
+  learning_rate: 5.0e-07
+  epsilon: 0.0001
+  eval_every: 0
+  checkpoint_policy: disabled
+  source_update_order: true
+  source_compatibility_profile: agzo_source_and_paper_gap
+  agzo_basis_seed_mode: ambient
+  agzo_max_activation_tokens: 0

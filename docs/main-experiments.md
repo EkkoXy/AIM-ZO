@@ -68,3 +68,20 @@ source protocol, which uses five prefix tokens and a generated-answer F1
 objective; the result ledger labels this distinction explicitly. Large-model
 evaluation-only settings are in
 `configs/supplemental/large-model-evaluation.yaml`.
+
+## Large-model runtime table
+
+The paper's Qwen3-8B-Base and OPT-30B runtime/memory comparison consists of
+ten real BF16 parameter-updating RTE steps for MeZO, AIM-ZO, and AGZO at seed
+42. These six `paper_runtime` protocols are included in the same registry and
+can be resolved with, for example:
+
+```bash
+python scripts/run_main_experiment.py \
+  --protocol qwen8-runtime-aimzo --task rte --seed 42 \
+  --model-path /path/to/Qwen3-8B-Base
+```
+
+Evaluation and checkpoint saving are disabled. These runs reproduce the paper's
+runtime and peak-memory table, not downstream accuracy or a 40K-call training
+budget.

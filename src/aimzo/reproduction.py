@@ -37,8 +37,10 @@ def validate_experiment_registry(registry: dict[str, Any]) -> None:
         if unknown_tasks:
             raise ValueError(f"{protocol_id}: unknown tasks {sorted(unknown_tasks)}")
         budget = int(protocol["steps"]) * int(protocol["calls_per_step"])
-        if budget not in EXPECTED_CALL_BUDGETS:
-            raise ValueError(f"{protocol_id}: objective-call budget is {budget}, expected 39999 or 40000")
+        if protocol.get("budget_policy") != "short_runtime" and budget not in EXPECTED_CALL_BUDGETS:
+            raise ValueError(
+                f"{protocol_id}: objective-call budget is {budget}, expected 39999 or 40000"
+            )
         milestones = protocol.get("checkpoints")
         if milestones and (len(milestones) != 5 or int(milestones[-1]) != int(protocol["steps"])):
             raise ValueError(f"{protocol_id}: checkpoints must contain five points ending at max steps")
@@ -87,7 +89,7 @@ def build_training_config(
     steps = int(protocol["steps"])
     checkpoints = (
         []
-        if protocol.get("checkpoint_policy") == "interval"
+        if protocol.get("checkpoint_policy") in {"interval", "disabled"}
         else list(protocol.get("checkpoints") or _uniform_milestones(steps))
     )
     config: dict[str, Any] = {
@@ -104,7 +106,7 @@ def build_training_config(
             "name": "hf",
             "model_name": registry["models"][protocol["model"]],
             "dtype": protocol["dtype"],
-            "max_model_len": int(task_spec["context"]),
+            "max_model_len": int(protocol.get("context", task_spec["context"])),
         },
         "objective": {
             "name": (
@@ -121,7 +123,7 @@ def build_training_config(
             "eps": float(protocol["epsilon"]),
             "eps_schedule": protocol.get("epsilon_schedule", "constant"),
             "eps_schedule_min_ratio": float(protocol.get("epsilon_min_ratio", 0.0)),
-            "eps_schedule_total_steps": steps,
+            "eps_schedule_total_steps": int(protocol.get("epsilon_total_steps", steps)),
             "learning_rate": float(protocol["learning_rate"]),
             "lr_schedule": "constant",
             "parameter_scope": "full_parameters",
@@ -130,6 +132,8 @@ def build_training_config(
             "noise_backend": "gpu_seeded",
             "restore_strategy": "seed_replay",
             "weight_decay": 0.0,
+            "source_update_order": bool(protocol.get("source_update_order", False)),
+            "source_compatibility_profile": protocol.get("source_compatibility_profile"),
         },
         "trainer": {
             "output_dir": f"outputs/main/{protocol['model']}/{method}/{task}/seed{seed}",
@@ -139,12 +143,17 @@ def build_training_config(
             "eval_every": int(protocol["eval_every"]),
             "checkpoint_milestones": checkpoints,
             "save_every": 0,
-            "max_periodic_checkpoints": 5,
-            "save_checkpoints": True,
+            "max_periodic_checkpoints": 0 if protocol.get("checkpoint_policy") == "disabled" else 5,
+            "save_checkpoints": protocol.get("checkpoint_policy") != "disabled",
             "best_checkpoint_metric": task_spec["metric"],
             "best_checkpoint_mode": task_spec["mode"],
         },
-        "logging": {"tensorboard": False},
+        "logging": {
+            "tensorboard": False,
+            "history_snapshot_interval": (
+                1 if protocol.get("budget_policy") == "short_runtime" else None
+            ),
+        },
     }
     _add_method_config(config["zo"], method, protocol)
     return config
@@ -188,18 +197,26 @@ def _add_method_config(zo: dict[str, Any], method: str, protocol: dict[str, Any]
             "abh_population_summary_last_only": True,
             "abh_population_deferred_update_trace": True,
             "abh_population_cache_restore_factors": True,
+            "abh_population_fused_varied_q_update": bool(
+                protocol.get("aimzo_fused_varied_q", False)
+            ),
         }
     elif method == "agzo":
         zo["agzo"] = {
             "rank": 1,
             "target_module_regex": ".*",
             "fallback": "gaussian",
+            "max_activation_tokens": int(
+                protocol.get("agzo_max_activation_tokens", 128)
+            ),
             "source_scalar_dtype": "bfloat16",
             "stream_activation_basis": True,
             "estimator_mode": "two_side",
             "subspace_backend": "power_iteration",
             "power_iterations": 3,
-            "basis_seed_mode": "perturbation_seed",
+            "basis_seed_mode": protocol.get(
+                "agzo_basis_seed_mode", "perturbation_seed"
+            ),
             "perturbation_form": "basis",
         }
     elif method == "hizoo":
