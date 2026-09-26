@@ -65,8 +65,11 @@ evaluation is run once rather than once per training seed.
 The released OPT-13B table uses one uniform full-parameter, generation-CE
 protocol for SQuAD across methods. This differs from the original MeZO SQuAD
 source protocol, which uses five prefix tokens and a generated-answer F1
-objective; the result ledger labels this distinction explicitly. Large-model
-evaluation-only settings are in
+objective; the result ledger labels this distinction explicitly. The registry also contains the six-task, 40K-call Qwen3-8B-Base MeZO,
+AGZO, and AIM-ZO protocols and the OPT-30B MeZO and AIM-ZO protocols used by
+the main table. The `provenance_status` field distinguishes protocols backed
+by synchronized seed artifacts from protocols reconstructed from the paper
+settings. Large-model evaluation settings are summarized in
 `configs/supplemental/large-model-evaluation.yaml`.
 
 ## Large-model runtime table

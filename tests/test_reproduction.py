@@ -104,3 +104,16 @@ def test_large_model_runtime_protocols_are_exact_short_runs() -> None:
             assert config["zo"]["aimzo"][
                 "abh_population_fused_varied_q_update"
             ] is True
+
+
+def test_large_model_main_protocols_cover_paper_matrix() -> None:
+    registry = load_experiment_registry(REGISTRY)
+    by_id = {row["id"]: row for row in registry["protocols"]}
+    qwen_tasks = {"rte", "boolq", "sst2", "wic", "multirc", "squad"}
+    opt_tasks = {"rte", "boolq", "sst2", "wic", "wsc", "squad"}
+    for protocol_id in ("qwen8-mezo", "qwen8-agzo", "qwen8-aimzo"):
+        assert set(by_id[protocol_id]["tasks"]) == qwen_tasks
+        assert by_id[protocol_id]["seeds"] == [42, 142, 242]
+    for protocol_id in ("opt30-mezo", "opt30-aimzo"):
+        assert set(by_id[protocol_id]["tasks"]) == opt_tasks
+        assert by_id[protocol_id]["seeds"] == [42, 142, 242]

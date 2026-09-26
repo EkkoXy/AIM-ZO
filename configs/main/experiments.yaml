@@ -608,6 +608,143 @@ protocols:
   learning_rate: 1.0e-07
   epsilon: 0.001
   eval_every: 4000
+- id: qwen8-mezo
+  scope: primary
+  provenance_status: paper_protocol_without_seed_artifacts
+  model: qwen3-8b-base
+  method: mezo
+  tasks:
+  - rte
+  - boolq
+  - sst2
+  - wic
+  - multirc
+  - squad
+  seeds:
+  - 42
+  - 142
+  - 242
+  dtype: bfloat16
+  context: 2048
+  steps: 20000
+  calls_per_step: 2
+  learning_rate: 5.0e-07
+  epsilon: 0.001
+  eval_every: 4000
+  source_update_order: true
+  source_compatibility_profile: mezo_source
+- id: qwen8-aimzo
+  scope: primary
+  provenance_status: paper_protocol_without_seed_artifacts
+  model: qwen3-8b-base
+  method: aimzo
+  tasks:
+  - rte
+  - boolq
+  - sst2
+  - wic
+  - multirc
+  - squad
+  seeds:
+  - 42
+  - 142
+  - 242
+  dtype: bfloat16
+  context: 2048
+  steps: 2500
+  calls_per_step: 16
+  learning_rate: 0.001
+  epsilon: 8.0e-05
+  epsilon_schedule: cosine_decay
+  epsilon_min_ratio: 0.25
+  eval_every: 500
+  aimzo_refresh: 1
+  aimzo_fused_varied_q: true
+- id: qwen8-agzo
+  scope: primary
+  provenance_status: verified_seed_artifacts
+  model: qwen3-8b-base
+  method: agzo
+  tasks:
+  - rte
+  - boolq
+  - sst2
+  - wic
+  - multirc
+  - squad
+  seeds:
+  - 42
+  - 142
+  - 242
+  dtype: bfloat16
+  context: 2048
+  steps: 13333
+  calls_per_step: 3
+  learning_rate: 1.0e-07
+  epsilon: 0.0001
+  eval_every: 2667
+  checkpoints:
+  - 2667
+  - 5333
+  - 8000
+  - 10666
+  - 13333
+  source_update_order: true
+  source_compatibility_profile: agzo_source_and_paper_gap
+  agzo_basis_seed_mode: ambient
+  agzo_max_activation_tokens: 0
+- id: opt30-mezo
+  scope: primary
+  provenance_status: rte_partial_seed_artifacts
+  model: opt-30b
+  method: mezo
+  tasks:
+  - rte
+  - boolq
+  - sst2
+  - wic
+  - wsc
+  - squad
+  seeds:
+  - 42
+  - 142
+  - 242
+  dtype: float16
+  context: 2048
+  steps: 20000
+  calls_per_step: 2
+  learning_rate: 1.0e-07
+  epsilon: 0.001
+  eval_every: 4000
+  source_update_order: true
+  source_compatibility_profile: mezo_source
+- id: opt30-aimzo
+  scope: primary
+  provenance_status: rte_verified_seed_artifacts
+  model: opt-30b
+  method: aimzo
+  tasks:
+  - rte
+  - boolq
+  - sst2
+  - wic
+  - wsc
+  - squad
+  seeds:
+  - 42
+  - 142
+  - 242
+  dtype: bfloat16
+  context: 2048
+  steps: 2500
+  calls_per_step: 16
+  learning_rate: 0.0005
+  epsilon: 6.0e-05
+  epsilon_schedule: cosine_decay
+  epsilon_min_ratio: 0.25
+  eval_every: 500
+  aimzo_refresh: 10
+  aimzo_fused_varied_q: true
 - id: qwen8-runtime-mezo
   scope: paper_runtime
   budget_policy: short_runtime

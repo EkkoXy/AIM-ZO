@@ -3,7 +3,7 @@ experiments:
   - model: qwen3-8b-base
     model_path: data/model/Qwen3-8B-Base
     evaluation:
-      methods: [zero-shot, agzo]
+      methods: [zero-shot, mezo, agzo, aimzo]
       tasks: [rte, boolq, sst2, wic, multirc, squad]
       dtype: bfloat16
       agzo_seeds: [42, 142, 242]
@@ -13,6 +13,7 @@ experiments:
         learning_rate: 1.0e-7
         epsilon: 1.0e-4
         checkpoints: [2667, 5333, 8000, 10666, 13333]
+      training_protocols: [qwen8-mezo, qwen8-agzo, qwen8-aimzo]
     paper_runtime:
       task: rte
       seed: 42
@@ -22,9 +23,10 @@ experiments:
   - model: opt-30b
     model_path: data/model/OPT-30B
     evaluation:
-      methods: [zero-shot]
+      methods: [zero-shot, mezo, aimzo]
       tasks: [rte, boolq, sst2, wic, wsc, squad]
       dtype: bfloat16
+      training_protocols: [opt30-mezo, opt30-aimzo]
     paper_runtime:
       task: rte
       seed: 42
