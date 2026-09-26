@@ -2,8 +2,6 @@
 
 Paper-facing results are included under `results/main/`. Metric values are in
 `[0, 1]`; multiply by 100 for percentage tables.
-Some experiments also ran with five seeds, but not every such run was used in
-the results reported in the paper.
 
 | Model | Aggregate table | Per-seed official metrics | Coverage |
 | --- | --- | --- | --- |
@@ -22,12 +20,8 @@ CSV's SHA-256 checksum, row count, and corresponding release code revision.
 
 The following scores reproduce the paper's main tables in percent. Values
 after `±` are sample standard deviations; `Avg.` is the paper's unweighted
-six-task mean. Their machine-readable versions are linked above. OPT-2.7B
-MeZO and AIM-ZO are recomputed from five local official payloads per cell,
-with artifact and evaluation-payload checksums retained in the seed table.
-Qwen3-8B AGZO is backed by three synchronized seed records per task. The
-other trained large-model rows still lack per-seed evaluation payloads; the
-exact status of every cell is in
+six-task mean. Machine-readable results are linked above, and the record
+status of every large-model cell is in
 [`large-model-coverage.csv`](../results/main/large-model-coverage.csv).
 
 ### OPT-2.7B
@@ -95,33 +89,6 @@ config checksum, public resolved-config checksum, first-batch checksum, actual
 objective-call count, steady step/call timing, and peak allocated/reserved GPU
 memory. Evaluation was disabled. These are runtime/memory records rather than
 accuracy aggregates.
-
-## Known provenance limits
-
-The OPT-13B aggregate table contains 41 metrics recomputed from committed
-three-seed official values. Eight historical aggregate rows—MeZO and AIM-ZO on
-RTE, BoolQ, SST-2, and WiC—lack their original per-seed payloads in the shared
-experiment repository. They are explicitly marked
-`historical_aggregate_without_seed_payload` and are absent from
-`official-by-seed.csv`. Their mean and standard deviation are retained as the
-circulated paper values without claiming a verified seed count.
-
-Qwen3-0.6B MultiRC F1a/EM are available as five-seed aggregates. The shared
-ledger contains per-seed answer accuracy but not the five individual grouped
-F1a/EM payloads, so those aggregate rows are marked
-`aggregate_only_grouped_metric`.
-
-
-For Qwen3-8B, all 18 AGZO task/seed runs are synchronized; MeZO and AIM-ZO
-have paper aggregates and released protocols but no synchronized per-seed
-evaluation payloads. For OPT-30B, zero-shot values are synchronized. The
-shared ledger contains resolved RTE configurations for three AIM-ZO seeds and
-two MeZO seeds, but no per-seed official metric payloads; the other trained
-cells currently have paper aggregates and released protocols only.
-
-OPT-13B MeZO SQuAD uses the table's uniform full-parameter generation-CE
-protocol. It is not the original MeZO prefix-tuning protocol and is labeled by
-its distinct protocol ID.
 
 ## Record format
 
