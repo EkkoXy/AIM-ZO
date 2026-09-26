@@ -11,6 +11,44 @@ Paper-facing results are included under `results/main/`. Metric values are in
 [`results/main/manifest.csv`](../results/main/manifest.csv) records each public
 CSV's SHA-256 checksum, row count, and corresponding release code revision.
 
+## Remaining main-text results
+
+The following aggregate scores complete the main-text comparison for the
+models not covered by the CSVs above. They are transcribed from the paper's
+main tables, in percent. Values after `±` are the reported sample standard
+deviations; `Avg.` is the paper's unweighted six-task mean. These tables do
+not supply per-seed evaluation records or artifact-level provenance.
+
+### OPT-2.7B
+
+| Method | RTE | BoolQ | SST-2 | WiC | WSC | SQuAD F1 | Avg. |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Zero-shot | 55.23 | 52.87 | 56.65 | 54.86 | 36.54 | 26.92 | 47.18 |
+| MeZO | 65.13 ± 1.67 | 66.10 ± 2.26 | 92.50 ± 0.54 | 58.53 ± 0.41 | 54.81 ± 1.52 | 80.99 ± 1.42 | 69.68 |
+| CurvZO | 64.53 ± 4.83 | 68.01 ± 0.62 | 92.96 ± 0.31 | 57.96 ± 2.07 | 46.47 ± 7.28 | 58.71 ± 2.47 | 64.77 |
+| HiZOO | 60.29 ± 2.94 | 67.31 ± 1.34 | 91.77 ± 0.67 | 58.88 ± 0.80 | 53.53 ± 2.42 | 73.81 ± 0.90 | 67.60 |
+| AGZO | 64.40 ± 3.10 | 66.26 ± 1.46 | 92.59 ± 0.51 | 57.02 ± 1.73 | 47.76 ± 2.22 | 29.82 ± 5.54 | 59.64 |
+| ZO-Muon | 63.32 ± 2.53 | 68.90 ± 1.12 | 92.75 ± 0.52 | 61.13 ± 1.12 | 51.60 ± 3.38 | 78.93 ± 1.13 | 69.44 |
+| LoZO | 61.88 ± 4.48 | 65.33 ± 0.73 | 91.51 ± 0.83 | 53.67 ± 2.70 | 50.96 ± 7.26 | 43.52 ± 1.24 | 61.15 |
+| AIM-ZO | 67.51 ± 3.18 | 67.22 ± 1.67 | 92.87 ± 0.47 | 60.13 ± 1.70 | 56.73 ± 4.35 | 81.19 ± 0.49 | 70.94 |
+
+### OPT-30B
+
+| Method | RTE | BoolQ | SST-2 | WiC | WSC | SQuAD F1 | Avg. |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Zero-shot | 53.79 | 40.90 | 58.83 | 52.98 | 37.50 | 46.48 | 48.41 |
+| MeZO | 63.25 ± 1.79 | 70.74 ± 1.17 | 91.08 ± 0.36 | 55.96 ± 1.81 | 58.08 ± 2.85 | 80.22 ± 0.99 | 69.89 |
+| AIM-ZO | 68.16 ± 2.66 | 74.90 ± 1.53 | 93.47 ± 0.56 | 57.71 ± 0.91 | 59.23 ± 2.77 | 82.96 ± 0.69 | 72.74 |
+
+### Qwen3-8B-Base
+
+| Method | RTE | BoolQ | SST-2 | WiC | MultiRC accuracy | SQuAD F1 | Avg. |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Zero-shot | 86.28 | 74.60 | 58.49 | 65.67 | 72.77 | 83.67 | 73.58 |
+| MeZO | 88.33 ± 1.37 | 85.75 ± 0.36 | 90.94 ± 0.40 | 67.92 ± 1.31 | 86.01 ± 0.48 | 86.90 ± 1.95 | 84.31 |
+| AGZO | 86.88 ± 1.50 | 79.40 ± 0.85 | 81.42 ± 2.88 | 65.78 ± 1.75 | 83.76 ± 1.88 | 68.20 ± 4.77 | 77.57 |
+| AIM-ZO | 89.53 ± 1.08 | 85.76 ± 0.13 | 89.49 ± 0.81 | 68.18 ± 1.51 | 86.68 ± 0.16 | 91.80 ± 0.42 | 85.24 |
+
 ## Provenance fields
 
 Every trained result contains a `release_config_sha256` or
