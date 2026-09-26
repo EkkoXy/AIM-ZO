@@ -25,10 +25,6 @@ dependencies = [
     "sentencepiece==0.2.2",
 ]
 
-[project.urls]
-Repository = "https://github.com/EkkoXy/AIM-ZO"
-Issues = "https://github.com/EkkoXy/AIM-ZO/issues"
-
 [project.optional-dependencies]
 dev = ["pytest", "ruff"]
 
