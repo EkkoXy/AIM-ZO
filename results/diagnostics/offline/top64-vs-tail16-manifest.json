@@ -1,0 +1,41 @@
+{
+  "protocol_id": "aimzo-top64-vs-random-tail16-offline-v1",
+  "state": "complete",
+  "models": [
+    "opt27b",
+    "qwen4b"
+  ],
+  "steps": {
+    "opt27b": [
+      2000,
+      2008,
+      2015
+    ],
+    "qwen4b": [
+      500,
+      508,
+      515
+    ]
+  },
+  "gradient_target": "disjoint_eval_batch_fp32_autograd",
+  "Q_source": "independent_K128_frozen_replay",
+  "K": 128,
+  "k": 64,
+  "top_policy": "stored_prefix_64",
+  "mix_policy": "stored_prefix_48_uniform_tail_16_reselected_per_probe",
+  "families": [
+    "full_gaussian",
+    "rank_one",
+    "rank_one_layer_fro"
+  ],
+  "N": [
+    4,
+    15
+  ],
+  "repeats": 256,
+  "paired_random_coefficients": true,
+  "new_cells": 7776,
+  "total_cells": 7776,
+  "linear_oracle_only": true,
+  "final_seed42_only": false
+}

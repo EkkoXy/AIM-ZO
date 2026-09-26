@@ -22,7 +22,7 @@ from aimzo.tasks.zoregular import ZORegularSample, load_zoregular_split
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Evaluate SQuAD/DROP checkpoints with generation F1 and EM"
+        description="Evaluate SQuAD/ReCoRD/DROP checkpoints with generation F1 and EM"
     )
     parser.add_argument("--config", type=Path, required=True)
     parser.add_argument("--checkpoint", type=Path, help="Omit for zero-shot")
@@ -69,8 +69,8 @@ def _payload_checksum(rows: list[ZORegularSample]) -> str:
 def evaluate_checkpoint(args: argparse.Namespace) -> dict[str, Any]:
     config = load_config(args.config)
     validate_cli_config(config)
-    if config.data.task not in {"squad", "drop"}:
-        raise ValueError("QA metric evaluation supports only squad and drop")
+    if config.data.task not in {"squad", "record", "drop"}:
+        raise ValueError("QA metric evaluation supports only squad, record, and drop")
     task = build_task(config.data)
     rows, source_indices = _evaluation_rows(
         config,

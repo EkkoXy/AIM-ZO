@@ -1,0 +1,11 @@
+{
+  "state": "complete",
+  "cells": 7776,
+  "unique_gradient_Q_units": 1296,
+  "primary_cells": 864,
+  "J_top_wins": 1221,
+  "J_top_total": 1296,
+  "mean_absolute_empirical_vs_exact_J_top_full_gaussian_N15": 5.231392342804975e-05,
+  "raw_csv_sha256": "2eb54b66d37a42c810dc6868a183d4bf0cd1309d10dfe299f558abfa72463f3f",
+  "raw_csv_not_published": true
+}
