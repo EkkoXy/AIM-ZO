@@ -2,6 +2,8 @@
 
 Paper-facing results are included under `results/main/`. Metric values are in
 `[0, 1]`; multiply by 100 for percentage tables.
+Some experiments also ran with five seeds, but not every such run was used in
+the results reported in the paper.
 
 | Model | Aggregate table | Per-seed official metrics | Coverage |
 | --- | --- | --- | --- |
