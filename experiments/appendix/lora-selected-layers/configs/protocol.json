@@ -1,0 +1,37 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "seeds": [
+    42,
+    142,
+    242
+  ],
+  "dtype": "bfloat16",
+  "batch_size": 16,
+  "training_calls_per_run": 40000,
+  "selection": "minimum of five development CE values; exact ties choose earlier step",
+  "test_used_for_selection": false,
+  "MeZO+LoRA": {
+    "parameter_scope": "q_proj/v_proj LoRA factors",
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0,
+    "steps": 20000,
+    "learning_rate": 5e-05,
+    "epsilon": 0.01,
+    "eval_every": 4000
+  },
+  "AIM-ZO": {
+    "parameter_scope": "direct q_proj/v_proj weights",
+    "steps": 2500,
+    "lambda": 0.006,
+    "epsilon_start": 6e-05,
+    "epsilon_end": 1.5e-05,
+    "epsilon_schedule": "cosine_decay",
+    "eval_every": 500,
+    "K": 256,
+    "k": 32,
+    "head": 24,
+    "tail": 8,
+    "center_tokens": 512
+  }
+}

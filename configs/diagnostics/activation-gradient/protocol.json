@@ -1,0 +1,78 @@
+{
+  "model": "facebook/opt-2.7b",
+  "seed": 42,
+  "checkpoint_steps": [
+    500,
+    1500,
+    2500
+  ],
+  "trajectory": "Each task uses checkpoints trained on that same task.",
+  "rank": 64,
+  "basis_samples": 32,
+  "gradient_samples": 32,
+  "reference_pools_disjoint": true,
+  "activation_svd": "uncentered",
+  "max_activation_tokens": 2048,
+  "max_length": 512,
+  "model_dtype": "bfloat16",
+  "gradient_accumulator_dtype": "float32",
+  "random_spaces": 5,
+  "coverage": "||G Q||_F^2 / ||G||_F^2",
+  "rte": {
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "projections": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "out_proj",
+      "fc1",
+      "fc2"
+    ]
+  },
+  "sst2": {
+    "layers": [
+      0,
+      15,
+      31
+    ],
+    "projections": [
+      "q_proj",
+      "v_proj",
+      "fc1",
+      "fc2"
+    ]
+  }
+}

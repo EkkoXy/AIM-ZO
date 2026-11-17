@@ -1,0 +1,3155 @@
+{
+  "status": "complete",
+  "task": "rte",
+  "seed": 42,
+  "data_sha256": "48219387988a7fe44dfa2b68101f05699b889ab483c70c00af537cdaa571a4e1",
+  "entry_sha256": "e01ceb656cf52f948bdfd8c9d4a256e41d420f78a33b4c08db40bba57f97530e",
+  "basis_indices": [
+    2363,
+    799,
+    112,
+    819,
+    730,
+    1459,
+    457,
+    770,
+    1587,
+    1509,
+    762,
+    275,
+    1580,
+    1488,
+    2132,
+    1214,
+    0,
+    182,
+    1913,
+    1533,
+    334,
+    299,
+    3,
+    1866,
+    1418,
+    2324,
+    415,
+    702,
+    1950,
+    564,
+    1702,
+    1340
+  ],
+  "gradient_indices": [
+    1700,
+    2240,
+    979,
+    2111,
+    1123,
+    1172,
+    560,
+    263,
+    614,
+    573,
+    2430,
+    1071,
+    1808,
+    2028,
+    1489,
+    1629,
+    1174,
+    645,
+    1596,
+    788,
+    1302,
+    170,
+    1183,
+    2024,
+    774,
+    727,
+    1964,
+    2128,
+    2057,
+    2033,
+    2096,
+    345
+  ],
+  "definition": "coverage of mean gradient by fresh uncentered activation SVD",
+  "rows": [
+    {
+      "module": "model.decoder.layers.0.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.07338950037956238,
+      "activation_coverage": 0.648023784160614,
+      "random_coverage": [
+        0.023692376911640167,
+        0.026057453826069832,
+        0.0234085600823164,
+        0.025356296449899673,
+        0.025235410779714584
+      ],
+      "excess_coverage": 0.6232737645506858
+    },
+    {
+      "module": "model.decoder.layers.0.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.09253036975860596,
+      "activation_coverage": 0.6282368302345276,
+      "random_coverage": [
+        0.024854406714439392,
+        0.024406753480434418,
+        0.02365177683532238,
+        0.024817880243062973,
+        0.025860097259283066
+      ],
+      "excess_coverage": 0.6035186473280192
+    },
+    {
+      "module": "model.decoder.layers.0.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 2.5465166568756104,
+      "activation_coverage": 0.6921026110649109,
+      "random_coverage": [
+        0.02423715777695179,
+        0.02434505894780159,
+        0.023146243765950203,
+        0.025399332866072655,
+        0.02524629607796669
+      ],
+      "excess_coverage": 0.6676277931779623
+    },
+    {
+      "module": "model.decoder.layers.0.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 2.4856882095336914,
+      "activation_coverage": 0.5994386076927185,
+      "random_coverage": [
+        0.024172130972146988,
+        0.024463331326842308,
+        0.024579687044024467,
+        0.025005729869008064,
+        0.023645365610718727
+      ],
+      "excess_coverage": 0.5750653587281704
+    },
+    {
+      "module": "model.decoder.layers.0.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 5.685403823852539,
+      "activation_coverage": 0.9739294052124023,
+      "random_coverage": [
+        0.022917669266462326,
+        0.023533601313829422,
+        0.01787877082824707,
+        0.02797526866197586,
+        0.023315731436014175
+      ],
+      "excess_coverage": 0.9508051969110966
+    },
+    {
+      "module": "model.decoder.layers.0.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 2.2624399662017822,
+      "activation_coverage": 0.8794833421707153,
+      "random_coverage": [
+        0.007269374560564756,
+        0.006454079877585173,
+        0.006133923307061195,
+        0.006729033309966326,
+        0.005846863612532616
+      ],
+      "excess_coverage": 0.8729966872371733
+    },
+    {
+      "module": "model.decoder.layers.1.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.006427371874451637,
+      "activation_coverage": 0.9802194833755493,
+      "random_coverage": [
+        0.019867533817887306,
+        0.02241351082921028,
+        0.01768510416150093,
+        0.025113269686698914,
+        0.0258360356092453
+      ],
+      "excess_coverage": 0.9580363925546408
+    },
+    {
+      "module": "model.decoder.layers.1.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.0006542963674291968,
+      "activation_coverage": 0.8443158864974976,
+      "random_coverage": [
+        0.024172605946660042,
+        0.024692382663488388,
+        0.02132546901702881,
+        0.02643188089132309,
+        0.02797659859061241
+      ],
+      "excess_coverage": 0.819396099075675
+    },
+    {
+      "module": "model.decoder.layers.1.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 6.503129005432129,
+      "activation_coverage": 0.9983120560646057,
+      "random_coverage": [
+        0.019801896065473557,
+        0.022190190851688385,
+        0.01762079820036888,
+        0.024617187678813934,
+        0.025904206559062004
+      ],
+      "excess_coverage": 0.9762852001935244
+    },
+    {
+      "module": "model.decoder.layers.1.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.9402906894683838,
+      "activation_coverage": 0.9693730473518372,
+      "random_coverage": [
+        0.016611332073807716,
+        0.028947614133358,
+        0.03752141818404198,
+        0.021342691034078598,
+        0.02350923791527748
+      ],
+      "excess_coverage": 0.9437865886837244
+    },
+    {
+      "module": "model.decoder.layers.1.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 2.8517158031463623,
+      "activation_coverage": 0.9883601069450378,
+      "random_coverage": [
+        0.021227337419986725,
+        0.019603006541728973,
+        0.019536320120096207,
+        0.02545611746609211,
+        0.02592160552740097
+      ],
+      "excess_coverage": 0.9660112295299769
+    },
+    {
+      "module": "model.decoder.layers.1.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.899073600769043,
+      "activation_coverage": 0.8630519509315491,
+      "random_coverage": [
+        0.006354015786200762,
+        0.005503419321030378,
+        0.006654562894254923,
+        0.008237161673605442,
+        0.00700022978708148
+      ],
+      "excess_coverage": 0.8563020730391144
+    },
+    {
+      "module": "model.decoder.layers.2.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.007912103086709976,
+      "activation_coverage": 0.9774833917617798,
+      "random_coverage": [
+        0.02005203254520893,
+        0.020640108734369278,
+        0.01772312819957733,
+        0.026021337136626244,
+        0.026121314615011215
+      ],
+      "excess_coverage": 0.9553718075156212
+    },
+    {
+      "module": "model.decoder.layers.2.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.0008324900991283357,
+      "activation_coverage": 0.8036412000656128,
+      "random_coverage": [
+        0.02211187779903412,
+        0.02562866173684597,
+        0.02510867454111576,
+        0.03068000264465809,
+        0.02813851833343506
+      ],
+      "excess_coverage": 0.777307653054595
+    },
+    {
+      "module": "model.decoder.layers.2.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 8.629603385925293,
+      "activation_coverage": 0.9989137649536133,
+      "random_coverage": [
+        0.01994057558476925,
+        0.020765528082847595,
+        0.01766638457775116,
+        0.025053294375538826,
+        0.026122765615582466
+      ],
+      "excess_coverage": 0.9770040553063154
+    },
+    {
+      "module": "model.decoder.layers.2.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.9848424792289734,
+      "activation_coverage": 0.9744006395339966,
+      "random_coverage": [
+        0.027718305587768555,
+        0.020599719136953354,
+        0.02084812894463539,
+        0.02519405074417591,
+        0.019365103915333748
+      ],
+      "excess_coverage": 0.9516555778682232
+    },
+    {
+      "module": "model.decoder.layers.2.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 5.310693264007568,
+      "activation_coverage": 0.9930165410041809,
+      "random_coverage": [
+        0.02172360196709633,
+        0.019167106598615646,
+        0.01852119341492653,
+        0.02542995661497116,
+        0.025929274037480354
+      ],
+      "excess_coverage": 0.9708623144775629
+    },
+    {
+      "module": "model.decoder.layers.2.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.5623228549957275,
+      "activation_coverage": 0.7737478017807007,
+      "random_coverage": [
+        0.004965568892657757,
+        0.00622011162340641,
+        0.006698350887745619,
+        0.005833784118294716,
+        0.0060598296113312244
+      ],
+      "excess_coverage": 0.7677922727540135
+    },
+    {
+      "module": "model.decoder.layers.3.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.02943350560963154,
+      "activation_coverage": 0.980871319770813,
+      "random_coverage": [
+        0.020112095400691032,
+        0.019964545965194702,
+        0.017820095643401146,
+        0.025316376239061356,
+        0.026543136686086655
+      ],
+      "excess_coverage": 0.958920069783926
+    },
+    {
+      "module": "model.decoder.layers.3.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.002284021582454443,
+      "activation_coverage": 0.6897074580192566,
+      "random_coverage": [
+        0.0240872111171484,
+        0.02387722209095955,
+        0.024203181266784668,
+        0.0288188848644495,
+        0.025424350053071976
+      ],
+      "excess_coverage": 0.6644252881407737
+    },
+    {
+      "module": "model.decoder.layers.3.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 12.611784934997559,
+      "activation_coverage": 0.9987847208976746,
+      "random_coverage": [
+        0.020035386085510254,
+        0.02026313729584217,
+        0.01758488640189171,
+        0.024751290678977966,
+        0.02608121931552887
+      ],
+      "excess_coverage": 0.9770415369421244
+    },
+    {
+      "module": "model.decoder.layers.3.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.0278655290603638,
+      "activation_coverage": 0.9558504223823547,
+      "random_coverage": [
+        0.021680312231183052,
+        0.028704041615128517,
+        0.02732415311038494,
+        0.03212475776672363,
+        0.02332150936126709
+      ],
+      "excess_coverage": 0.9292194675654173
+    },
+    {
+      "module": "model.decoder.layers.3.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 3.8753855228424072,
+      "activation_coverage": 0.9902965426445007,
+      "random_coverage": [
+        0.020864218473434448,
+        0.018795017153024673,
+        0.01842653751373291,
+        0.02490633726119995,
+        0.025334138423204422
+      ],
+      "excess_coverage": 0.9686312928795815
+    },
+    {
+      "module": "model.decoder.layers.3.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.3025260865688324,
+      "activation_coverage": 0.6193106174468994,
+      "random_coverage": [
+        0.006155121605843306,
+        0.005669172387570143,
+        0.006336291320621967,
+        0.006642501801252365,
+        0.005828913301229477
+      ],
+      "excess_coverage": 0.613184217363596
+    },
+    {
+      "module": "model.decoder.layers.4.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.07030608505010605,
+      "activation_coverage": 0.9763843417167664,
+      "random_coverage": [
+        0.02016555145382881,
+        0.01833261176943779,
+        0.017899300903081894,
+        0.025061411783099174,
+        0.025802671909332275
+      ],
+      "excess_coverage": 0.9549320321530104
+    },
+    {
+      "module": "model.decoder.layers.4.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.007120134774595499,
+      "activation_coverage": 0.6336773633956909,
+      "random_coverage": [
+        0.02493159845471382,
+        0.023378444835543633,
+        0.025088831782341003,
+        0.02770603820681572,
+        0.02761169895529747
+      ],
+      "excess_coverage": 0.6079340409487486
+    },
+    {
+      "module": "model.decoder.layers.4.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 25.107746124267578,
+      "activation_coverage": 0.9985538721084595,
+      "random_coverage": [
+        0.019764726981520653,
+        0.019085371866822243,
+        0.01770602911710739,
+        0.024317331612110138,
+        0.025457829236984253
+      ],
+      "excess_coverage": 0.9772876143455506
+    },
+    {
+      "module": "model.decoder.layers.4.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.3109174966812134,
+      "activation_coverage": 0.9369122385978699,
+      "random_coverage": [
+        0.03004426881670952,
+        0.027527425438165665,
+        0.02281400002539158,
+        0.025581933557987213,
+        0.022944197058677673
+      ],
+      "excess_coverage": 0.9111298736184835
+    },
+    {
+      "module": "model.decoder.layers.4.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 6.844113349914551,
+      "activation_coverage": 0.9900452494621277,
+      "random_coverage": [
+        0.021649718284606934,
+        0.019115719944238663,
+        0.01899981126189232,
+        0.02579464763402939,
+        0.02549293451011181
+      ],
+      "excess_coverage": 0.9678346831351519
+    },
+    {
+      "module": "model.decoder.layers.4.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.3621792197227478,
+      "activation_coverage": 0.6280694603919983,
+      "random_coverage": [
+        0.006375548895448446,
+        0.0065018595196306705,
+        0.0067411912605166435,
+        0.006094115320593119,
+        0.006225556135177612
+      ],
+      "excess_coverage": 0.621681806165725
+    },
+    {
+      "module": "model.decoder.layers.5.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.12810900807380676,
+      "activation_coverage": 0.9516838192939758,
+      "random_coverage": [
+        0.021088849753141403,
+        0.01853763312101364,
+        0.018368646502494812,
+        0.02476126328110695,
+        0.025427894666790962
+      ],
+      "excess_coverage": 0.9300469618290663
+    },
+    {
+      "module": "model.decoder.layers.5.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.016049029305577278,
+      "activation_coverage": 0.5926966667175293,
+      "random_coverage": [
+        0.024234330281615257,
+        0.023147620260715485,
+        0.026022210717201233,
+        0.025956332683563232,
+        0.026559822261333466
+      ],
+      "excess_coverage": 0.5675126034766436
+    },
+    {
+      "module": "model.decoder.layers.5.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 30.1746826171875,
+      "activation_coverage": 0.9976184368133545,
+      "random_coverage": [
+        0.020330829545855522,
+        0.01908678561449051,
+        0.018062420189380646,
+        0.024421215057373047,
+        0.025304103270173073
+      ],
+      "excess_coverage": 0.9761773660779
+    },
+    {
+      "module": "model.decoder.layers.5.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.6743232011795044,
+      "activation_coverage": 0.9395279884338379,
+      "random_coverage": [
+        0.02297316864132881,
+        0.021605243906378746,
+        0.02273624576628208,
+        0.02243235893547535,
+        0.029431745409965515
+      ],
+      "excess_coverage": 0.9156922359019518
+    },
+    {
+      "module": "model.decoder.layers.5.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 6.138984203338623,
+      "activation_coverage": 0.9870650172233582,
+      "random_coverage": [
+        0.021179569885134697,
+        0.020008260384202003,
+        0.017601583153009415,
+        0.025434711948037148,
+        0.024287739768624306
+      ],
+      "excess_coverage": 0.9653626441955566
+    },
+    {
+      "module": "model.decoder.layers.5.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.3048139214515686,
+      "activation_coverage": 0.6231346130371094,
+      "random_coverage": [
+        0.006385577842593193,
+        0.005958555731922388,
+        0.006127523723989725,
+        0.006153807044029236,
+        0.005559337325394154
+      ],
+      "excess_coverage": 0.6170976527035237
+    },
+    {
+      "module": "model.decoder.layers.6.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.11831624805927277,
+      "activation_coverage": 0.9352912306785583,
+      "random_coverage": [
+        0.022308045998215675,
+        0.019230211153626442,
+        0.01659367047250271,
+        0.023486709222197533,
+        0.026244482025504112
+      ],
+      "excess_coverage": 0.9137186069041491
+    },
+    {
+      "module": "model.decoder.layers.6.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.03023478575050831,
+      "activation_coverage": 0.7316984534263611,
+      "random_coverage": [
+        0.021770309656858444,
+        0.021517621353268623,
+        0.026039090007543564,
+        0.025006558746099472,
+        0.027941813692450523
+      ],
+      "excess_coverage": 0.707243374735117
+    },
+    {
+      "module": "model.decoder.layers.6.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 34.763221740722656,
+      "activation_coverage": 0.9980106353759766,
+      "random_coverage": [
+        0.020202966406941414,
+        0.01906004175543785,
+        0.017344433814287186,
+        0.024077409878373146,
+        0.02480020932853222
+      ],
+      "excess_coverage": 0.9769136231392622
+    },
+    {
+      "module": "model.decoder.layers.6.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.8248629570007324,
+      "activation_coverage": 0.9471469521522522,
+      "random_coverage": [
+        0.020841892808675766,
+        0.02675279974937439,
+        0.025509243831038475,
+        0.021231194958090782,
+        0.02573498524725437
+      ],
+      "excess_coverage": 0.9231329288333654
+    },
+    {
+      "module": "model.decoder.layers.6.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 5.923361778259277,
+      "activation_coverage": 0.9851436018943787,
+      "random_coverage": [
+        0.021743372082710266,
+        0.019473835825920105,
+        0.017404083162546158,
+        0.024782871827483177,
+        0.024524200707674026
+      ],
+      "excess_coverage": 0.9635579291731119
+    },
+    {
+      "module": "model.decoder.layers.6.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.2962072789669037,
+      "activation_coverage": 0.5558912754058838,
+      "random_coverage": [
+        0.005836464464664459,
+        0.006198673974722624,
+        0.006359438877552748,
+        0.006192798260599375,
+        0.006396533455699682
+      ],
+      "excess_coverage": 0.5496944935992361
+    },
+    {
+      "module": "model.decoder.layers.7.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.07443053275346756,
+      "activation_coverage": 0.9164695143699646,
+      "random_coverage": [
+        0.022316789254546165,
+        0.019169466570019722,
+        0.0181087926030159,
+        0.024361498653888702,
+        0.02621690183877945
+      ],
+      "excess_coverage": 0.8944348245859146
+    },
+    {
+      "module": "model.decoder.layers.7.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.01671397127211094,
+      "activation_coverage": 0.661285400390625,
+      "random_coverage": [
+        0.022461693733930588,
+        0.02408985048532486,
+        0.02440965734422207,
+        0.02594153769314289,
+        0.026500798761844635
+      ],
+      "excess_coverage": 0.636604692786932
+    },
+    {
+      "module": "model.decoder.layers.7.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 40.778724670410156,
+      "activation_coverage": 0.9980846643447876,
+      "random_coverage": [
+        0.02063499204814434,
+        0.018690086901187897,
+        0.01731671765446663,
+        0.023781733587384224,
+        0.025111248716711998
+      ],
+      "excess_coverage": 0.9769777085632085
+    },
+    {
+      "module": "model.decoder.layers.7.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 2.2770140171051025,
+      "activation_coverage": 0.9573103785514832,
+      "random_coverage": [
+        0.0300845205783844,
+        0.018978603184223175,
+        0.027664493769407272,
+        0.02415171079337597,
+        0.025456687435507774
+      ],
+      "excess_coverage": 0.9320431753993035
+    },
+    {
+      "module": "model.decoder.layers.7.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 4.932953834533691,
+      "activation_coverage": 0.9803044199943542,
+      "random_coverage": [
+        0.02086889185011387,
+        0.01979787088930607,
+        0.017018068581819534,
+        0.025390788912773132,
+        0.02504608780145645
+      ],
+      "excess_coverage": 0.9586800783872604
+    },
+    {
+      "module": "model.decoder.layers.7.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.30530887842178345,
+      "activation_coverage": 0.5826802253723145,
+      "random_coverage": [
+        0.006354686804115772,
+        0.006597531493753195,
+        0.006505035795271397,
+        0.006097348872572184,
+        0.006157895550131798
+      ],
+      "excess_coverage": 0.5763377256691455
+    },
+    {
+      "module": "model.decoder.layers.8.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.13107328116893768,
+      "activation_coverage": 0.9514352679252625,
+      "random_coverage": [
+        0.02088203653693199,
+        0.019161367788910866,
+        0.017349466681480408,
+        0.02449730597436428,
+        0.02585599571466446
+      ],
+      "excess_coverage": 0.9298860333859921
+    },
+    {
+      "module": "model.decoder.layers.8.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.031033208593726158,
+      "activation_coverage": 0.6598459482192993,
+      "random_coverage": [
+        0.022762533277273178,
+        0.023232070729136467,
+        0.02483333833515644,
+        0.023907290771603584,
+        0.027902690693736076
+      ],
+      "excess_coverage": 0.6353183634579181
+    },
+    {
+      "module": "model.decoder.layers.8.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 65.28691101074219,
+      "activation_coverage": 0.998018205165863,
+      "random_coverage": [
+        0.020239656791090965,
+        0.019063757732510567,
+        0.016983119770884514,
+        0.024101996794342995,
+        0.025253603234887123
+      ],
+      "excess_coverage": 0.9768897783011198
+    },
+    {
+      "module": "model.decoder.layers.8.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 3.0678184032440186,
+      "activation_coverage": 0.95292067527771,
+      "random_coverage": [
+        0.020037157461047173,
+        0.03348666802048683,
+        0.030356014147400856,
+        0.03132108226418495,
+        0.025578225031495094
+      ],
+      "excess_coverage": 0.924764845892787
+    },
+    {
+      "module": "model.decoder.layers.8.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 5.718722343444824,
+      "activation_coverage": 0.9788622260093689,
+      "random_coverage": [
+        0.020836355164647102,
+        0.01940208300948143,
+        0.017321208491921425,
+        0.025809548795223236,
+        0.02445949800312519
+      ],
+      "excess_coverage": 0.9572964873164892
+    },
+    {
+      "module": "model.decoder.layers.8.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.37912994623184204,
+      "activation_coverage": 0.6016590595245361,
+      "random_coverage": [
+        0.006452069152146578,
+        0.006406226195394993,
+        0.006037808023393154,
+        0.00607078243046999,
+        0.006353839300572872
+      ],
+      "excess_coverage": 0.5953949145041406
+    },
+    {
+      "module": "model.decoder.layers.9.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.16289930045604706,
+      "activation_coverage": 0.9679641127586365,
+      "random_coverage": [
+        0.020957740023732185,
+        0.017945924773812294,
+        0.017610399052500725,
+        0.02500949241220951,
+        0.026882285252213478
+      ],
+      "excess_coverage": 0.9462829444557428
+    },
+    {
+      "module": "model.decoder.layers.9.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.03278288245201111,
+      "activation_coverage": 0.7034462690353394,
+      "random_coverage": [
+        0.0234226044267416,
+        0.02488079108297825,
+        0.026571007445454597,
+        0.025234004482626915,
+        0.028208112344145775
+      ],
+      "excess_coverage": 0.67778296507895
+    },
+    {
+      "module": "model.decoder.layers.9.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 85.07752990722656,
+      "activation_coverage": 0.9977489709854126,
+      "random_coverage": [
+        0.020413177087903023,
+        0.018621692433953285,
+        0.01726708747446537,
+        0.024450207129120827,
+        0.025372331961989403
+      ],
+      "excess_coverage": 0.9765240717679262
+    },
+    {
+      "module": "model.decoder.layers.9.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 4.028733253479004,
+      "activation_coverage": 0.9575439095497131,
+      "random_coverage": [
+        0.023269029334187508,
+        0.02374967746436596,
+        0.022287890315055847,
+        0.025809820741415024,
+        0.018413342535495758
+      ],
+      "excess_coverage": 0.9348379574716091
+    },
+    {
+      "module": "model.decoder.layers.9.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 8.598814010620117,
+      "activation_coverage": 0.9770388007164001,
+      "random_coverage": [
+        0.021361827850341797,
+        0.018845433369278908,
+        0.017740437760949135,
+        0.026778852567076683,
+        0.025473440065979958
+      ],
+      "excess_coverage": 0.9549988023936749
+    },
+    {
+      "module": "model.decoder.layers.9.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.6377880573272705,
+      "activation_coverage": 0.6371356844902039,
+      "random_coverage": [
+        0.005746807437390089,
+        0.0060675060376524925,
+        0.006514624692499638,
+        0.006209672428667545,
+        0.00621994212269783
+      ],
+      "excess_coverage": 0.6309839739464224
+    },
+    {
+      "module": "model.decoder.layers.10.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.24612541496753693,
+      "activation_coverage": 0.9472478032112122,
+      "random_coverage": [
+        0.021019771695137024,
+        0.01882379688322544,
+        0.01823451928794384,
+        0.02549956552684307,
+        0.026285793632268906
+      ],
+      "excess_coverage": 0.9252751138061285
+    },
+    {
+      "module": "model.decoder.layers.10.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.04990015923976898,
+      "activation_coverage": 0.5867754817008972,
+      "random_coverage": [
+        0.02354329451918602,
+        0.023526551201939583,
+        0.025332167744636536,
+        0.025916580110788345,
+        0.027883373200893402
+      ],
+      "excess_coverage": 0.5615350883454084
+    },
+    {
+      "module": "model.decoder.layers.10.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 113.20221710205078,
+      "activation_coverage": 0.9976869821548462,
+      "random_coverage": [
+        0.020807111635804176,
+        0.018913328647613525,
+        0.017690232023596764,
+        0.024635808542370796,
+        0.025272568687796593
+      ],
+      "excess_coverage": 0.9762231722474098
+    },
+    {
+      "module": "model.decoder.layers.10.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 5.054515838623047,
+      "activation_coverage": 0.946136474609375,
+      "random_coverage": [
+        0.02680385857820511,
+        0.02657897397875786,
+        0.028789376839995384,
+        0.02305968664586544,
+        0.027063433080911636
+      ],
+      "excess_coverage": 0.9196774087846279
+    },
+    {
+      "module": "model.decoder.layers.10.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 14.002724647521973,
+      "activation_coverage": 0.9779114127159119,
+      "random_coverage": [
+        0.020873989909887314,
+        0.019259221851825714,
+        0.018170537427067757,
+        0.025517743080854416,
+        0.0260559543967247
+      ],
+      "excess_coverage": 0.9559359233826399
+    },
+    {
+      "module": "model.decoder.layers.10.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.8682315349578857,
+      "activation_coverage": 0.6605958938598633,
+      "random_coverage": [
+        0.006437692325562239,
+        0.006220473442226648,
+        0.0067831664346158504,
+        0.006595840211957693,
+        0.006547302007675171
+      ],
+      "excess_coverage": 0.6540789989754557
+    },
+    {
+      "module": "model.decoder.layers.11.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.3713495135307312,
+      "activation_coverage": 0.9493619203567505,
+      "random_coverage": [
+        0.021128326654434204,
+        0.0176552701741457,
+        0.01895906589925289,
+        0.02548268623650074,
+        0.02763325162231922
+      ],
+      "excess_coverage": 0.9271902002394199
+    },
+    {
+      "module": "model.decoder.layers.11.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.07290346175432205,
+      "activation_coverage": 0.6698015332221985,
+      "random_coverage": [
+        0.022119764238595963,
+        0.02477545663714409,
+        0.026047836989164352,
+        0.02584732323884964,
+        0.027007564902305603
+      ],
+      "excess_coverage": 0.6446419440209865
+    },
+    {
+      "module": "model.decoder.layers.11.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 143.63172912597656,
+      "activation_coverage": 0.9978325963020325,
+      "random_coverage": [
+        0.020732123404741287,
+        0.018946731463074684,
+        0.017970608547329903,
+        0.02417835220694542,
+        0.02555900625884533
+      ],
+      "excess_coverage": 0.9763552319258452
+    },
+    {
+      "module": "model.decoder.layers.11.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 5.600571155548096,
+      "activation_coverage": 0.9462651014328003,
+      "random_coverage": [
+        0.022725027054548264,
+        0.025685563683509827,
+        0.023868579417467117,
+        0.029267659410834312,
+        0.024385184049606323
+      ],
+      "excess_coverage": 0.9210786987096071
+    },
+    {
+      "module": "model.decoder.layers.11.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 10.801222801208496,
+      "activation_coverage": 0.9698483943939209,
+      "random_coverage": [
+        0.02050751820206642,
+        0.019337471574544907,
+        0.01891048066318035,
+        0.026123907417058945,
+        0.028349271044135094
+      ],
+      "excess_coverage": 0.9472026646137237
+    },
+    {
+      "module": "model.decoder.layers.11.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.1035678386688232,
+      "activation_coverage": 0.7223221063613892,
+      "random_coverage": [
+        0.006248928606510162,
+        0.006191357038915157,
+        0.0064524575136601925,
+        0.006325462833046913,
+        0.005889493506401777
+      ],
+      "excess_coverage": 0.7161005664616823
+    },
+    {
+      "module": "model.decoder.layers.12.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.5974858999252319,
+      "activation_coverage": 0.9593152403831482,
+      "random_coverage": [
+        0.020590396597981453,
+        0.018676450476050377,
+        0.019500816240906715,
+        0.025658750906586647,
+        0.029299523681402206
+      ],
+      "excess_coverage": 0.9365700528025627
+    },
+    {
+      "module": "model.decoder.layers.12.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.09443173557519913,
+      "activation_coverage": 0.7148410677909851,
+      "random_coverage": [
+        0.02154756896197796,
+        0.024775072932243347,
+        0.025965668261051178,
+        0.02565249428153038,
+        0.02455635741353035
+      ],
+      "excess_coverage": 0.6903416354209184
+    },
+    {
+      "module": "model.decoder.layers.12.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 163.7606201171875,
+      "activation_coverage": 0.9974823594093323,
+      "random_coverage": [
+        0.020410094410181046,
+        0.019188499078154564,
+        0.01814751885831356,
+        0.023967839777469635,
+        0.026219157502055168
+      ],
+      "excess_coverage": 0.9758957374840975
+    },
+    {
+      "module": "model.decoder.layers.12.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 7.318869590759277,
+      "activation_coverage": 0.9445835947990417,
+      "random_coverage": [
+        0.02230747416615486,
+        0.02406538836658001,
+        0.027021056041121483,
+        0.025259720161557198,
+        0.03288646414875984
+      ],
+      "excess_coverage": 0.9182755742222071
+    },
+    {
+      "module": "model.decoder.layers.12.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 11.155410766601562,
+      "activation_coverage": 0.9654542207717896,
+      "random_coverage": [
+        0.020812639966607094,
+        0.019358869642019272,
+        0.017907407134771347,
+        0.026936430484056473,
+        0.028073227033019066
+      ],
+      "excess_coverage": 0.9428365059196949
+    },
+    {
+      "module": "model.decoder.layers.12.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.5500291585922241,
+      "activation_coverage": 0.7890678644180298,
+      "random_coverage": [
+        0.0058497111313045025,
+        0.0052690887823700905,
+        0.006840711459517479,
+        0.0065049780532717705,
+        0.006585044786334038
+      ],
+      "excess_coverage": 0.7828579575754702
+    },
+    {
+      "module": "model.decoder.layers.13.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.522038996219635,
+      "activation_coverage": 0.9580262899398804,
+      "random_coverage": [
+        0.020943501964211464,
+        0.018660731613636017,
+        0.018638698384165764,
+        0.025954142212867737,
+        0.028397060930728912
+      ],
+      "excess_coverage": 0.9355074629187584
+    },
+    {
+      "module": "model.decoder.layers.13.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.09405525773763657,
+      "activation_coverage": 0.6878003478050232,
+      "random_coverage": [
+        0.02190321497619152,
+        0.024866994470357895,
+        0.025970587506890297,
+        0.026183268055319786,
+        0.024284668266773224
+      ],
+      "excess_coverage": 0.6631586011499166
+    },
+    {
+      "module": "model.decoder.layers.13.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 207.23194885253906,
+      "activation_coverage": 0.9977985620498657,
+      "random_coverage": [
+        0.020783567801117897,
+        0.019204389303922653,
+        0.017558543011546135,
+        0.02410099096596241,
+        0.025944022461771965
+      ],
+      "excess_coverage": 0.9762802593410015
+    },
+    {
+      "module": "model.decoder.layers.13.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 6.857029914855957,
+      "activation_coverage": 0.9430159330368042,
+      "random_coverage": [
+        0.030062997713685036,
+        0.020033231005072594,
+        0.02893027476966381,
+        0.027381910011172295,
+        0.025903305038809776
+      ],
+      "excess_coverage": 0.9165535893291235
+    },
+    {
+      "module": "model.decoder.layers.13.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 14.822514533996582,
+      "activation_coverage": 0.967036783695221,
+      "random_coverage": [
+        0.021175101399421692,
+        0.01959460787475109,
+        0.018224840983748436,
+        0.02688908763229847,
+        0.029239719733595848
+      ],
+      "excess_coverage": 0.9440121121704579
+    },
+    {
+      "module": "model.decoder.layers.13.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.9493180513381958,
+      "activation_coverage": 0.8074074387550354,
+      "random_coverage": [
+        0.006159276235848665,
+        0.006194082088768482,
+        0.0065898532047867775,
+        0.005760322790592909,
+        0.006450639571994543
+      ],
+      "excess_coverage": 0.8011766039766371
+    },
+    {
+      "module": "model.decoder.layers.14.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.8701097965240479,
+      "activation_coverage": 0.9684029221534729,
+      "random_coverage": [
+        0.020968524739146233,
+        0.017784759402275085,
+        0.017971016466617584,
+        0.026271432638168335,
+        0.029873289167881012
+      ],
+      "excess_coverage": 0.9458291176706553
+    },
+    {
+      "module": "model.decoder.layers.14.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.1555180549621582,
+      "activation_coverage": 0.7723190188407898,
+      "random_coverage": [
+        0.02096315659582615,
+        0.025087034329771996,
+        0.026097655296325684,
+        0.026899239048361778,
+        0.0247217807918787
+      ],
+      "excess_coverage": 0.7475652456283569
+    },
+    {
+      "module": "model.decoder.layers.14.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 237.90252685546875,
+      "activation_coverage": 0.9978317618370056,
+      "random_coverage": [
+        0.0207764133810997,
+        0.01909669116139412,
+        0.017406001687049866,
+        0.024464840069413185,
+        0.026473820209503174
+      ],
+      "excess_coverage": 0.9761882085353136
+    },
+    {
+      "module": "model.decoder.layers.14.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 8.082502365112305,
+      "activation_coverage": 0.9400705099105835,
+      "random_coverage": [
+        0.018576286733150482,
+        0.025846390053629875,
+        0.02646741084754467,
+        0.02230694517493248,
+        0.02999138832092285
+      ],
+      "excess_coverage": 0.9154328256845474
+    },
+    {
+      "module": "model.decoder.layers.14.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 17.57856559753418,
+      "activation_coverage": 0.9644084572792053,
+      "random_coverage": [
+        0.020429547876119614,
+        0.01993541605770588,
+        0.017901064828038216,
+        0.0267129335552454,
+        0.029148347675800323
+      ],
+      "excess_coverage": 0.9415829952806234
+    },
+    {
+      "module": "model.decoder.layers.14.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 3.1078951358795166,
+      "activation_coverage": 0.8493388891220093,
+      "random_coverage": [
+        0.005833862815052271,
+        0.006320360582321882,
+        0.006038142833858728,
+        0.005948904901742935,
+        0.006485736463218927
+      ],
+      "excess_coverage": 0.8432134876027704
+    },
+    {
+      "module": "model.decoder.layers.15.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.1562730073928833,
+      "activation_coverage": 0.9587845802307129,
+      "random_coverage": [
+        0.020732292905449867,
+        0.01878919079899788,
+        0.017784487456083298,
+        0.02689480036497116,
+        0.030254090204834938
+      ],
+      "excess_coverage": 0.9358936078846455
+    },
+    {
+      "module": "model.decoder.layers.15.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.23710791766643524,
+      "activation_coverage": 0.7850040793418884,
+      "random_coverage": [
+        0.020447207614779472,
+        0.02352224476635456,
+        0.02582962065935135,
+        0.02494935877621174,
+        0.024931471794843674
+      ],
+      "excess_coverage": 0.7610680986195802
+    },
+    {
+      "module": "model.decoder.layers.15.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 243.0530242919922,
+      "activation_coverage": 0.9972162246704102,
+      "random_coverage": [
+        0.02067975327372551,
+        0.019714443013072014,
+        0.017319591715931892,
+        0.02426314726471901,
+        0.026500985026359558
+      ],
+      "excess_coverage": 0.9755206406116486
+    },
+    {
+      "module": "model.decoder.layers.15.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 8.706988334655762,
+      "activation_coverage": 0.9195578694343567,
+      "random_coverage": [
+        0.024168388918042183,
+        0.022220361977815628,
+        0.025002706795930862,
+        0.026771176606416702,
+        0.02525092288851738
+      ],
+      "excess_coverage": 0.8948751579970121
+    },
+    {
+      "module": "model.decoder.layers.15.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 23.886079788208008,
+      "activation_coverage": 0.9637248516082764,
+      "random_coverage": [
+        0.019953757524490356,
+        0.01987452432513237,
+        0.018185215070843697,
+        0.02688060700893402,
+        0.029903536662459373
+      ],
+      "excess_coverage": 0.9407653234899044
+    },
+    {
+      "module": "model.decoder.layers.15.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 4.814736366271973,
+      "activation_coverage": 0.8603588938713074,
+      "random_coverage": [
+        0.005352557171136141,
+        0.006148451939225197,
+        0.006529408972710371,
+        0.00604294054210186,
+        0.006440687924623489
+      ],
+      "excess_coverage": 0.8542560845613479
+    },
+    {
+      "module": "model.decoder.layers.16.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.285231590270996,
+      "activation_coverage": 0.9499345421791077,
+      "random_coverage": [
+        0.020668692886829376,
+        0.018945487216114998,
+        0.018402740359306335,
+        0.025797981768846512,
+        0.03079972416162491
+      ],
+      "excess_coverage": 0.9270116169005632
+    },
+    {
+      "module": "model.decoder.layers.16.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.33098459243774414,
+      "activation_coverage": 0.7251200079917908,
+      "random_coverage": [
+        0.022419685497879982,
+        0.02397063747048378,
+        0.02597762830555439,
+        0.02430432103574276,
+        0.024095099419355392
+      ],
+      "excess_coverage": 0.7009665336459875
+    },
+    {
+      "module": "model.decoder.layers.16.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 206.44268798828125,
+      "activation_coverage": 0.9961065649986267,
+      "random_coverage": [
+        0.02074921503663063,
+        0.019770868122577667,
+        0.017320796847343445,
+        0.02408825419843197,
+        0.026160506531596184
+      ],
+      "excess_coverage": 0.9744886368513107
+    },
+    {
+      "module": "model.decoder.layers.16.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 8.836379051208496,
+      "activation_coverage": 0.897339940071106,
+      "random_coverage": [
+        0.023561077192425728,
+        0.023691777139902115,
+        0.024150820448994637,
+        0.022841116413474083,
+        0.021491948515176773
+      ],
+      "excess_coverage": 0.8741925921291113
+    },
+    {
+      "module": "model.decoder.layers.16.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 26.706541061401367,
+      "activation_coverage": 0.9607878923416138,
+      "random_coverage": [
+        0.020237086340785027,
+        0.019513003528118134,
+        0.01972861774265766,
+        0.027302589267492294,
+        0.02837875671684742
+      ],
+      "excess_coverage": 0.9377558816224336
+    },
+    {
+      "module": "model.decoder.layers.16.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 6.276241779327393,
+      "activation_coverage": 0.8619545698165894,
+      "random_coverage": [
+        0.007541480008512735,
+        0.005894114263355732,
+        0.006068746093660593,
+        0.0066647701896727085,
+        0.006760677322745323
+      ],
+      "excess_coverage": 0.8553686122409999
+    },
+    {
+      "module": "model.decoder.layers.17.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.85674250125885,
+      "activation_coverage": 0.9213594794273376,
+      "random_coverage": [
+        0.021221529692411423,
+        0.019023921340703964,
+        0.02025439776480198,
+        0.026047412306070328,
+        0.030194371938705444
+      ],
+      "excess_coverage": 0.8980111528187991
+    },
+    {
+      "module": "model.decoder.layers.17.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.658862829208374,
+      "activation_coverage": 0.7829642295837402,
+      "random_coverage": [
+        0.023161889985203743,
+        0.024109629914164543,
+        0.02733444795012474,
+        0.024072248488664627,
+        0.026358941569924355
+      ],
+      "excess_coverage": 0.7579567980021238
+    },
+    {
+      "module": "model.decoder.layers.17.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 207.96377563476562,
+      "activation_coverage": 0.9958442449569702,
+      "random_coverage": [
+        0.020453106611967087,
+        0.01996714621782303,
+        0.01754911057651043,
+        0.024293847382068634,
+        0.025423899292945862
+      ],
+      "excess_coverage": 0.9743068229407073
+    },
+    {
+      "module": "model.decoder.layers.17.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 8.609458923339844,
+      "activation_coverage": 0.8938767313957214,
+      "random_coverage": [
+        0.028390638530254364,
+        0.022014759480953217,
+        0.021799545735120773,
+        0.02703118324279785,
+        0.029177580028772354
+      ],
+      "excess_coverage": 0.8681939899921417
+    },
+    {
+      "module": "model.decoder.layers.17.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 32.77286148071289,
+      "activation_coverage": 0.9549861550331116,
+      "random_coverage": [
+        0.019399484619498253,
+        0.017926938831806183,
+        0.020597459748387337,
+        0.02836783044040203,
+        0.02960343286395073
+      ],
+      "excess_coverage": 0.9318071257323026
+    },
+    {
+      "module": "model.decoder.layers.17.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 7.474236011505127,
+      "activation_coverage": 0.8681826591491699,
+      "random_coverage": [
+        0.006044243462383747,
+        0.0057362900115549564,
+        0.0057893795892596245,
+        0.00651952438056469,
+        0.0060133119113743305
+      ],
+      "excess_coverage": 0.8621621092781424
+    },
+    {
+      "module": "model.decoder.layers.18.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 3.1889309883117676,
+      "activation_coverage": 0.9361574053764343,
+      "random_coverage": [
+        0.020457476377487183,
+        0.017559101805090904,
+        0.020916379988193512,
+        0.026767196133732796,
+        0.02970767393708229
+      ],
+      "excess_coverage": 0.913075839728117
+    },
+    {
+      "module": "model.decoder.layers.18.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.9087141156196594,
+      "activation_coverage": 0.8041192889213562,
+      "random_coverage": [
+        0.022264359518885612,
+        0.021501639857888222,
+        0.026172712445259094,
+        0.023579420521855354,
+        0.024415768682956696
+      ],
+      "excess_coverage": 0.7805325087159872
+    },
+    {
+      "module": "model.decoder.layers.18.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 210.4853057861328,
+      "activation_coverage": 0.9951676726341248,
+      "random_coverage": [
+        0.020628703758120537,
+        0.01983446627855301,
+        0.017820235341787338,
+        0.02473180554807186,
+        0.02525159902870655
+      ],
+      "excess_coverage": 0.9735143106430769
+    },
+    {
+      "module": "model.decoder.layers.18.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 7.5072784423828125,
+      "activation_coverage": 0.8867979049682617,
+      "random_coverage": [
+        0.02222486399114132,
+        0.022047314792871475,
+        0.024115359410643578,
+        0.0297698937356472,
+        0.024215171113610268
+      ],
+      "excess_coverage": 0.862323384359479
+    },
+    {
+      "module": "model.decoder.layers.18.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 38.81853103637695,
+      "activation_coverage": 0.9500254988670349,
+      "random_coverage": [
+        0.019176077097654343,
+        0.01775534451007843,
+        0.023376183584332466,
+        0.026761852204799652,
+        0.029999645426869392
+      ],
+      "excess_coverage": 0.9266116783022881
+    },
+    {
+      "module": "model.decoder.layers.18.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 10.943893432617188,
+      "activation_coverage": 0.9032201766967773,
+      "random_coverage": [
+        0.008133282884955406,
+        0.005590078420937061,
+        0.005218347068876028,
+        0.00481179216876626,
+        0.005871504079550505
+      ],
+      "excess_coverage": 0.8972951757721603
+    },
+    {
+      "module": "model.decoder.layers.19.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 2.7074241638183594,
+      "activation_coverage": 0.9594886898994446,
+      "random_coverage": [
+        0.02220185659825802,
+        0.018159808591008186,
+        0.023389868438243866,
+        0.0258643701672554,
+        0.03145496919751167
+      ],
+      "excess_coverage": 0.9352745153009892
+    },
+    {
+      "module": "model.decoder.layers.19.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.0640400648117065,
+      "activation_coverage": 0.7683367133140564,
+      "random_coverage": [
+        0.024198373779654503,
+        0.02420213632285595,
+        0.026460537686944008,
+        0.023243777453899384,
+        0.022990776225924492
+      ],
+      "excess_coverage": 0.7441175930202008
+    },
+    {
+      "module": "model.decoder.layers.19.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 185.6836700439453,
+      "activation_coverage": 0.9923524260520935,
+      "random_coverage": [
+        0.020639345049858093,
+        0.019236000254750252,
+        0.018469251692295074,
+        0.02472345344722271,
+        0.026274094358086586
+      ],
+      "excess_coverage": 0.970483997091651
+    },
+    {
+      "module": "model.decoder.layers.19.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 7.222647190093994,
+      "activation_coverage": 0.8268097043037415,
+      "random_coverage": [
+        0.029230548068881035,
+        0.023871352896094322,
+        0.02933799847960472,
+        0.02740013785660267,
+        0.021045701578259468
+      ],
+      "excess_coverage": 0.800632556527853
+    },
+    {
+      "module": "model.decoder.layers.19.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 30.1599178314209,
+      "activation_coverage": 0.9474939107894897,
+      "random_coverage": [
+        0.02038147859275341,
+        0.018630176782608032,
+        0.02481389418244362,
+        0.026660792529582977,
+        0.030959831550717354
+      ],
+      "excess_coverage": 0.9232046760618686
+    },
+    {
+      "module": "model.decoder.layers.19.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 10.429065704345703,
+      "activation_coverage": 0.8880732655525208,
+      "random_coverage": [
+        0.006375174969434738,
+        0.005322308279573917,
+        0.00579086784273386,
+        0.006125749554485083,
+        0.006246055476367474
+      ],
+      "excess_coverage": 0.8821012343280017
+    },
+    {
+      "module": "model.decoder.layers.20.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.5141326189041138,
+      "activation_coverage": 0.9381819367408752,
+      "random_coverage": [
+        0.021558424457907677,
+        0.01814178191125393,
+        0.02444884553551674,
+        0.027028022333979607,
+        0.030498096719384193
+      ],
+      "excess_coverage": 0.9138469025492668
+    },
+    {
+      "module": "model.decoder.layers.20.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.862564206123352,
+      "activation_coverage": 0.790998637676239,
+      "random_coverage": [
+        0.023441752418875694,
+        0.023280471563339233,
+        0.025414131581783295,
+        0.02202974446117878,
+        0.02072547934949398
+      ],
+      "excess_coverage": 0.7680203218013049
+    },
+    {
+      "module": "model.decoder.layers.20.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 105.06829833984375,
+      "activation_coverage": 0.9904482364654541,
+      "random_coverage": [
+        0.020510636270046234,
+        0.01985861361026764,
+        0.019031140953302383,
+        0.02479063719511032,
+        0.02607894316315651
+      ],
+      "excess_coverage": 0.9683942422270775
+    },
+    {
+      "module": "model.decoder.layers.20.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 4.055477142333984,
+      "activation_coverage": 0.8271210789680481,
+      "random_coverage": [
+        0.016738297417759895,
+        0.023624207824468613,
+        0.024070600047707558,
+        0.021807722747325897,
+        0.029875444248318672
+      ],
+      "excess_coverage": 0.803897824510932
+    },
+    {
+      "module": "model.decoder.layers.20.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 17.830806732177734,
+      "activation_coverage": 0.9392463564872742,
+      "random_coverage": [
+        0.020915783941745758,
+        0.01993134617805481,
+        0.02387676201760769,
+        0.027314459905028343,
+        0.02948661521077156
+      ],
+      "excess_coverage": 0.9149413630366325
+    },
+    {
+      "module": "model.decoder.layers.20.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 6.071805953979492,
+      "activation_coverage": 0.8701664805412292,
+      "random_coverage": [
+        0.007292630150914192,
+        0.007324710488319397,
+        0.005222168751060963,
+        0.006654474884271622,
+        0.0060732606798410416
+      ],
+      "excess_coverage": 0.8636530315503478
+    },
+    {
+      "module": "model.decoder.layers.21.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.708805799484253,
+      "activation_coverage": 0.9327776432037354,
+      "random_coverage": [
+        0.02177388407289982,
+        0.019367972388863564,
+        0.02470134198665619,
+        0.022763220593333244,
+        0.030267924070358276
+      ],
+      "excess_coverage": 0.9090027745813132
+    },
+    {
+      "module": "model.decoder.layers.21.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.9613486528396606,
+      "activation_coverage": 0.8557941317558289,
+      "random_coverage": [
+        0.023145757615566254,
+        0.02515682764351368,
+        0.022784601897001266,
+        0.01941745914518833,
+        0.022864867001771927
+      ],
+      "excess_coverage": 0.8331202290952205
+    },
+    {
+      "module": "model.decoder.layers.21.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 61.06302261352539,
+      "activation_coverage": 0.9888615608215332,
+      "random_coverage": [
+        0.020405186340212822,
+        0.020360790193080902,
+        0.018685227259993553,
+        0.023846955969929695,
+        0.025615816935896873
+      ],
+      "excess_coverage": 0.9670787654817105
+    },
+    {
+      "module": "model.decoder.layers.21.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 4.3595499992370605,
+      "activation_coverage": 0.8475798964500427,
+      "random_coverage": [
+        0.02940966747701168,
+        0.026887593790888786,
+        0.03463341295719147,
+        0.025204258039593697,
+        0.0231800340116024
+      ],
+      "excess_coverage": 0.8197169031947851
+    },
+    {
+      "module": "model.decoder.layers.21.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 14.27517318725586,
+      "activation_coverage": 0.929095983505249,
+      "random_coverage": [
+        0.02104613184928894,
+        0.01953291706740856,
+        0.026279060170054436,
+        0.025206811726093292,
+        0.028709901496767998
+      ],
+      "excess_coverage": 0.9049410190433264
+    },
+    {
+      "module": "model.decoder.layers.21.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 5.428443908691406,
+      "activation_coverage": 0.8603549599647522,
+      "random_coverage": [
+        0.007713209837675095,
+        0.005243742372840643,
+        0.006171220447868109,
+        0.005213370081037283,
+        0.00703074038028717
+      ],
+      "excess_coverage": 0.8540805033408105
+    },
+    {
+      "module": "model.decoder.layers.22.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.4665082693099976,
+      "activation_coverage": 0.9209170341491699,
+      "random_coverage": [
+        0.023320432752370834,
+        0.017740312963724136,
+        0.028267579153180122,
+        0.024424204602837563,
+        0.031592246145009995
+      ],
+      "excess_coverage": 0.8958480790257454
+    },
+    {
+      "module": "model.decoder.layers.22.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.2612775564193726,
+      "activation_coverage": 0.843136191368103,
+      "random_coverage": [
+        0.024690452963113785,
+        0.0239398330450058,
+        0.027062581852078438,
+        0.02029574289917946,
+        0.026506466791033745
+      ],
+      "excess_coverage": 0.8186371758580208
+    },
+    {
+      "module": "model.decoder.layers.22.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 34.49443817138672,
+      "activation_coverage": 0.9861302971839905,
+      "random_coverage": [
+        0.02070477418601513,
+        0.020672312006354332,
+        0.02006600983440876,
+        0.02455553412437439,
+        0.026240788400173187
+      ],
+      "excess_coverage": 0.9636824134737253
+    },
+    {
+      "module": "model.decoder.layers.22.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 2.9985575675964355,
+      "activation_coverage": 0.8371187448501587,
+      "random_coverage": [
+        0.02268081344664097,
+        0.029964983463287354,
+        0.024879667907953262,
+        0.02605784870684147,
+        0.02269076183438301
+      ],
+      "excess_coverage": 0.8118639297783374
+    },
+    {
+      "module": "model.decoder.layers.22.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 8.097504615783691,
+      "activation_coverage": 0.908156156539917,
+      "random_coverage": [
+        0.020938115194439888,
+        0.020568493753671646,
+        0.024844469502568245,
+        0.026105862110853195,
+        0.03078821301460266
+      ],
+      "excess_coverage": 0.8835071258246898
+    },
+    {
+      "module": "model.decoder.layers.22.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 4.831143379211426,
+      "activation_coverage": 0.8785197138786316,
+      "random_coverage": [
+        0.008007514290511608,
+        0.006887112278491259,
+        0.006154955364763737,
+        0.0065717631950974464,
+        0.00536976708099246
+      ],
+      "excess_coverage": 0.8719214914366603
+    },
+    {
+      "module": "model.decoder.layers.23.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.2942754030227661,
+      "activation_coverage": 0.8870652914047241,
+      "random_coverage": [
+        0.024462534114718437,
+        0.02013578452169895,
+        0.025385404005646706,
+        0.02280634269118309,
+        0.03125500679016113
+      ],
+      "excess_coverage": 0.8622562769800425
+    },
+    {
+      "module": "model.decoder.layers.23.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.8760193586349487,
+      "activation_coverage": 0.8566214442253113,
+      "random_coverage": [
+        0.02256426028907299,
+        0.024013571441173553,
+        0.025793757289648056,
+        0.019619883969426155,
+        0.022363143041729927
+      ],
+      "excess_coverage": 0.8337505210191012
+    },
+    {
+      "module": "model.decoder.layers.23.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 18.303205490112305,
+      "activation_coverage": 0.9845596551895142,
+      "random_coverage": [
+        0.020902615040540695,
+        0.02117219939827919,
+        0.018996892496943474,
+        0.025003908202052116,
+        0.02568805031478405
+      ],
+      "excess_coverage": 0.9622069220989943
+    },
+    {
+      "module": "model.decoder.layers.23.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.6225707530975342,
+      "activation_coverage": 0.7688842415809631,
+      "random_coverage": [
+        0.029663745313882828,
+        0.01873864233493805,
+        0.021495236083865166,
+        0.027738019824028015,
+        0.026121579110622406
+      ],
+      "excess_coverage": 0.7441327970474958
+    },
+    {
+      "module": "model.decoder.layers.23.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 5.834534168243408,
+      "activation_coverage": 0.8895524144172668,
+      "random_coverage": [
+        0.0237455815076828,
+        0.019815877079963684,
+        0.02440968155860901,
+        0.02510197088122368,
+        0.030388861894607544
+      ],
+      "excess_coverage": 0.8648600198328495
+    },
+    {
+      "module": "model.decoder.layers.23.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 3.303739547729492,
+      "activation_coverage": 0.8745681047439575,
+      "random_coverage": [
+        0.006185448728501797,
+        0.0068628182634711266,
+        0.006353786680847406,
+        0.005802334286272526,
+        0.00828449334949255
+      ],
+      "excess_coverage": 0.8678703284822404
+    },
+    {
+      "module": "model.decoder.layers.24.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.43374744057655334,
+      "activation_coverage": 0.864592969417572,
+      "random_coverage": [
+        0.02443850412964821,
+        0.01994418166577816,
+        0.026698632165789604,
+        0.0221880916506052,
+        0.03219324350357056
+      ],
+      "excess_coverage": 0.8395004387944937
+    },
+    {
+      "module": "model.decoder.layers.24.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.34146690368652344,
+      "activation_coverage": 0.8630796074867249,
+      "random_coverage": [
+        0.022201336920261383,
+        0.022499989718198776,
+        0.02488817274570465,
+        0.018845155835151672,
+        0.021732306107878685
+      ],
+      "excess_coverage": 0.8410462152212859
+    },
+    {
+      "module": "model.decoder.layers.24.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 14.088030815124512,
+      "activation_coverage": 0.9902257919311523,
+      "random_coverage": [
+        0.021279139444231987,
+        0.021589059382677078,
+        0.018277309834957123,
+        0.025075724348425865,
+        0.025209220126271248
+      ],
+      "excess_coverage": 0.9679397013038397
+    },
+    {
+      "module": "model.decoder.layers.24.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.0385078191757202,
+      "activation_coverage": 0.7906806468963623,
+      "random_coverage": [
+        0.026097595691680908,
+        0.01988021843135357,
+        0.031425949186086655,
+        0.021450916305184364,
+        0.02594413235783577
+      ],
+      "excess_coverage": 0.7657208845019341
+    },
+    {
+      "module": "model.decoder.layers.24.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 5.401056289672852,
+      "activation_coverage": 0.892578125,
+      "random_coverage": [
+        0.023819325491786003,
+        0.018632538616657257,
+        0.02656005322933197,
+        0.026084087789058685,
+        0.03241277113556862
+      ],
+      "excess_coverage": 0.8670763697475194
+    },
+    {
+      "module": "model.decoder.layers.24.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 2.211418390274048,
+      "activation_coverage": 0.8514379262924194,
+      "random_coverage": [
+        0.005907347891479731,
+        0.006848675198853016,
+        0.007307650987058878,
+        0.0071170637384057045,
+        0.006876565515995026
+      ],
+      "excess_coverage": 0.8446264656260609
+    },
+    {
+      "module": "model.decoder.layers.25.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.8323213458061218,
+      "activation_coverage": 0.88929283618927,
+      "random_coverage": [
+        0.025304920971393585,
+        0.01984991692006588,
+        0.027309812605381012,
+        0.02447512559592724,
+        0.03145677223801613
+      ],
+      "excess_coverage": 0.8636135265231133
+    },
+    {
+      "module": "model.decoder.layers.25.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.218022346496582,
+      "activation_coverage": 0.9002919793128967,
+      "random_coverage": [
+        0.024689652025699615,
+        0.02716604620218277,
+        0.031179120764136314,
+        0.025475071743130684,
+        0.02626017853617668
+      ],
+      "excess_coverage": 0.8733379654586315
+    },
+    {
+      "module": "model.decoder.layers.25.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 11.56029224395752,
+      "activation_coverage": 0.9832271337509155,
+      "random_coverage": [
+        0.021163875237107277,
+        0.02179093472659588,
+        0.01881209760904312,
+        0.02620154432952404,
+        0.02567290887236595
+      ],
+      "excess_coverage": 0.9604988615959883
+    },
+    {
+      "module": "model.decoder.layers.25.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.874853253364563,
+      "activation_coverage": 0.76817387342453,
+      "random_coverage": [
+        0.03374475985765457,
+        0.030629191547632217,
+        0.030625151470303535,
+        0.028026705607771873,
+        0.0229541826993227
+      ],
+      "excess_coverage": 0.7389778751879931
+    },
+    {
+      "module": "model.decoder.layers.25.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 3.524040460586548,
+      "activation_coverage": 0.8752270936965942,
+      "random_coverage": [
+        0.025786392390727997,
+        0.020186325535178185,
+        0.026873424649238586,
+        0.025108249858021736,
+        0.029917636886239052
+      ],
+      "excess_coverage": 0.8496526878327131
+    },
+    {
+      "module": "model.decoder.layers.25.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.5487060546875,
+      "activation_coverage": 0.8488132953643799,
+      "random_coverage": [
+        0.008215868845582008,
+        0.005552672781050205,
+        0.004189458210021257,
+        0.006216921377927065,
+        0.006095456890761852
+      ],
+      "excess_coverage": 0.8427592197433114
+    },
+    {
+      "module": "model.decoder.layers.26.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.41875898838043213,
+      "activation_coverage": 0.8907328844070435,
+      "random_coverage": [
+        0.026582790538668633,
+        0.02189655229449272,
+        0.02474425919353962,
+        0.023892173543572426,
+        0.031327005475759506
+      ],
+      "excess_coverage": 0.8650443281978368
+    },
+    {
+      "module": "model.decoder.layers.26.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.4261329770088196,
+      "activation_coverage": 0.8784196376800537,
+      "random_coverage": [
+        0.02117743529379368,
+        0.02164112962782383,
+        0.02564331889152527,
+        0.017537245526909828,
+        0.02057930827140808
+      ],
+      "excess_coverage": 0.8571039501577615
+    },
+    {
+      "module": "model.decoder.layers.26.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 5.592376232147217,
+      "activation_coverage": 0.9831422567367554,
+      "random_coverage": [
+        0.021412644535303116,
+        0.021667564287781715,
+        0.019418617710471153,
+        0.024425381794571877,
+        0.026193460449576378
+      ],
+      "excess_coverage": 0.9605187229812145
+    },
+    {
+      "module": "model.decoder.layers.26.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.8826686143875122,
+      "activation_coverage": 0.7963089346885681,
+      "random_coverage": [
+        0.023308778181672096,
+        0.020200498402118683,
+        0.026569530367851257,
+        0.029943767935037613,
+        0.03157680109143257
+      ],
+      "excess_coverage": 0.7699890594929457
+    },
+    {
+      "module": "model.decoder.layers.26.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 3.389810085296631,
+      "activation_coverage": 0.8842918872833252,
+      "random_coverage": [
+        0.025224940851330757,
+        0.02193870022892952,
+        0.024470482021570206,
+        0.02391575649380684,
+        0.03257220983505249
+      ],
+      "excess_coverage": 0.8586674693971872
+    },
+    {
+      "module": "model.decoder.layers.26.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.8217122554779053,
+      "activation_coverage": 0.8123631477355957,
+      "random_coverage": [
+        0.0075417859479784966,
+        0.007031561806797981,
+        0.006034871097654104,
+        0.007445516064763069,
+        0.006745009683072567
+      ],
+      "excess_coverage": 0.8054033988155425
+    },
+    {
+      "module": "model.decoder.layers.27.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.14607316255569458,
+      "activation_coverage": 0.8310614228248596,
+      "random_coverage": [
+        0.02663581632077694,
+        0.021566886454820633,
+        0.026346048340201378,
+        0.023321809247136116,
+        0.034045711159706116
+      ],
+      "excess_coverage": 0.8046781685203314
+    },
+    {
+      "module": "model.decoder.layers.27.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.16046550869941711,
+      "activation_coverage": 0.739996075630188,
+      "random_coverage": [
+        0.023644516244530678,
+        0.022997494786977768,
+        0.02601286582648754,
+        0.02247602678835392,
+        0.020514782518148422
+      ],
+      "excess_coverage": 0.7168669383972883
+    },
+    {
+      "module": "model.decoder.layers.27.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 4.299555778503418,
+      "activation_coverage": 0.9813308119773865,
+      "random_coverage": [
+        0.02092258632183075,
+        0.021734673529863358,
+        0.01846335269510746,
+        0.02468392439186573,
+        0.02616732195019722
+      ],
+      "excess_coverage": 0.9589364401996135
+    },
+    {
+      "module": "model.decoder.layers.27.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.5888270735740662,
+      "activation_coverage": 0.6042289137840271,
+      "random_coverage": [
+        0.02438519522547722,
+        0.029382379725575447,
+        0.0194109994918108,
+        0.02240663208067417,
+        0.021204516291618347
+      ],
+      "excess_coverage": 0.5808709692209959
+    },
+    {
+      "module": "model.decoder.layers.27.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.429510474205017,
+      "activation_coverage": 0.8491595983505249,
+      "random_coverage": [
+        0.02553808130323887,
+        0.021521717309951782,
+        0.02590646967291832,
+        0.022817781195044518,
+        0.03270215541124344
+      ],
+      "excess_coverage": 0.8234623573720455
+    },
+    {
+      "module": "model.decoder.layers.27.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.667407751083374,
+      "activation_coverage": 0.7932133078575134,
+      "random_coverage": [
+        0.0058829039335250854,
+        0.0044668568298220634,
+        0.005051467102020979,
+        0.004053983371704817,
+        0.006549483630806208
+      ],
+      "excess_coverage": 0.7880123688839376
+    },
+    {
+      "module": "model.decoder.layers.28.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.09226474910974503,
+      "activation_coverage": 0.8165079355239868,
+      "random_coverage": [
+        0.0257700327783823,
+        0.021761776879429817,
+        0.027035094797611237,
+        0.023435845971107483,
+        0.03252541646361351
+      ],
+      "excess_coverage": 0.790402302145958
+    },
+    {
+      "module": "model.decoder.layers.28.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.10182006657123566,
+      "activation_coverage": 0.6959167718887329,
+      "random_coverage": [
+        0.023499172180891037,
+        0.021676264703273773,
+        0.02668498083949089,
+        0.022760959342122078,
+        0.022943494841456413
+      ],
+      "excess_coverage": 0.6724037975072861
+    },
+    {
+      "module": "model.decoder.layers.28.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 3.6160831451416016,
+      "activation_coverage": 0.9821674227714539,
+      "random_coverage": [
+        0.02090529166162014,
+        0.02145073376595974,
+        0.018580352887511253,
+        0.024274330586194992,
+        0.025816667824983597
+      ],
+      "excess_coverage": 0.9599619474261999
+    },
+    {
+      "module": "model.decoder.layers.28.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.4652014970779419,
+      "activation_coverage": 0.6421487927436829,
+      "random_coverage": [
+        0.027092745527625084,
+        0.02370465360581875,
+        0.027741700410842896,
+        0.01605323515832424,
+        0.025462079793214798
+      ],
+      "excess_coverage": 0.6181379098445177
+    },
+    {
+      "module": "model.decoder.layers.28.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.22959566116333,
+      "activation_coverage": 0.8337956070899963,
+      "random_coverage": [
+        0.026108840480446815,
+        0.020441066473722458,
+        0.02449142374098301,
+        0.022052982822060585,
+        0.030455613508820534
+      ],
+      "excess_coverage": 0.8090856216847897
+    },
+    {
+      "module": "model.decoder.layers.28.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.647550106048584,
+      "activation_coverage": 0.8057794570922852,
+      "random_coverage": [
+        0.007420014124363661,
+        0.005030294414609671,
+        0.005527830217033625,
+        0.005671917460858822,
+        0.005029911175370216
+      ],
+      "excess_coverage": 0.8000434636138379
+    },
+    {
+      "module": "model.decoder.layers.29.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.05672556161880493,
+      "activation_coverage": 0.7668246626853943,
+      "random_coverage": [
+        0.027390383183956146,
+        0.020848166197538376,
+        0.026189103722572327,
+        0.02140522003173828,
+        0.030041376128792763
+      ],
+      "excess_coverage": 0.7416498128324747
+    },
+    {
+      "module": "model.decoder.layers.29.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.08832637965679169,
+      "activation_coverage": 0.7683530449867249,
+      "random_coverage": [
+        0.024583743885159492,
+        0.022178981453180313,
+        0.02333202213048935,
+        0.023140210658311844,
+        0.02261642925441265
+      ],
+      "excess_coverage": 0.7451827675104141
+    },
+    {
+      "module": "model.decoder.layers.29.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 4.080873966217041,
+      "activation_coverage": 0.9864754676818848,
+      "random_coverage": [
+        0.021316224709153175,
+        0.021813156083226204,
+        0.01818116568028927,
+        0.02446059137582779,
+        0.025661371648311615
+      ],
+      "excess_coverage": 0.9641889657825231
+    },
+    {
+      "module": "model.decoder.layers.29.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.32573288679122925,
+      "activation_coverage": 0.6378491520881653,
+      "random_coverage": [
+        0.024445679038763046,
+        0.021388279274106026,
+        0.023288046941161156,
+        0.022580454126000404,
+        0.026433292776346207
+      ],
+      "excess_coverage": 0.6142220016568899
+    },
+    {
+      "module": "model.decoder.layers.29.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 3.5833661556243896,
+      "activation_coverage": 0.8604444861412048,
+      "random_coverage": [
+        0.027950603514909744,
+        0.01874033361673355,
+        0.026483189314603806,
+        0.022553669288754463,
+        0.029504872858524323
+      ],
+      "excess_coverage": 0.8353979524224997
+    },
+    {
+      "module": "model.decoder.layers.29.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.5758844614028931,
+      "activation_coverage": 0.7572049498558044,
+      "random_coverage": [
+        0.006221187300980091,
+        0.006850991398096085,
+        0.005815880373120308,
+        0.006352315656840801,
+        0.005014381371438503
+      ],
+      "excess_coverage": 0.7511539986357093
+    },
+    {
+      "module": "model.decoder.layers.30.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.010219278745353222,
+      "activation_coverage": 0.7556760907173157,
+      "random_coverage": [
+        0.027334652841091156,
+        0.02182812988758087,
+        0.028241092339158058,
+        0.024282589554786682,
+        0.028224250301718712
+      ],
+      "excess_coverage": 0.7296939477324486
+    },
+    {
+      "module": "model.decoder.layers.30.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.015927419066429138,
+      "activation_coverage": 0.6934281587600708,
+      "random_coverage": [
+        0.02488870546221733,
+        0.02406739443540573,
+        0.025153517723083496,
+        0.023304082453250885,
+        0.021975839510560036
+      ],
+      "excess_coverage": 0.6695502508431673
+    },
+    {
+      "module": "model.decoder.layers.30.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 4.208151340484619,
+      "activation_coverage": 0.994263768196106,
+      "random_coverage": [
+        0.021428236737847328,
+        0.02211039327085018,
+        0.017461396753787994,
+        0.024542970582842827,
+        0.024234937503933907
+      ],
+      "excess_coverage": 0.9723081812262535
+    },
+    {
+      "module": "model.decoder.layers.30.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.24835479259490967,
+      "activation_coverage": 0.7237344980239868,
+      "random_coverage": [
+        0.019230017438530922,
+        0.024084126576781273,
+        0.02872326225042343,
+        0.021581090986728668,
+        0.016871841624379158
+      ],
+      "excess_coverage": 0.7016364302486181
+    },
+    {
+      "module": "model.decoder.layers.30.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.6946699619293213,
+      "activation_coverage": 0.8495436310768127,
+      "random_coverage": [
+        0.028497818857431412,
+        0.019611256197094917,
+        0.027009230107069016,
+        0.023334084078669548,
+        0.02696368098258972
+      ],
+      "excess_coverage": 0.8244604170322418
+    },
+    {
+      "module": "model.decoder.layers.30.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.7921442985534668,
+      "activation_coverage": 0.7836417555809021,
+      "random_coverage": [
+        0.005961474496871233,
+        0.007872418500483036,
+        0.00635072635486722,
+        0.0054094078950583935,
+        0.004815584048628807
+      ],
+      "excess_coverage": 0.7775598333217204
+    },
+    {
+      "module": "model.decoder.layers.31.self_attn.q_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.02628459222614765,
+      "activation_coverage": 0.8027271032333374,
+      "random_coverage": [
+        0.02978643961250782,
+        0.021934302523732185,
+        0.02743515744805336,
+        0.02227804809808731,
+        0.026816029101610184
+      ],
+      "excess_coverage": 0.7770771078765393
+    },
+    {
+      "module": "model.decoder.layers.31.self_attn.k_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.03415406122803688,
+      "activation_coverage": 0.8163775205612183,
+      "random_coverage": [
+        0.02645809017121792,
+        0.023572444915771484,
+        0.02545943111181259,
+        0.025134392082691193,
+        0.02177048847079277
+      ],
+      "excess_coverage": 0.791898551210761
+    },
+    {
+      "module": "model.decoder.layers.31.self_attn.v_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 3.867997646331787,
+      "activation_coverage": 0.9936885833740234,
+      "random_coverage": [
+        0.021382687613368034,
+        0.021964792162179947,
+        0.017398621886968613,
+        0.02482733316719532,
+        0.024691002443432808
+      ],
+      "excess_coverage": 0.9716356959193945
+    },
+    {
+      "module": "model.decoder.layers.31.self_attn.out_proj",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 0.45892930030822754,
+      "activation_coverage": 0.8162893056869507,
+      "random_coverage": [
+        0.029965966939926147,
+        0.02670294977724552,
+        0.022528082132339478,
+        0.025128938257694244,
+        0.027543695643544197
+      ],
+      "excess_coverage": 0.7899153791368008
+    },
+    {
+      "module": "model.decoder.layers.31.fc1",
+      "input_dimension": 2560,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 6.120267391204834,
+      "activation_coverage": 0.7878590226173401,
+      "random_coverage": [
+        0.029588036239147186,
+        0.02077839896082878,
+        0.02492852509021759,
+        0.021196158602833748,
+        0.02545223757624626
+      ],
+      "excess_coverage": 0.7634703513234854
+    },
+    {
+      "module": "model.decoder.layers.31.fc2",
+      "input_dimension": 10240,
+      "rank": 64,
+      "activation_tokens": 2048,
+      "gradient_energy": 1.1196449995040894,
+      "activation_coverage": 0.8369818925857544,
+      "random_coverage": [
+        0.005966674070805311,
+        0.006765301804989576,
+        0.007179296109825373,
+        0.0058990782126784325,
+        0.0066956025548279285
+      ],
+      "excess_coverage": 0.830480702035129
+    }
+  ],
+  "mean_ce": 0.62628173828125,
+  "training_steps": 0,
+  "sample_objective_calls": 64,
+  "backward_calls": 32,
+  "checkpoint_step": 1500
+}

@@ -1,0 +1,69 @@
+{
+  "sources": [
+    {
+      "source": "B_rte_step500.json",
+      "sha256": "1aa22ddcf06e8a25cab9e6a8667d4ef4a0ed362b24012961b3791cbb2de56640"
+    },
+    {
+      "source": "B_rte_step1500.json",
+      "sha256": "40938db0de8ed561baa2cc5c1f7f9e21e7209af3ec4a5d0083c56e950cbb1ced"
+    },
+    {
+      "source": "B_rte_step2500.json",
+      "sha256": "7fa69caa62b0d54c13c8f7676972d5feaf6dfadae56d4808240474e630edd3bb"
+    },
+    {
+      "source": "sst2_step500.json",
+      "sha256": "ffba2af88893c5dc9a8634d9d9bdac5f4e9edf67b3f4adb9920e6f9e436b4226"
+    },
+    {
+      "source": "sst2_step1500.json",
+      "sha256": "a1259df11866005667e4e8370cb61ce5046ca35a0c602a574fa69ff3b2d43979"
+    },
+    {
+      "source": "sst2_step2500.json",
+      "sha256": "c887b2b29319ab5e828860c75b13cb7ae18b983018f83f175fe8dc88cec003dd"
+    },
+    {
+      "source": "cpu_audit.json",
+      "sha256": "9800e553c4e347b5f552620eaf0bddda82a6e6cca249d036fd156f957cecfbc4"
+    },
+    {
+      "source": "main_appendix_provenance.json",
+      "sha256": "07372e7851b8e64b3843df4bf23e1b4dc12560a79d5f6f8022759c64b0d1f0ac"
+    },
+    {
+      "source": "summary.json",
+      "sha256": "d3970b375cfa64db0952e704eb23395873bc6e99d0b7fabcd9d6ef4c561fe88c"
+    },
+    {
+      "source": "agzo_comparison.json",
+      "sha256": "448c7e0375338a6f14140d9c7ce9830a54c617a5a69e2c6977edfa213cfe5853"
+    },
+    {
+      "source": "lozo_comparison.json",
+      "sha256": "eb500080a7a2fe6cc900a3ba8f52e564d19240050051c69a9df2482401013fa5"
+    },
+    {
+      "source": "kernel_recheck.json",
+      "sha256": "d2b8aa239eddc971b3e19dcfd2161be53975529eaed03d98120bd626b3387ef0"
+    },
+    {
+      "source": "tuning.json",
+      "sha256": "1e3366a2155c951303131e2e8e0a0524fec668c83a4cb76650322e2992832537"
+    },
+    {
+      "source": "all_candidates.csv",
+      "sha256": "4484b50aecc350cdae112ce450b5bb83957203316c794dc4e91692b0d9427aef"
+    },
+    {
+      "source": "agzo_squad_per_run_results.csv",
+      "sha256": "00dab92a4986aa41250fe3e02087dcb57d2544a9423b1e42586be7590702f108"
+    },
+    {
+      "source": "final99_cpu_audit.json",
+      "sha256": "32eb2aac0f9397c13317b42d174ce378dba7939fc1c47abb81032e74bfe32fc7"
+    }
+  ],
+  "description": "SHA256 identities of the source audit artifacts used to export these tables."
+}

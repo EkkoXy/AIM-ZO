@@ -83,3 +83,7 @@ The complete runnable protocol matrix and deterministic config generator are des
 [main experiments](docs/main-experiments.md). Mechanism diagnostics and the
 offline-artifact release policy are described in
 [offline experiments](docs/offline-experiments.md).
+
+Additional diagnostics, baseline consistency and tuning evidence, width
+experiments, and an independent LoRA/selected-layer comparison are indexed in
+[supplementary experiments](rebuttal/README.md).

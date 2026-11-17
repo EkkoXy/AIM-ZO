@@ -1,0 +1,33 @@
+{
+  "model": "facebook/opt-2.7b",
+  "task": "rte",
+  "seeds": [
+    42,
+    142,
+    242
+  ],
+  "K": 128,
+  "arms": [
+    {
+      "k": 64,
+      "head": 48,
+      "tail": 16
+    },
+    {
+      "k": 128,
+      "head": 128,
+      "tail": 0
+    }
+  ],
+  "steps": 2500,
+  "training_calls": 40000,
+  "batch_size": 16,
+  "dtype": "bfloat16",
+  "learning_rate": 0.0015,
+  "epsilon_start": 8e-05,
+  "epsilon_end": 2e-05,
+  "epsilon_schedule": "cosine_decay",
+  "selection": "maximum development accuracy",
+  "eval_every": 500,
+  "official_examples": 277
+}

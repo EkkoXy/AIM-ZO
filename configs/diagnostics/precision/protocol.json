@@ -1,0 +1,38 @@
+{
+  "model": "facebook/opt-2.7b",
+  "task": "squad",
+  "batch_size": 16,
+  "learning_rate": 1e-07,
+  "epsilon": 0.001,
+  "steps": 20000,
+  "training_calls": 40000,
+  "selection": "minimum development CE",
+  "eval_every": 1000,
+  "official_examples": 1000,
+  "lozo": {
+    "seeds": [
+      42,
+      142,
+      242
+    ],
+    "rank": 2,
+    "step_interval": 50
+  },
+  "curvzo": {
+    "seeds": [
+      42
+    ],
+    "sample_ratio": 0.4,
+    "sgs_alpha": 0.1,
+    "sensitivity_init": 0.01,
+    "sensitivity_beta": 0.1,
+    "sensitivity_global_beta": 0.1,
+    "adaptive_every": 20,
+    "sampling_mode": "poisson_pps",
+    "normalize_energy_by_numel": false
+  },
+  "dtypes": [
+    "bfloat16",
+    "float16"
+  ]
+}

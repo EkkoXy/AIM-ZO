@@ -1,0 +1,1151 @@
+{
+  "scope": "CPU perturbation and update kernels with fixed scalar gradients",
+  "torch_version": "2.8.0+cu128",
+  "lozo": [
+    {
+      "dtype": "torch.float64",
+      "rows": [
+        {
+          "zero_based_step": 0,
+          "refresh": true,
+          "perturb_equal": true,
+          "update_max_abs_error": {
+            "weight": 0.0,
+            "bias": 0.0
+          },
+          "update_equal": true
+        },
+        {
+          "zero_based_step": 1,
+          "refresh": false,
+          "perturb_equal": true,
+          "update_max_abs_error": {
+            "weight": 0.0,
+            "bias": 0.0
+          },
+          "update_equal": true
+        },
+        {
+          "zero_based_step": 2,
+          "refresh": false,
+          "perturb_equal": true,
+          "update_max_abs_error": {
+            "weight": 0.0,
+            "bias": 0.0
+          },
+          "update_equal": true
+        },
+        {
+          "zero_based_step": 3,
+          "refresh": false,
+          "perturb_equal": true,
+          "update_max_abs_error": {
+            "weight": 0.0,
+            "bias": 0.0
+          },
+          "update_equal": true
+        },
+        {
+          "zero_based_step": 4,
+          "refresh": false,
+          "perturb_equal": true,
+          "update_max_abs_error": {
+            "weight": 0.0,
+            "bias": 0.0
+          },
+          "update_equal": true
+        },
+        {
+          "zero_based_step": 5,
+          "refresh": true,
+          "perturb_equal": true,
+          "update_max_abs_error": {
+            "weight": 0.0,
+            "bias": 0.0
+          },
+          "update_equal": true
+        },
+        {
+          "zero_based_step": 6,
+          "refresh": false,
+          "perturb_equal": true,
+          "update_max_abs_error": {
+            "weight": 0.0,
+            "bias": 0.0
+          },
+          "update_equal": true
+        }
+      ],
+      "scope": "Actual author AST function bodies; tiny CPU tensors, fixed scalar gradient; not model training"
+    },
+    {
+      "dtype": "torch.float16",
+      "rows": [
+        {
+          "zero_based_step": 0,
+          "refresh": true,
+          "perturb_equal": true,
+          "update_max_abs_error": {
+            "weight": 0.0,
+            "bias": 0.0
+          },
+          "update_equal": true
+        },
+        {
+          "zero_based_step": 1,
+          "refresh": false,
+          "perturb_equal": true,
+          "update_max_abs_error": {
+            "weight": 0.0,
+            "bias": 0.0
+          },
+          "update_equal": true
+        },
+        {
+          "zero_based_step": 2,
+          "refresh": false,
+          "perturb_equal": true,
+          "update_max_abs_error": {
+            "weight": 0.0,
+            "bias": 0.0
+          },
+          "update_equal": true
+        },
+        {
+          "zero_based_step": 3,
+          "refresh": false,
+          "perturb_equal": true,
+          "update_max_abs_error": {
+            "weight": 0.0,
+            "bias": 0.0
+          },
+          "update_equal": true
+        },
+        {
+          "zero_based_step": 4,
+          "refresh": false,
+          "perturb_equal": true,
+          "update_max_abs_error": {
+            "weight": 0.0,
+            "bias": 0.0
+          },
+          "update_equal": true
+        },
+        {
+          "zero_based_step": 5,
+          "refresh": true,
+          "perturb_equal": true,
+          "update_max_abs_error": {
+            "weight": 0.0,
+            "bias": 0.0
+          },
+          "update_equal": true
+        },
+        {
+          "zero_based_step": 6,
+          "refresh": false,
+          "perturb_equal": true,
+          "update_max_abs_error": {
+            "weight": 0.0,
+            "bias": 0.0
+          },
+          "update_equal": true
+        }
+      ],
+      "scope": "Actual author AST function bodies; tiny CPU tensors, fixed scalar gradient; not model training"
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "rows": [
+        {
+          "zero_based_step": 0,
+          "refresh": true,
+          "perturb_equal": true,
+          "update_max_abs_error": {
+            "weight": 0.0,
+            "bias": 0.0
+          },
+          "update_equal": true
+        },
+        {
+          "zero_based_step": 1,
+          "refresh": false,
+          "perturb_equal": true,
+          "update_max_abs_error": {
+            "weight": 0.0,
+            "bias": 0.0
+          },
+          "update_equal": true
+        },
+        {
+          "zero_based_step": 2,
+          "refresh": false,
+          "perturb_equal": true,
+          "update_max_abs_error": {
+            "weight": 0.0,
+            "bias": 0.0
+          },
+          "update_equal": true
+        },
+        {
+          "zero_based_step": 3,
+          "refresh": false,
+          "perturb_equal": true,
+          "update_max_abs_error": {
+            "weight": 0.0,
+            "bias": 0.0
+          },
+          "update_equal": true
+        },
+        {
+          "zero_based_step": 4,
+          "refresh": false,
+          "perturb_equal": true,
+          "update_max_abs_error": {
+            "weight": 0.0,
+            "bias": 0.0
+          },
+          "update_equal": true
+        },
+        {
+          "zero_based_step": 5,
+          "refresh": true,
+          "perturb_equal": true,
+          "update_max_abs_error": {
+            "weight": 0.0,
+            "bias": 0.0
+          },
+          "update_equal": true
+        },
+        {
+          "zero_based_step": 6,
+          "refresh": false,
+          "perturb_equal": true,
+          "update_max_abs_error": {
+            "weight": 0.0,
+            "bias": 0.0
+          },
+          "update_equal": true
+        }
+      ],
+      "scope": "Actual author AST function bodies; tiny CPU tensors, fixed scalar gradient; not model training"
+    }
+  ],
+  "curvzo": [
+    {
+      "dtype": "torch.float64",
+      "rows": [
+        {
+          "step": 1,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 2,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 3,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 4,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 5,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 6,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 7,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 8,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 9,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 10,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 11,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 12,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 13,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 14,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 15,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 16,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 17,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 18,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 19,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 20,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 21,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 22,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 23,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 24,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 25,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 26,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 27,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 28,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 29,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 30,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 31,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 32,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 33,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 34,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 35,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 36,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 37,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 38,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 39,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 40,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 41,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 42,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 43,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 44,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 45,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 46,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 47,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 48,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 49,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 50,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 51,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 52,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 53,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 54,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 55,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 56,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 57,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 58,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 59,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 60,
+          "perturb_equal": true,
+          "update_equal": true
+        }
+      ]
+    },
+    {
+      "dtype": "torch.float16",
+      "rows": [
+        {
+          "step": 1,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 2,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 3,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 4,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 5,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 6,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 7,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 8,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 9,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 10,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 11,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 12,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 13,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 14,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 15,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 16,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 17,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 18,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 19,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 20,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 21,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 22,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 23,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 24,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 25,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 26,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 27,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 28,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 29,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 30,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 31,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 32,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 33,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 34,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 35,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 36,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 37,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 38,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 39,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 40,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 41,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 42,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 43,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 44,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 45,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 46,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 47,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 48,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 49,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 50,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 51,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 52,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 53,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 54,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 55,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 56,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 57,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 58,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 59,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 60,
+          "perturb_equal": true,
+          "update_equal": true
+        }
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "rows": [
+        {
+          "step": 1,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 2,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 3,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 4,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 5,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 6,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 7,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 8,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 9,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 10,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 11,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 12,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 13,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 14,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 15,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 16,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 17,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 18,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 19,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 20,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 21,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 22,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 23,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 24,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 25,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 26,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 27,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 28,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 29,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 30,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 31,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 32,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 33,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 34,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 35,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 36,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 37,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 38,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 39,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 40,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 41,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 42,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 43,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 44,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 45,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 46,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 47,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 48,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 49,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 50,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 51,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 52,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 53,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 54,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 55,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 56,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 57,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 58,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 59,
+          "perturb_equal": true,
+          "update_equal": true
+        },
+        {
+          "step": 60,
+          "perturb_equal": true,
+          "update_equal": true
+        }
+      ]
+    }
+  ]
+}

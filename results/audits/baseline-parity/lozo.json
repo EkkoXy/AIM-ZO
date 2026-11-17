@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "method": "lozo",
+  "steps_per_arm": 52,
+  "compared_fields": [
+    "step",
+    "seed",
+    "f_plus",
+    "f_minus",
+    "projected_grad",
+    "objective_calls",
+    "train_batch_checksum",
+    "sampled_parameters_after",
+    "step_sampled_delta"
+  ],
+  "mismatches": [],
+  "full_initial_final_hashes_equal": true,
+  "scope": "Source-kernel equivalence under the recorded model/objective/configuration",
+  "arms": [
+    {
+      "steps": 52,
+      "training_calls": 104,
+      "initial_model_sha256": "610a28a2b1a6aa4d76951b261c9fab66ec8d9e2389002d4ffc77d485b3db2232",
+      "final_model_sha256": "8471d87fa0ee02942bbc4d8a7b01d493d04d7a9673f6d9ae5e6bad863ba46b99"
+    },
+    {
+      "steps": 52,
+      "training_calls": 104,
+      "initial_model_sha256": "610a28a2b1a6aa4d76951b261c9fab66ec8d9e2389002d4ffc77d485b3db2232",
+      "final_model_sha256": "8471d87fa0ee02942bbc4d8a7b01d493d04d7a9673f6d9ae5e6bad863ba46b99"
+    }
+  ]
+}

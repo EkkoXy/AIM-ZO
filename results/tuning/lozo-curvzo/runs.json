@@ -1,0 +1,3253 @@
+[
+  {
+    "path": "opt27b_squad_curvzo_official_seed142",
+    "method": "curvzo",
+    "dtype": "bfloat16",
+    "seed": 142,
+    "epsilon": 0.001,
+    "learning_rate": 1e-07,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 500,
+      "zoregular_train_dev_samples": null,
+      "seed": 142,
+      "zoregular_sampling_policy": "mezo_train_dev",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": "loss",
+      "best_checkpoint_mode": "min",
+      "eval_every": 1000
+    },
+    "configured_steps": 20000,
+    "result_ok": true,
+    "reported_completed_steps": 20000,
+    "history_rows": 20000,
+    "first_step": 1,
+    "last_step": 20000,
+    "logged_calls": 40000,
+    "zero_gradient_fraction": 0.0343,
+    "best_eval": {
+      "step": 17000,
+      "loss": 0.86028125,
+      "generation_ce": 0.86028125,
+      "token_nll_mean": 0.86028125,
+      "num_examples": 15.904,
+      "num_response_tokens": 84.8,
+      "num_eval_examples": 500,
+      "num_eval_batches": 32,
+      "payload_checksum": "e8d071edf5bee5fde20435bf3e7852a61b701b9db6f15963a3fde44380b456ae"
+    },
+    "official": {
+      "f1": 0.5612804676053306,
+      "em": 0.449,
+      "num_examples": 1000,
+      "payload_checksum": "40a20e2ec9acff6deca1c009bac73eb19ce37693467e8190cdb80bf7d5f3fa67",
+      "checkpoint": "best"
+    },
+    "error": null,
+    "config_sha256": "d604d0d65b738f758a383c73d7dde44585f597d5b6179666308b13ebf9f9c207"
+  },
+  {
+    "path": "opt27b_squad_curvzo_official_seed242",
+    "method": "curvzo",
+    "dtype": "bfloat16",
+    "seed": 242,
+    "epsilon": 0.001,
+    "learning_rate": 1e-07,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 500,
+      "zoregular_train_dev_samples": null,
+      "seed": 242,
+      "zoregular_sampling_policy": "mezo_train_dev",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": "loss",
+      "best_checkpoint_mode": "min",
+      "eval_every": 1000
+    },
+    "configured_steps": 20000,
+    "result_ok": true,
+    "reported_completed_steps": 20000,
+    "history_rows": 20000,
+    "first_step": 1,
+    "last_step": 20000,
+    "logged_calls": 40000,
+    "zero_gradient_fraction": 0.03715,
+    "best_eval": {
+      "step": 11000,
+      "loss": 0.828125,
+      "generation_ce": 0.828125,
+      "token_nll_mean": 0.828125,
+      "num_examples": 15.904,
+      "num_response_tokens": 89.64,
+      "num_eval_examples": 500,
+      "num_eval_batches": 32,
+      "payload_checksum": "9aaf6f03985de84dfb78a51e753ca01b0f5aa0149632a1de5cebc17d1d2e3058"
+    },
+    "official": {
+      "f1": 0.5895840892971907,
+      "em": 0.468,
+      "num_examples": 1000,
+      "payload_checksum": "40a20e2ec9acff6deca1c009bac73eb19ce37693467e8190cdb80bf7d5f3fa67",
+      "checkpoint": "best"
+    },
+    "error": null,
+    "config_sha256": "da8f4a133d9e4899911a33c5455e1aa7c0a2a4f8299be86b6fe7f9cf1e0bbb73"
+  },
+  {
+    "path": "opt27b_squad_curvzo_official_seed42",
+    "method": "curvzo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1e-07,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 500,
+      "zoregular_train_dev_samples": null,
+      "seed": 42,
+      "zoregular_sampling_policy": "mezo_train_dev",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": "loss",
+      "best_checkpoint_mode": "min",
+      "eval_every": 1000
+    },
+    "configured_steps": 20000,
+    "result_ok": true,
+    "reported_completed_steps": 20000,
+    "history_rows": 20000,
+    "first_step": 1,
+    "last_step": 20000,
+    "logged_calls": 40000,
+    "zero_gradient_fraction": 0.03575,
+    "best_eval": {
+      "step": 9000,
+      "loss": 0.90534375,
+      "generation_ce": 0.90534375,
+      "token_nll_mean": 0.90534375,
+      "num_examples": 15.904,
+      "num_response_tokens": 81.2,
+      "num_eval_examples": 500,
+      "num_eval_batches": 32,
+      "payload_checksum": "bf5781cc113a8b08b9d70ac2dbc071d6c2b780b66d55cc5a6634d331d715206d"
+    },
+    "official": {
+      "f1": 0.6105382003285325,
+      "em": 0.48,
+      "num_examples": 1000,
+      "payload_checksum": "40a20e2ec9acff6deca1c009bac73eb19ce37693467e8190cdb80bf7d5f3fa67",
+      "checkpoint": "best"
+    },
+    "error": null,
+    "config_sha256": "cbce2d9594aeb0d79cb2871117947411c8320308846b1f53bec412c97f913830"
+  },
+  {
+    "path": "opt27b_squad_lozo_official_seed142",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 142,
+    "epsilon": 0.001,
+    "learning_rate": 1e-07,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 500,
+      "zoregular_train_dev_samples": null,
+      "seed": 142,
+      "zoregular_sampling_policy": "mezo_train_dev",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": "loss",
+      "best_checkpoint_mode": "min",
+      "eval_every": 1000
+    },
+    "configured_steps": 20000,
+    "result_ok": true,
+    "reported_completed_steps": 20000,
+    "history_rows": 20000,
+    "first_step": 1,
+    "last_step": 20000,
+    "logged_calls": 40000,
+    "zero_gradient_fraction": 0.0357,
+    "best_eval": {
+      "step": 6000,
+      "loss": 1.23525,
+      "generation_ce": 1.23525,
+      "token_nll_mean": 1.23525,
+      "num_examples": 15.904,
+      "num_response_tokens": 84.8,
+      "num_eval_examples": 500,
+      "num_eval_batches": 32,
+      "payload_checksum": "e8d071edf5bee5fde20435bf3e7852a61b701b9db6f15963a3fde44380b456ae"
+    },
+    "official": {
+      "f1": 0.4222836359186174,
+      "em": 0.321,
+      "num_examples": 1000,
+      "payload_checksum": "40a20e2ec9acff6deca1c009bac73eb19ce37693467e8190cdb80bf7d5f3fa67",
+      "checkpoint": "best"
+    },
+    "error": null,
+    "config_sha256": "3aba62060638b04c36c20c50805038a7245dd2429878d4274ebcb7f8a2e30c86"
+  },
+  {
+    "path": "opt27b_squad_lozo_official_seed242",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 242,
+    "epsilon": 0.001,
+    "learning_rate": 1e-07,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 500,
+      "zoregular_train_dev_samples": null,
+      "seed": 242,
+      "zoregular_sampling_policy": "mezo_train_dev",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": "loss",
+      "best_checkpoint_mode": "min",
+      "eval_every": 1000
+    },
+    "configured_steps": 20000,
+    "result_ok": true,
+    "reported_completed_steps": 20000,
+    "history_rows": 20000,
+    "first_step": 1,
+    "last_step": 20000,
+    "logged_calls": 40000,
+    "zero_gradient_fraction": 0.0325,
+    "best_eval": {
+      "step": 4000,
+      "loss": 1.178125,
+      "generation_ce": 1.178125,
+      "token_nll_mean": 1.178125,
+      "num_examples": 15.904,
+      "num_response_tokens": 89.64,
+      "num_eval_examples": 500,
+      "num_eval_batches": 32,
+      "payload_checksum": "9aaf6f03985de84dfb78a51e753ca01b0f5aa0149632a1de5cebc17d1d2e3058"
+    },
+    "official": {
+      "f1": 0.44691879337991636,
+      "em": 0.323,
+      "num_examples": 1000,
+      "payload_checksum": "40a20e2ec9acff6deca1c009bac73eb19ce37693467e8190cdb80bf7d5f3fa67",
+      "checkpoint": "best"
+    },
+    "error": null,
+    "config_sha256": "55d03c96e3e4f328a394eb113421f83cf68a4f7315edc69db836b4116d9d8943"
+  },
+  {
+    "path": "opt27b_squad_lozo_official_seed42",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1e-07,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 500,
+      "zoregular_train_dev_samples": null,
+      "seed": 42,
+      "zoregular_sampling_policy": "mezo_train_dev",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": "loss",
+      "best_checkpoint_mode": "min",
+      "eval_every": 1000
+    },
+    "configured_steps": 20000,
+    "result_ok": true,
+    "reported_completed_steps": 20000,
+    "history_rows": 20000,
+    "first_step": 1,
+    "last_step": 20000,
+    "logged_calls": 40000,
+    "zero_gradient_fraction": 0.03425,
+    "best_eval": {
+      "step": 6000,
+      "loss": 1.2465,
+      "generation_ce": 1.2465,
+      "token_nll_mean": 1.2465,
+      "num_examples": 15.904,
+      "num_response_tokens": 81.2,
+      "num_eval_examples": 500,
+      "num_eval_batches": 32,
+      "payload_checksum": "bf5781cc113a8b08b9d70ac2dbc071d6c2b780b66d55cc5a6634d331d715206d"
+    },
+    "official": {
+      "f1": 0.43627486079800193,
+      "em": 0.326,
+      "num_examples": 1000,
+      "payload_checksum": "40a20e2ec9acff6deca1c009bac73eb19ce37693467e8190cdb80bf7d5f3fa67",
+      "checkpoint": "best"
+    },
+    "error": null,
+    "config_sha256": "03bc6ea4c25d41b91f63a10eae4cbf63910dc990cba41b5ea60d0382f28740d0"
+  },
+  {
+    "path": "opt27b_squad_curvzo_fp16_seed42_20k",
+    "method": "curvzo",
+    "dtype": "float16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1e-07,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 500,
+      "zoregular_train_dev_samples": null,
+      "seed": 42,
+      "zoregular_sampling_policy": "mezo_train_dev",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": "loss",
+      "best_checkpoint_mode": "min",
+      "eval_every": 1000
+    },
+    "configured_steps": 20000,
+    "result_ok": true,
+    "reported_completed_steps": 20000,
+    "history_rows": 20000,
+    "first_step": 1,
+    "last_step": 20000,
+    "logged_calls": 40000,
+    "zero_gradient_fraction": 0.00485,
+    "best_eval": {
+      "step": 20000,
+      "loss": 0.53012890625,
+      "generation_ce": 0.53012890625,
+      "token_nll_mean": 0.53012890625,
+      "num_examples": 15.904,
+      "num_response_tokens": 81.2,
+      "num_eval_examples": 500,
+      "num_eval_batches": 32,
+      "payload_checksum": "bf5781cc113a8b08b9d70ac2dbc071d6c2b780b66d55cc5a6634d331d715206d"
+    },
+    "official": {
+      "f1": 0.7826060408721006,
+      "em": 0.671,
+      "num_examples": 1000,
+      "payload_checksum": "40a20e2ec9acff6deca1c009bac73eb19ce37693467e8190cdb80bf7d5f3fa67",
+      "checkpoint": "best"
+    },
+    "error": null,
+    "config_sha256": "f8681483dabd1024ce62f192275610a4b445597d06fc5e5cbed0e67c87a2ef50"
+  },
+  {
+    "path": "opt27b_squad_lozo_fp16_seed42_20k",
+    "method": "lozo",
+    "dtype": "float16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1e-07,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 500,
+      "zoregular_train_dev_samples": null,
+      "seed": 42,
+      "zoregular_sampling_policy": "mezo_train_dev",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": "loss",
+      "best_checkpoint_mode": "min",
+      "eval_every": 1000
+    },
+    "configured_steps": 20000,
+    "result_ok": true,
+    "reported_completed_steps": 20000,
+    "history_rows": 20000,
+    "first_step": 1,
+    "last_step": 20000,
+    "logged_calls": 40000,
+    "zero_gradient_fraction": 0.0022,
+    "best_eval": {
+      "step": 19000,
+      "loss": 0.5025,
+      "generation_ce": 0.5025,
+      "token_nll_mean": 0.5025,
+      "num_examples": 15.904,
+      "num_response_tokens": 81.2,
+      "num_eval_examples": 500,
+      "num_eval_batches": 32,
+      "payload_checksum": "bf5781cc113a8b08b9d70ac2dbc071d6c2b780b66d55cc5a6634d331d715206d"
+    },
+    "official": {
+      "f1": 0.8054010691156072,
+      "em": 0.706,
+      "num_examples": 1000,
+      "payload_checksum": "40a20e2ec9acff6deca1c009bac73eb19ce37693467e8190cdb80bf7d5f3fa67",
+      "checkpoint": "best"
+    },
+    "error": null,
+    "config_sha256": "7787063b0ec84eb0ca678f8f9ff19ae17b10636fc5e4ae48b12be80442227fdc"
+  },
+  {
+    "path": "opt27b_squad_lozo_fp16_seed142_20k",
+    "method": "lozo",
+    "dtype": "float16",
+    "seed": 142,
+    "epsilon": 0.001,
+    "learning_rate": 1e-07,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 500,
+      "zoregular_train_dev_samples": null,
+      "seed": 142,
+      "zoregular_sampling_policy": "mezo_train_dev",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": "loss",
+      "best_checkpoint_mode": "min",
+      "eval_every": 1000
+    },
+    "configured_steps": 20000,
+    "result_ok": true,
+    "reported_completed_steps": 20000,
+    "history_rows": 20000,
+    "first_step": 1,
+    "last_step": 20000,
+    "logged_calls": 40000,
+    "zero_gradient_fraction": 0.002,
+    "best_eval": {
+      "step": 20000,
+      "loss": 0.4786171875,
+      "generation_ce": 0.4786171875,
+      "token_nll_mean": 0.4786171875,
+      "num_examples": 15.904,
+      "num_response_tokens": 84.8,
+      "num_eval_examples": 500,
+      "num_eval_batches": 32,
+      "payload_checksum": "e8d071edf5bee5fde20435bf3e7852a61b701b9db6f15963a3fde44380b456ae"
+    },
+    "official": {
+      "f1": 0.7738769902528512,
+      "em": 0.677,
+      "num_examples": 1000,
+      "payload_checksum": "40a20e2ec9acff6deca1c009bac73eb19ce37693467e8190cdb80bf7d5f3fa67",
+      "checkpoint": "best"
+    },
+    "error": null,
+    "config_sha256": "73dacece8865db2205e3bb4fdfa8a5f2e28a2ae21f1f4cd3a578be6fb5d9a65a"
+  },
+  {
+    "path": "opt27b_squad_lozo_fp16_seed242_20k",
+    "method": "lozo",
+    "dtype": "float16",
+    "seed": 242,
+    "epsilon": 0.001,
+    "learning_rate": 1e-07,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 500,
+      "zoregular_train_dev_samples": null,
+      "seed": 242,
+      "zoregular_sampling_policy": "mezo_train_dev",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": "loss",
+      "best_checkpoint_mode": "min",
+      "eval_every": 1000
+    },
+    "configured_steps": 20000,
+    "result_ok": false,
+    "reported_completed_steps": 40,
+    "history_rows": 41,
+    "first_step": 1,
+    "last_step": 41,
+    "logged_calls": 82,
+    "zero_gradient_fraction": 0.024390243902439025,
+    "best_eval": null,
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": {
+      "type": "CandidateObjectiveError",
+      "message": "candidate objective failed",
+      "step": 41,
+      "failed_candidates": [
+        "plus",
+        "minus"
+      ],
+      "candidate_results": [
+        {
+          "candidate_id": "plus",
+          "objective_value": null,
+          "ok": false,
+          "finite": false,
+          "error_state": {
+            "type": "OutOfMemoryError",
+            "message": "CUDA out of memory. Tried to allocate 1020.00 MiB. GPU 0 has a total capacity of 23.65 GiB of which 1005.38 MiB is free. Including non-PyTorch memory, this process has 9.55 GiB memory in use. Process 2848233 has 4.69 GiB memory in use. Process 2848582 has 4.69 GiB memory in use. Process 2849295 has 2.83 GiB memory in use. Process 2849686 has 892.00 MiB memory in use. Of the allocated memory 8.24 GiB is allocated by PyTorch, and 871.87 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+          },
+          "metrics": {},
+          "protocol": {
+            "objective_name": "zoregular_generation_ce",
+            "name": "zoregular_supervised",
+            "rollout_policy": "fixed_supervised_batch",
+            "fixed_rollout": true,
+            "regenerates_rollout": false,
+            "requires_logprobs": true,
+            "old_logprob_policy": "unused",
+            "reference_policy": "unused",
+            "advantage_policy": "unused",
+            "aggregation": "sample_mean",
+            "include_kl": false,
+            "objective_normalization": "none",
+            "logprob_granularity": "token"
+          },
+          "perturbation_seed": 282,
+          "eps": 0.001,
+          "scaling": 1.0,
+          "elapsed_time": 1.3453505532816052
+        },
+        {
+          "candidate_id": "minus",
+          "objective_value": null,
+          "ok": false,
+          "finite": false,
+          "error_state": {
+            "type": "OutOfMemoryError",
+            "message": "CUDA out of memory. Tried to allocate 1020.00 MiB. GPU 0 has a total capacity of 23.65 GiB of which 761.38 MiB is free. Including non-PyTorch memory, this process has 9.79 GiB memory in use. Process 2848233 has 4.69 GiB memory in use. Process 2848582 has 4.69 GiB memory in use. Process 2849295 has 2.83 GiB memory in use. Process 2849686 has 892.00 MiB memory in use. Of the allocated memory 8.25 GiB is allocated by PyTorch, and 1.09 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+          },
+          "metrics": {},
+          "protocol": {
+            "objective_name": "zoregular_generation_ce",
+            "name": "zoregular_supervised",
+            "rollout_policy": "fixed_supervised_batch",
+            "fixed_rollout": true,
+            "regenerates_rollout": false,
+            "requires_logprobs": true,
+            "old_logprob_policy": "unused",
+            "reference_policy": "unused",
+            "advantage_policy": "unused",
+            "aggregation": "sample_mean",
+            "include_kl": false,
+            "objective_normalization": "none",
+            "logprob_granularity": "token"
+          },
+          "perturbation_seed": 282,
+          "eps": 0.001,
+          "scaling": -1.0,
+          "elapsed_time": 1.326446124818176
+        }
+      ]
+    },
+    "config_sha256": "c323f7752cf76ca9c9871f6c5aa9ef758594c2039a210b211b02772fa8273417"
+  },
+  {
+    "path": "opt27b_squad_lozo_fp16_seed242_20k",
+    "method": "lozo",
+    "dtype": "float16",
+    "seed": 242,
+    "epsilon": 0.001,
+    "learning_rate": 1e-07,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 500,
+      "zoregular_train_dev_samples": null,
+      "seed": 242,
+      "zoregular_sampling_policy": "mezo_train_dev",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": "loss",
+      "best_checkpoint_mode": "min",
+      "eval_every": 1000
+    },
+    "configured_steps": 20000,
+    "result_ok": true,
+    "reported_completed_steps": 20000,
+    "history_rows": 20000,
+    "first_step": 1,
+    "last_step": 20000,
+    "logged_calls": 40000,
+    "zero_gradient_fraction": 0.0027,
+    "best_eval": {
+      "step": 20000,
+      "loss": 0.521681640625,
+      "generation_ce": 0.521681640625,
+      "token_nll_mean": 0.521681640625,
+      "num_examples": 15.904,
+      "num_response_tokens": 89.64,
+      "num_eval_examples": 500,
+      "num_eval_batches": 32,
+      "payload_checksum": "9aaf6f03985de84dfb78a51e753ca01b0f5aa0149632a1de5cebc17d1d2e3058"
+    },
+    "official": {
+      "f1": 0.7626955027407122,
+      "em": 0.656,
+      "num_examples": 1000,
+      "payload_checksum": "40a20e2ec9acff6deca1c009bac73eb19ce37693467e8190cdb80bf7d5f3fa67",
+      "checkpoint": "best"
+    },
+    "error": null,
+    "config_sha256": "1a63ffbf2d8232935c10c3a359ed5758f16de476c777628080b4e410e7d8f583"
+  },
+  {
+    "path": "curvzo_eps1em03_lr12em07_20k",
+    "method": "curvzo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1.2e-06,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 1000
+    },
+    "configured_steps": 20000,
+    "result_ok": null,
+    "reported_completed_steps": null,
+    "history_rows": 4174,
+    "first_step": 1,
+    "last_step": 4174,
+    "logged_calls": 8348,
+    "zero_gradient_fraction": 0.031384762817441306,
+    "best_eval": null,
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "5c47b052d5132a622b795632cb0426976f54c44bfe1434b5742bf852ceb1119f"
+  },
+  {
+    "path": "lozo_r1_i50_eps1em03_lr10em06_aggr_1k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1e-06,
+    "lozo": {
+      "rank": 1,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": true,
+    "reported_completed_steps": 1000,
+    "history_rows": 1000,
+    "first_step": 1,
+    "last_step": 1000,
+    "logged_calls": 2000,
+    "zero_gradient_fraction": 0.021,
+    "best_eval": {
+      "step": 1000,
+      "loss": 0.73371875,
+      "generation_ce": 0.73371875,
+      "token_nll_mean": 0.73371875,
+      "num_examples": 15.936,
+      "num_response_tokens": 60.312,
+      "num_eval_examples": 1000,
+      "num_eval_batches": 63,
+      "payload_checksum": "fd53c231b88ede254371c0669aae6abed68145b5949578936dcc40b49cd837e3"
+    },
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "7ce88d59c4dd36702e06825ecd779ad71fca552ef0361c11195bc8021084612d"
+  },
+  {
+    "path": "lozo_r1_i50_eps1em03_lr15em06_aggr_1k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1.5e-06,
+    "lozo": {
+      "rank": 1,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": null,
+    "reported_completed_steps": null,
+    "history_rows": 201,
+    "first_step": 1,
+    "last_step": 201,
+    "logged_calls": 402,
+    "zero_gradient_fraction": 0.03482587064676617,
+    "best_eval": null,
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "5715ec22f1b7fdd29e20788bb35340eceed6b83498a46aa38149725a0a10d99c"
+  },
+  {
+    "path": "lozo_r1_i50_eps1em03_lr20em06_aggr_1k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 2e-06,
+    "lozo": {
+      "rank": 1,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": null,
+    "reported_completed_steps": null,
+    "history_rows": 769,
+    "first_step": 1,
+    "last_step": 769,
+    "logged_calls": 1538,
+    "zero_gradient_fraction": 0.04031209362808843,
+    "best_eval": null,
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "514794565666346f43da4a1b641bed2704dcb73f24f53e6be03730ec3f10cc12"
+  },
+  {
+    "path": "lozo_r2_i50_eps1em03_lr10em06_aggr_1k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1e-06,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": null,
+    "reported_completed_steps": null,
+    "history_rows": 47,
+    "first_step": 1,
+    "last_step": 47,
+    "logged_calls": 94,
+    "zero_gradient_fraction": 0.02127659574468085,
+    "best_eval": null,
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "22f7c692fb2c1dc93ef86556d29f0dea778316d7171211527491999287c5e7f8"
+  },
+  {
+    "path": "curvzo_eps1em03_lr1em07_save2k_20k",
+    "method": "curvzo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1e-07,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 1000
+    },
+    "configured_steps": 20000,
+    "result_ok": true,
+    "reported_completed_steps": 20000,
+    "history_rows": 20000,
+    "first_step": 1,
+    "last_step": 20000,
+    "logged_calls": 40000,
+    "zero_gradient_fraction": 0.0325,
+    "best_eval": {
+      "step": 20000,
+      "loss": 0.86715625,
+      "generation_ce": 0.86715625,
+      "token_nll_mean": 0.86715625,
+      "num_examples": 15.936,
+      "num_response_tokens": 60.312,
+      "num_eval_examples": 1000,
+      "num_eval_batches": 63,
+      "payload_checksum": "fd53c231b88ede254371c0669aae6abed68145b5949578936dcc40b49cd837e3"
+    },
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "7a3f81ffb2dfe49d7f74a3fe0bf655f6e6c6a46a2c137254100e9397c1c6c847"
+  },
+  {
+    "path": "lozo_r1_i50_eps1em03_lr1em07_save2k_20k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1e-07,
+    "lozo": {
+      "rank": 1,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 1000
+    },
+    "configured_steps": 20000,
+    "result_ok": null,
+    "reported_completed_steps": null,
+    "history_rows": 7074,
+    "first_step": 1,
+    "last_step": 7074,
+    "logged_calls": 14148,
+    "zero_gradient_fraction": 0.024314390726604466,
+    "best_eval": null,
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "18115ce1cebee87a8539288af2fb4a2dc82026419b34bda57c80f7ede5c4e55c"
+  },
+  {
+    "path": "curvzo_eps1em03_lr30em07_official_band_1k",
+    "method": "curvzo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 3e-07,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 1000
+    },
+    "configured_steps": 20000,
+    "result_ok": null,
+    "reported_completed_steps": null,
+    "history_rows": 13132,
+    "first_step": 1,
+    "last_step": 13132,
+    "logged_calls": 26264,
+    "zero_gradient_fraction": 0.03213524215656412,
+    "best_eval": null,
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "af603f1846170597345add1d0ad1f75074ceb8820678fa664fe575acab73177f"
+  },
+  {
+    "path": "lozo_r1_i100_eps1em03_lr10em06_official_band_1k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1e-06,
+    "lozo": {
+      "rank": 1,
+      "step_interval": 100,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": true,
+    "reported_completed_steps": 1000,
+    "history_rows": 1000,
+    "first_step": 1,
+    "last_step": 1000,
+    "logged_calls": 2000,
+    "zero_gradient_fraction": 0.018,
+    "best_eval": {
+      "step": 1000,
+      "loss": 0.748375,
+      "generation_ce": 0.748375,
+      "token_nll_mean": 0.748375,
+      "num_examples": 15.936,
+      "num_response_tokens": 60.312,
+      "num_eval_examples": 1000,
+      "num_eval_batches": 63,
+      "payload_checksum": "fd53c231b88ede254371c0669aae6abed68145b5949578936dcc40b49cd837e3"
+    },
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "3e882d6b41e91d223f533a405fd21f8cde30b117fa8a2bf2c9aadff3d1f5c606"
+  },
+  {
+    "path": "lozo_r1_i100_eps1em03_lr70em07_official_band_1k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 7e-07,
+    "lozo": {
+      "rank": 1,
+      "step_interval": 100,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": true,
+    "reported_completed_steps": 1000,
+    "history_rows": 1000,
+    "first_step": 1,
+    "last_step": 1000,
+    "logged_calls": 2000,
+    "zero_gradient_fraction": 0.021,
+    "best_eval": {
+      "step": 1000,
+      "loss": 0.819125,
+      "generation_ce": 0.819125,
+      "token_nll_mean": 0.819125,
+      "num_examples": 15.936,
+      "num_response_tokens": 60.312,
+      "num_eval_examples": 1000,
+      "num_eval_batches": 63,
+      "payload_checksum": "fd53c231b88ede254371c0669aae6abed68145b5949578936dcc40b49cd837e3"
+    },
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "3408b061522769babad41fc5f66501e864f887de340b3a4e3f8b33b14dae16c3"
+  },
+  {
+    "path": "lozo_r1_i50_eps1em03_lr10em07_official_band_1k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1e-07,
+    "lozo": {
+      "rank": 1,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": null,
+    "reported_completed_steps": null,
+    "history_rows": 388,
+    "first_step": 1,
+    "last_step": 388,
+    "logged_calls": 776,
+    "zero_gradient_fraction": 0.015463917525773196,
+    "best_eval": null,
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "84f98f9eba56b6d74c9e1bd1ab8d91b3605fa1dd39e06046401eff2197cfa982"
+  },
+  {
+    "path": "lozo_r2_i100_eps1em03_lr30em07_official_band_1k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 3e-07,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 100,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": null,
+    "reported_completed_steps": null,
+    "history_rows": 447,
+    "first_step": 1,
+    "last_step": 447,
+    "logged_calls": 894,
+    "zero_gradient_fraction": 0.017897091722595078,
+    "best_eval": null,
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "f878dc60570af96799cf81709fbf92bdcf0c6530e45c6e99a34e7ad51b7d0e5a"
+  },
+  {
+    "path": "lozo_r2_i50_eps1em03_lr70em07_official_band_1k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 7e-07,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": null,
+    "reported_completed_steps": null,
+    "history_rows": 4,
+    "first_step": 1,
+    "last_step": 4,
+    "logged_calls": 8,
+    "zero_gradient_fraction": 0.0,
+    "best_eval": null,
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "b1518f220396c8e08d1e4a1185db1a661864fb8c6193d0ee8880283583d71b9c"
+  },
+  {
+    "path": "curvzo_eps1em03_lr2em07_2k",
+    "method": "curvzo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 2e-07,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 500
+    },
+    "configured_steps": 2000,
+    "result_ok": true,
+    "reported_completed_steps": 2000,
+    "history_rows": 2000,
+    "first_step": 1,
+    "last_step": 2000,
+    "logged_calls": 4000,
+    "zero_gradient_fraction": 0.0275,
+    "best_eval": {
+      "step": 2000,
+      "loss": 0.9249375,
+      "generation_ce": 0.9249375,
+      "token_nll_mean": 0.9249375,
+      "num_examples": 15.936,
+      "num_response_tokens": 60.312,
+      "num_eval_examples": 1000,
+      "num_eval_batches": 63,
+      "payload_checksum": "fd53c231b88ede254371c0669aae6abed68145b5949578936dcc40b49cd837e3"
+    },
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "ab13d1844badc925a1685d785833966e11bf4807fd32398e09b1847120fcfe41"
+  },
+  {
+    "path": "curvzo_eps1em03_lr3em07_2k",
+    "method": "curvzo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 3e-07,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 500
+    },
+    "configured_steps": 2000,
+    "result_ok": true,
+    "reported_completed_steps": 2000,
+    "history_rows": 2000,
+    "first_step": 1,
+    "last_step": 2000,
+    "logged_calls": 4000,
+    "zero_gradient_fraction": 0.0435,
+    "best_eval": {
+      "step": 2000,
+      "loss": 0.8394375,
+      "generation_ce": 0.8394375,
+      "token_nll_mean": 0.8394375,
+      "num_examples": 15.936,
+      "num_response_tokens": 60.312,
+      "num_eval_examples": 1000,
+      "num_eval_batches": 63,
+      "payload_checksum": "fd53c231b88ede254371c0669aae6abed68145b5949578936dcc40b49cd837e3"
+    },
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "a3d612ba41126b61cab85cff969afc26cff8913bad3e063b7b50feff0205425d"
+  },
+  {
+    "path": "lozo_r1_i50_eps1em03_lr1em07_2k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1e-07,
+    "lozo": {
+      "rank": 1,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 500
+    },
+    "configured_steps": 2000,
+    "result_ok": true,
+    "reported_completed_steps": 2000,
+    "history_rows": 2000,
+    "first_step": 1,
+    "last_step": 2000,
+    "logged_calls": 4000,
+    "zero_gradient_fraction": 0.0265,
+    "best_eval": {
+      "step": 2000,
+      "loss": 1.3065625,
+      "generation_ce": 1.3065625,
+      "token_nll_mean": 1.3065625,
+      "num_examples": 15.936,
+      "num_response_tokens": 60.312,
+      "num_eval_examples": 1000,
+      "num_eval_batches": 63,
+      "payload_checksum": "fd53c231b88ede254371c0669aae6abed68145b5949578936dcc40b49cd837e3"
+    },
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "ccd56d718d34889b3ed7c3a09d7a48a38395fc9d89c6481ea8f649d65aefb4a0"
+  },
+  {
+    "path": "lozo_r4_i50_eps1em03_lr1em07_2k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1e-07,
+    "lozo": {
+      "rank": 4,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 500
+    },
+    "configured_steps": 2000,
+    "result_ok": true,
+    "reported_completed_steps": 2000,
+    "history_rows": 2000,
+    "first_step": 1,
+    "last_step": 2000,
+    "logged_calls": 4000,
+    "zero_gradient_fraction": 0.016,
+    "best_eval": {
+      "step": 2000,
+      "loss": 1.06790625,
+      "generation_ce": 1.06790625,
+      "token_nll_mean": 1.06790625,
+      "num_examples": 15.936,
+      "num_response_tokens": 60.312,
+      "num_eval_examples": 1000,
+      "num_eval_batches": 63,
+      "payload_checksum": "fd53c231b88ede254371c0669aae6abed68145b5949578936dcc40b49cd837e3"
+    },
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "fcd14be1a19f2f134e610ffd702fb5c6212fb983533aa790c1dc2f01fd893678"
+  },
+  {
+    "path": "lozo_r1_i50_eps1em03_lr10em06_20k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1e-06,
+    "lozo": {
+      "rank": 1,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 1000
+    },
+    "configured_steps": 20000,
+    "result_ok": null,
+    "reported_completed_steps": null,
+    "history_rows": 10038,
+    "first_step": 1,
+    "last_step": 10038,
+    "logged_calls": 20076,
+    "zero_gradient_fraction": 0.0679418210798964,
+    "best_eval": null,
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "41b7201d5552b95d44943c2244a4fe6debd363d72749e419fae131d12372c288"
+  },
+  {
+    "path": "lozo_r2_i50_eps1em03_lr1em07_save2k_20k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1e-07,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 1000
+    },
+    "configured_steps": 20000,
+    "result_ok": null,
+    "reported_completed_steps": null,
+    "history_rows": 15445,
+    "first_step": 1,
+    "last_step": 15445,
+    "logged_calls": 30890,
+    "zero_gradient_fraction": 0.02486241502104241,
+    "best_eval": null,
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "7b301dd10a3ce2ac956bdad095d234762e825880f82c16dbb9e1e21fad176968"
+  },
+  {
+    "path": "lozo_r2_i50_eps1em03_lr1em07_2k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1e-07,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 500
+    },
+    "configured_steps": 2000,
+    "result_ok": true,
+    "reported_completed_steps": 2000,
+    "history_rows": 2000,
+    "first_step": 1,
+    "last_step": 2000,
+    "logged_calls": 4000,
+    "zero_gradient_fraction": 0.019,
+    "best_eval": {
+      "step": 2000,
+      "loss": 1.2491875,
+      "generation_ce": 1.2491875,
+      "token_nll_mean": 1.2491875,
+      "num_examples": 15.936,
+      "num_response_tokens": 60.312,
+      "num_eval_examples": 1000,
+      "num_eval_batches": 63,
+      "payload_checksum": "fd53c231b88ede254371c0669aae6abed68145b5949578936dcc40b49cd837e3"
+    },
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "4780c00aabfa9f2f226d016cd8da0db09318a0ec0f2a39b0cc23e417aa5b53a8"
+  },
+  {
+    "path": "curvzo_eps1em03_lr5em08_save2k_20k",
+    "method": "curvzo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 5e-08,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 1000
+    },
+    "configured_steps": 20000,
+    "result_ok": null,
+    "reported_completed_steps": null,
+    "history_rows": 18165,
+    "first_step": 1,
+    "last_step": 18165,
+    "logged_calls": 36330,
+    "zero_gradient_fraction": 0.033856317093311314,
+    "best_eval": null,
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "164a65e64de69f7318c33c8ab69520ad9572b9a9403a2c48a49fec6b80a21e39"
+  },
+  {
+    "path": "lozo_r2_i50_eps1em03_lr5em08_save2k_20k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 5e-08,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 1000
+    },
+    "configured_steps": 20000,
+    "result_ok": null,
+    "reported_completed_steps": null,
+    "history_rows": 14169,
+    "first_step": 1,
+    "last_step": 14169,
+    "logged_calls": 28338,
+    "zero_gradient_fraction": 0.022302209047921517,
+    "best_eval": null,
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "a970925c6deb6faf73ed4a8150047cdf9fd6399ec9b26e474cc5c123ee9c1539"
+  },
+  {
+    "path": "curvzo_eps1em03_lr12em07_lrsweep_1k",
+    "method": "curvzo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1.2e-06,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": true,
+    "reported_completed_steps": 1000,
+    "history_rows": 1000,
+    "first_step": 1,
+    "last_step": 1000,
+    "logged_calls": 2000,
+    "zero_gradient_fraction": 0.042,
+    "best_eval": {
+      "step": 1000,
+      "loss": 0.639578125,
+      "generation_ce": 0.639578125,
+      "token_nll_mean": 0.639578125,
+      "num_examples": 15.936,
+      "num_response_tokens": 60.312,
+      "num_eval_examples": 1000,
+      "num_eval_batches": 63,
+      "payload_checksum": "fd53c231b88ede254371c0669aae6abed68145b5949578936dcc40b49cd837e3"
+    },
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "7fbe1b01eee8ccee3c35ab536fc62e2c57aeff64ba8463bf74da074e48242b92"
+  },
+  {
+    "path": "curvzo_eps1em03_lr1em06_retune_1k",
+    "method": "curvzo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1e-06,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": true,
+    "reported_completed_steps": 1000,
+    "history_rows": 1000,
+    "first_step": 1,
+    "last_step": 1000,
+    "logged_calls": 2000,
+    "zero_gradient_fraction": 0.034,
+    "best_eval": {
+      "step": 1000,
+      "loss": 0.73478125,
+      "generation_ce": 0.73478125,
+      "token_nll_mean": 0.73478125,
+      "num_examples": 15.936,
+      "num_response_tokens": 60.312,
+      "num_eval_examples": 1000,
+      "num_eval_batches": 63,
+      "payload_checksum": "fd53c231b88ede254371c0669aae6abed68145b5949578936dcc40b49cd837e3"
+    },
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "26150a0d4f445cc7a6a001e5f10842255b8d46ce91bb0f8eca42dbd45579384b"
+  },
+  {
+    "path": "curvzo_eps1em03_lr2em06_lrsweep_1k",
+    "method": "curvzo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 2e-06,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": true,
+    "reported_completed_steps": 1000,
+    "history_rows": 1000,
+    "first_step": 1,
+    "last_step": 1000,
+    "logged_calls": 2000,
+    "zero_gradient_fraction": 0.034,
+    "best_eval": {
+      "step": 1000,
+      "loss": 6.173,
+      "generation_ce": 6.173,
+      "token_nll_mean": 6.173,
+      "num_examples": 15.936,
+      "num_response_tokens": 60.312,
+      "num_eval_examples": 1000,
+      "num_eval_batches": 63,
+      "payload_checksum": "fd53c231b88ede254371c0669aae6abed68145b5949578936dcc40b49cd837e3"
+    },
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "e0fe3d988929f1a9b7d718d01071b53d113d853acd5edba12cb925108e1dbdac"
+  },
+  {
+    "path": "curvzo_eps1em03_lr5em07_1k",
+    "method": "curvzo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 5e-07,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": true,
+    "reported_completed_steps": 1000,
+    "history_rows": 1000,
+    "first_step": 1,
+    "last_step": 1000,
+    "logged_calls": 2000,
+    "zero_gradient_fraction": 0.032,
+    "best_eval": {
+      "step": 1000,
+      "loss": 0.82615625,
+      "generation_ce": 0.82615625,
+      "token_nll_mean": 0.82615625,
+      "num_examples": 15.936,
+      "num_response_tokens": 60.312,
+      "num_eval_examples": 1000,
+      "num_eval_batches": 63,
+      "payload_checksum": "fd53c231b88ede254371c0669aae6abed68145b5949578936dcc40b49cd837e3"
+    },
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "f8f4c5d42795911a1f9f649ea93fe75a429c89e6cc5d46769e4d69855455c9be"
+  },
+  {
+    "path": "lozo_r1_eps1em03_lr1em06_1k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1e-06,
+    "lozo": {
+      "rank": 1,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": null,
+    "reported_completed_steps": null,
+    "history_rows": 52,
+    "first_step": 1,
+    "last_step": 52,
+    "logged_calls": 104,
+    "zero_gradient_fraction": 0.038461538461538464,
+    "best_eval": null,
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "db10695185b62cd591baf512fbf61d23ccd0dd9a038e24a935c89ab43cd7809d"
+  },
+  {
+    "path": "lozo_r1_eps1em03_lr1em06_retry_1k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1e-06,
+    "lozo": {
+      "rank": 1,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": true,
+    "reported_completed_steps": 1000,
+    "history_rows": 1000,
+    "first_step": 1,
+    "last_step": 1000,
+    "logged_calls": 2000,
+    "zero_gradient_fraction": 0.021,
+    "best_eval": {
+      "step": 1000,
+      "loss": 0.73371875,
+      "generation_ce": 0.73371875,
+      "token_nll_mean": 0.73371875,
+      "num_examples": 15.936,
+      "num_response_tokens": 60.312,
+      "num_eval_examples": 1000,
+      "num_eval_batches": 63,
+      "payload_checksum": "fd53c231b88ede254371c0669aae6abed68145b5949578936dcc40b49cd837e3"
+    },
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "918ef2dd2cdb782ea4d410707de8da7bc415d31127099a6dac0a95412bf3195a"
+  },
+  {
+    "path": "lozo_r1_eps1em03_lr3em06_retune_1k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 3e-06,
+    "lozo": {
+      "rank": 1,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": true,
+    "reported_completed_steps": 1000,
+    "history_rows": 1000,
+    "first_step": 1,
+    "last_step": 1000,
+    "logged_calls": 2000,
+    "zero_gradient_fraction": 0.07,
+    "best_eval": {
+      "step": 1000,
+      "loss": 7.138,
+      "generation_ce": 7.138,
+      "token_nll_mean": 7.138,
+      "num_examples": 15.936,
+      "num_response_tokens": 60.312,
+      "num_eval_examples": 1000,
+      "num_eval_batches": 63,
+      "payload_checksum": "fd53c231b88ede254371c0669aae6abed68145b5949578936dcc40b49cd837e3"
+    },
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "0863de79e0282e72b3ee6b61163185830515c9f7e3f2ba8eeb79053f56abce2f"
+  },
+  {
+    "path": "lozo_r1_i50_eps1em03_lr50em07_followup_1k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 5e-07,
+    "lozo": {
+      "rank": 1,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": null,
+    "reported_completed_steps": null,
+    "history_rows": 589,
+    "first_step": 1,
+    "last_step": 589,
+    "logged_calls": 1178,
+    "zero_gradient_fraction": 0.01867572156196944,
+    "best_eval": null,
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "b6b64983ee33febda6eb8a796b62aaab89259cf820d80f3faac00822456bee45"
+  },
+  {
+    "path": "lozo_r1_i50_eps1em03_lr70em07_followup_1k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 7e-07,
+    "lozo": {
+      "rank": 1,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": null,
+    "reported_completed_steps": null,
+    "history_rows": 580,
+    "first_step": 1,
+    "last_step": 580,
+    "logged_calls": 1160,
+    "zero_gradient_fraction": 0.020689655172413793,
+    "best_eval": null,
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "a4d9249e12ee03a549ec2e3aaaa449227f609102b7c573679dc9cb537581801a"
+  },
+  {
+    "path": "lozo_r2_eps1em03_lr1em06_1k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1e-06,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": true,
+    "reported_completed_steps": 1000,
+    "history_rows": 1000,
+    "first_step": 1,
+    "last_step": 1000,
+    "logged_calls": 2000,
+    "zero_gradient_fraction": 0.027,
+    "best_eval": {
+      "step": 1000,
+      "loss": 6.18575,
+      "generation_ce": 6.18575,
+      "token_nll_mean": 6.18575,
+      "num_examples": 15.936,
+      "num_response_tokens": 60.312,
+      "num_eval_examples": 1000,
+      "num_eval_batches": 63,
+      "payload_checksum": "fd53c231b88ede254371c0669aae6abed68145b5949578936dcc40b49cd837e3"
+    },
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "3c271adbc2a0983fdf5c0913f40c6fee14c19f0ae039d2a060a3c7a2c733bf6c"
+  },
+  {
+    "path": "lozo_r2_eps1em03_lr3em07_retune_1k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 3e-07,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": true,
+    "reported_completed_steps": 1000,
+    "history_rows": 1000,
+    "first_step": 1,
+    "last_step": 1000,
+    "logged_calls": 2000,
+    "zero_gradient_fraction": 0.015,
+    "best_eval": {
+      "step": 1000,
+      "loss": 0.9345625,
+      "generation_ce": 0.9345625,
+      "token_nll_mean": 0.9345625,
+      "num_examples": 15.936,
+      "num_response_tokens": 60.312,
+      "num_eval_examples": 1000,
+      "num_eval_batches": 63,
+      "payload_checksum": "fd53c231b88ede254371c0669aae6abed68145b5949578936dcc40b49cd837e3"
+    },
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "36026c20c03299415b5a7db235aea048f4e89ba068a1d6fdf8b543a6758b70a6"
+  },
+  {
+    "path": "lozo_r2_eps3em04_lr1em06_retune_1k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.0003,
+    "learning_rate": 1e-06,
+    "lozo": {
+      "rank": 2,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": null,
+    "reported_completed_steps": null,
+    "history_rows": 121,
+    "first_step": 1,
+    "last_step": 121,
+    "logged_calls": 242,
+    "zero_gradient_fraction": 0.024793388429752067,
+    "best_eval": null,
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "e8909997799c8efc64f8712922afad96ff20d0dedfbf4353ad41c4ead8d2e9db"
+  },
+  {
+    "path": "lozo_r4_i100_eps1em03_lr1em07_lrsweep_1k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 1e-07,
+    "lozo": {
+      "rank": 4,
+      "step_interval": 100,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": null,
+    "reported_completed_steps": null,
+    "history_rows": 546,
+    "first_step": 1,
+    "last_step": 546,
+    "logged_calls": 1092,
+    "zero_gradient_fraction": 0.02197802197802198,
+    "best_eval": null,
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "a3501e2175667234bba4852e20a474a1f1536105c8f98b8ed9dd531c7d1fb868"
+  },
+  {
+    "path": "lozo_r4_i100_eps1em03_lr3em07_lrsweep_1k",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 3e-07,
+    "lozo": {
+      "rank": 4,
+      "step_interval": 100,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": true,
+    "reported_completed_steps": 1000,
+    "history_rows": 1000,
+    "first_step": 1,
+    "last_step": 1000,
+    "logged_calls": 2000,
+    "zero_gradient_fraction": 0.013,
+    "best_eval": {
+      "step": 1000,
+      "loss": 1.8603125,
+      "generation_ce": 1.8603125,
+      "token_nll_mean": 1.8603125,
+      "num_examples": 15.936,
+      "num_response_tokens": 60.312,
+      "num_eval_examples": 1000,
+      "num_eval_batches": 63,
+      "payload_checksum": "fd53c231b88ede254371c0669aae6abed68145b5949578936dcc40b49cd837e3"
+    },
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "d1b98203d99020f67b7d2b1f72c9866a81c211231408aa5d5df8dd658a15aeee"
+  },
+  {
+    "path": "lozo_r1_i50_eps1em03_lr50em07_followup_1k_rerun",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 5e-07,
+    "lozo": {
+      "rank": 1,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": true,
+    "reported_completed_steps": 1000,
+    "history_rows": 1000,
+    "first_step": 1,
+    "last_step": 1000,
+    "logged_calls": 2000,
+    "zero_gradient_fraction": 0.02,
+    "best_eval": {
+      "step": 1000,
+      "loss": 0.90190625,
+      "generation_ce": 0.90190625,
+      "token_nll_mean": 0.90190625,
+      "num_examples": 15.936,
+      "num_response_tokens": 60.312,
+      "num_eval_examples": 1000,
+      "num_eval_batches": 63,
+      "payload_checksum": "fd53c231b88ede254371c0669aae6abed68145b5949578936dcc40b49cd837e3"
+    },
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "731899126059bbca95d866391ec3e9b3bbceb52b15f23caf6ccb0f0d8ceb047a"
+  },
+  {
+    "path": "lozo_r1_i50_eps1em03_lr70em07_followup_1k_rerun",
+    "method": "lozo",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "epsilon": 0.001,
+    "learning_rate": 7e-07,
+    "lozo": {
+      "rank": 1,
+      "step_interval": 50,
+      "normalization": "source",
+      "fallback": "gaussian"
+    },
+    "curvzo": {
+      "sample_ratio": 0.4,
+      "sgs_alpha": 0.1,
+      "sensitivity_init": 0.01,
+      "sensitivity_beta": 0.1,
+      "sensitivity_global_beta": 0.1,
+      "adaptive_every": 20,
+      "sampling_mode": "poisson_pps",
+      "normalize_energy_by_numel": false
+    },
+    "data": {
+      "task": "squad",
+      "data_root": "data/dataset",
+      "train_file": null,
+      "eval_file": null,
+      "max_train_samples": 1000,
+      "max_eval_samples": 1000,
+      "zoregular_train_dev_samples": null,
+      "seed": 0,
+      "zoregular_sampling_policy": "split",
+      "zoregular_batch_sampler_policy": "accelerate_seedable"
+    },
+    "selection": {
+      "best_checkpoint_metric": null,
+      "best_checkpoint_mode": null,
+      "eval_every": 200
+    },
+    "configured_steps": 1000,
+    "result_ok": null,
+    "reported_completed_steps": null,
+    "history_rows": 164,
+    "first_step": 1,
+    "last_step": 164,
+    "logged_calls": 328,
+    "zero_gradient_fraction": 0.018292682926829267,
+    "best_eval": null,
+    "official": {
+      "f1": null,
+      "em": null,
+      "num_examples": null,
+      "payload_checksum": null,
+      "checkpoint": null
+    },
+    "error": null,
+    "config_sha256": "11acc7e2e3265f0dbd6c84fdfc0dac8ac299702975d6c107c86297dbacc634a3"
+  }
+]

@@ -1,0 +1,1982 @@
+[
+  {
+    "run_id": "qwen06b_rte_s42_mezo_bf16_attempt02",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.44534375,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.439625,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 0.50853125,
+        "best_step": 8000
+      },
+      {
+        "step": 16000,
+        "loss": 0.6269375,
+        "best_step": 8000
+      },
+      {
+        "step": 20000,
+        "loss": 0.60053125,
+        "best_step": 8000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_rte_s142_mezo_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.45309375,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.44996875,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 0.50915625,
+        "best_step": 8000
+      },
+      {
+        "step": 16000,
+        "loss": 0.631875,
+        "best_step": 8000
+      },
+      {
+        "step": 20000,
+        "loss": 0.671125,
+        "best_step": 8000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_rte_s242_mezo_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.431359375,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.4504375,
+        "best_step": 4000
+      },
+      {
+        "step": 12000,
+        "loss": 0.51253125,
+        "best_step": 4000
+      },
+      {
+        "step": 16000,
+        "loss": 0.6578125,
+        "best_step": 4000
+      },
+      {
+        "step": 20000,
+        "loss": 0.6489375,
+        "best_step": 4000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_sst2_s42_mezo_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.4594375,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.35990625,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 0.2974765625,
+        "best_step": 12000
+      },
+      {
+        "step": 16000,
+        "loss": 0.27025,
+        "best_step": 16000
+      },
+      {
+        "step": 20000,
+        "loss": 0.278796875,
+        "best_step": 16000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_sst2_s142_mezo_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.39975,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.314640625,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 0.26315625,
+        "best_step": 12000
+      },
+      {
+        "step": 16000,
+        "loss": 0.2338984375,
+        "best_step": 16000
+      },
+      {
+        "step": 20000,
+        "loss": 0.218359375,
+        "best_step": 20000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_sst2_s242_mezo_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.467375,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.391984375,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 0.33854296875,
+        "best_step": 12000
+      },
+      {
+        "step": 16000,
+        "loss": 0.322609375,
+        "best_step": 16000
+      },
+      {
+        "step": 20000,
+        "loss": 0.33541796875,
+        "best_step": 16000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_wic_s42_mezo_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.6759375,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.6648125,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 0.6684375,
+        "best_step": 8000
+      },
+      {
+        "step": 16000,
+        "loss": 0.67275,
+        "best_step": 8000
+      },
+      {
+        "step": 20000,
+        "loss": 0.65584375,
+        "best_step": 20000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_wic_s142_mezo_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.6956875,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.6920625,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 0.69009375,
+        "best_step": 12000
+      },
+      {
+        "step": 16000,
+        "loss": 0.67771875,
+        "best_step": 16000
+      },
+      {
+        "step": 20000,
+        "loss": 0.66921875,
+        "best_step": 20000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_wic_s242_mezo_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.68075,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.67646875,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 0.689875,
+        "best_step": 8000
+      },
+      {
+        "step": 16000,
+        "loss": 0.6746875,
+        "best_step": 16000
+      },
+      {
+        "step": 20000,
+        "loss": 0.67378125,
+        "best_step": 20000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_copa_s42_mezo_bf16_expansion",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.5484375,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.54296875,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 0.53671875,
+        "best_step": 12000
+      },
+      {
+        "step": 16000,
+        "loss": 0.530078125,
+        "best_step": 16000
+      },
+      {
+        "step": 20000,
+        "loss": 0.5234375,
+        "best_step": 20000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_copa_s142_mezo_bf16_paired",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.582421875,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.5734375,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 0.566796875,
+        "best_step": 12000
+      },
+      {
+        "step": 16000,
+        "loss": 0.558203125,
+        "best_step": 16000
+      },
+      {
+        "step": 20000,
+        "loss": 0.55234375,
+        "best_step": 20000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_copa_s242_mezo_bf16_paired",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.5859375,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.57890625,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 0.5734375,
+        "best_step": 12000
+      },
+      {
+        "step": 16000,
+        "loss": 0.5671875,
+        "best_step": 16000
+      },
+      {
+        "step": 20000,
+        "loss": 0.56015625,
+        "best_step": 20000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_boolq_s42_mezo_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.572703125,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.556296875,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 0.53696875,
+        "best_step": 12000
+      },
+      {
+        "step": 16000,
+        "loss": 0.57796875,
+        "best_step": 12000
+      },
+      {
+        "step": 20000,
+        "loss": 0.62321875,
+        "best_step": 12000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_boolq_s142_mezo_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.516625,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.47734375,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 0.46278125,
+        "best_step": 12000
+      },
+      {
+        "step": 16000,
+        "loss": 0.486578125,
+        "best_step": 12000
+      },
+      {
+        "step": 20000,
+        "loss": 0.58028125,
+        "best_step": 12000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_boolq_s242_mezo_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.4889375,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.46296875,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 0.447125,
+        "best_step": 12000
+      },
+      {
+        "step": 16000,
+        "loss": 0.4789375,
+        "best_step": 12000
+      },
+      {
+        "step": 20000,
+        "loss": 0.57,
+        "best_step": 12000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_cb_s42_mezo_bf16_expansion",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.31038909912109375,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.45390625,
+        "best_step": 4000
+      },
+      {
+        "step": 12000,
+        "loss": 0.8284375,
+        "best_step": 4000
+      },
+      {
+        "step": 16000,
+        "loss": 0.82375,
+        "best_step": 4000
+      },
+      {
+        "step": 20000,
+        "loss": 0.5965625,
+        "best_step": 4000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_cb_s142_mezo_bf16_repeat",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.27318359375,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.2103125,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 0.6284375,
+        "best_step": 8000
+      },
+      {
+        "step": 16000,
+        "loss": 0.7184375,
+        "best_step": 8000
+      },
+      {
+        "step": 20000,
+        "loss": 0.76203125,
+        "best_step": 8000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_cb_s242_mezo_bf16_repeat",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.66791015625,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.59212890625,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 0.66359375,
+        "best_step": 8000
+      },
+      {
+        "step": 16000,
+        "loss": 0.805625,
+        "best_step": 8000
+      },
+      {
+        "step": 20000,
+        "loss": 0.8784375,
+        "best_step": 8000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_wsc_s42_mezo_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.69234375,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.68359375,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 0.6871875,
+        "best_step": 8000
+      },
+      {
+        "step": 16000,
+        "loss": 0.691875,
+        "best_step": 8000
+      },
+      {
+        "step": 20000,
+        "loss": 0.68421875,
+        "best_step": 8000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_wsc_s142_mezo_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.6934375,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.6953125,
+        "best_step": 4000
+      },
+      {
+        "step": 12000,
+        "loss": 0.6965625,
+        "best_step": 4000
+      },
+      {
+        "step": 16000,
+        "loss": 0.6903125,
+        "best_step": 16000
+      },
+      {
+        "step": 20000,
+        "loss": 0.7109375,
+        "best_step": 16000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_wsc_s242_mezo_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.70921875,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.7190625,
+        "best_step": 4000
+      },
+      {
+        "step": 12000,
+        "loss": 0.734375,
+        "best_step": 4000
+      },
+      {
+        "step": 16000,
+        "loss": 0.71609375,
+        "best_step": 4000
+      },
+      {
+        "step": 20000,
+        "loss": 0.7209375,
+        "best_step": 4000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_squad_s42_mezo_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.3963515625,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.37590625,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 0.3699453125,
+        "best_step": 12000
+      },
+      {
+        "step": 16000,
+        "loss": 0.3626328125,
+        "best_step": 16000
+      },
+      {
+        "step": 20000,
+        "loss": 0.3561640625,
+        "best_step": 20000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_squad_s142_mezo_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.376671875,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.358328125,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 0.3516875,
+        "best_step": 12000
+      },
+      {
+        "step": 16000,
+        "loss": 0.33940625,
+        "best_step": 16000
+      },
+      {
+        "step": 20000,
+        "loss": 0.336671875,
+        "best_step": 20000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_squad_s242_mezo_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.3796171875,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.362125,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 0.353984375,
+        "best_step": 12000
+      },
+      {
+        "step": 16000,
+        "loss": 0.35196875,
+        "best_step": 16000
+      },
+      {
+        "step": 20000,
+        "loss": 0.3518046875,
+        "best_step": 20000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_multirc_s42_mezo_bf16_coverage",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.3798310512367491,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.39991442137809186,
+        "best_step": 4000
+      },
+      {
+        "step": 12000,
+        "loss": 0.46451937941696114,
+        "best_step": 4000
+      },
+      {
+        "step": 16000,
+        "loss": 0.614979019434629,
+        "best_step": 4000
+      },
+      {
+        "step": 20000,
+        "loss": 0.6518468418727915,
+        "best_step": 4000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_multirc_s142_mezo_adaptive_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.43783058449074075,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.5227162905092593,
+        "best_step": 4000
+      },
+      {
+        "step": 12000,
+        "loss": 0.5848350694444444,
+        "best_step": 4000
+      },
+      {
+        "step": 16000,
+        "loss": 0.6872222222222222,
+        "best_step": 4000
+      },
+      {
+        "step": 20000,
+        "loss": 0.7358680555555556,
+        "best_step": 4000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_multirc_s242_mezo_adaptive_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.5691762713878327,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.5724809885931559,
+        "best_step": 4000
+      },
+      {
+        "step": 12000,
+        "loss": 0.6572005703422054,
+        "best_step": 4000
+      },
+      {
+        "step": 16000,
+        "loss": 0.7821114543726235,
+        "best_step": 4000
+      },
+      {
+        "step": 20000,
+        "loss": 0.785884030418251,
+        "best_step": 4000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_record_s42_mezo_bf16_coverage",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 2.141125,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 2.1365,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 2.13225,
+        "best_step": 12000
+      },
+      {
+        "step": 16000,
+        "loss": 2.12975,
+        "best_step": 16000
+      },
+      {
+        "step": 20000,
+        "loss": 2.1235,
+        "best_step": 20000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_record_s142_mezo_adaptive_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 2.134,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 2.12775,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 2.122875,
+        "best_step": 12000
+      },
+      {
+        "step": 16000,
+        "loss": 2.118125,
+        "best_step": 16000
+      },
+      {
+        "step": 20000,
+        "loss": 2.1125,
+        "best_step": 20000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_record_s242_mezo_adaptive_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 2.1155,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 2.11025,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 2.10475,
+        "best_step": 12000
+      },
+      {
+        "step": 16000,
+        "loss": 2.099375,
+        "best_step": 16000
+      },
+      {
+        "step": 20000,
+        "loss": 2.0935,
+        "best_step": 20000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_drop_s42_mezo_bf16_coverage",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.9361213235294118,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.9266850490196078,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 0.9442861519607844,
+        "best_step": 8000
+      },
+      {
+        "step": 16000,
+        "loss": 0.9498468137254902,
+        "best_step": 8000
+      },
+      {
+        "step": 20000,
+        "loss": 1.0401807598039217,
+        "best_step": 8000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_drop_s142_mezo_adaptive_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.7722236055776892,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.7792112798804781,
+        "best_step": 4000
+      },
+      {
+        "step": 12000,
+        "loss": 0.7904008964143426,
+        "best_step": 4000
+      },
+      {
+        "step": 16000,
+        "loss": 0.8346302290836654,
+        "best_step": 4000
+      },
+      {
+        "step": 20000,
+        "loss": 0.9163502241035857,
+        "best_step": 4000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_drop_s242_mezo_adaptive_bf16",
+    "evaluations": [
+      {
+        "step": 4000,
+        "loss": 0.9178082191780822,
+        "best_step": 4000
+      },
+      {
+        "step": 8000,
+        "loss": 0.8882629036203522,
+        "best_step": 8000
+      },
+      {
+        "step": 12000,
+        "loss": 0.9161417563600783,
+        "best_step": 8000
+      },
+      {
+        "step": 16000,
+        "loss": 0.9725721624266145,
+        "best_step": 8000
+      },
+      {
+        "step": 20000,
+        "loss": 0.9776785714285714,
+        "best_step": 8000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_rte_s42_direct_K256_k32_top24_tail8_t512_bf16_coverage",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.44175,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.42221875,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.42728125,
+        "best_step": 1000
+      },
+      {
+        "step": 2000,
+        "loss": 0.425,
+        "best_step": 1000
+      },
+      {
+        "step": 2500,
+        "loss": 0.41334375,
+        "best_step": 2500
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_rte_s142_direct_K256_k32_top24_tail8_t512_bf16_paired",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.451734375,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.431890625,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.41675,
+        "best_step": 1500
+      },
+      {
+        "step": 2000,
+        "loss": 0.41340625,
+        "best_step": 2000
+      },
+      {
+        "step": 2500,
+        "loss": 0.41696875,
+        "best_step": 2000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_rte_s242_direct_K256_k32_top24_tail8_t512_bf16_paired",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.44046875,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.45075,
+        "best_step": 500
+      },
+      {
+        "step": 1500,
+        "loss": 0.43821875,
+        "best_step": 1500
+      },
+      {
+        "step": 2000,
+        "loss": 0.43721875,
+        "best_step": 2000
+      },
+      {
+        "step": 2500,
+        "loss": 0.4434375,
+        "best_step": 2000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_sst2_s42_direct_K256_k32_top24_tail8_t512_bf16",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.42,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.3505625,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.3173125,
+        "best_step": 1500
+      },
+      {
+        "step": 2000,
+        "loss": 0.30803125,
+        "best_step": 2000
+      },
+      {
+        "step": 2500,
+        "loss": 0.298953125,
+        "best_step": 2500
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_sst2_s142_k32_adaptive_bf16",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.4028125,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.326859375,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.295640625,
+        "best_step": 1500
+      },
+      {
+        "step": 2000,
+        "loss": 0.28446875,
+        "best_step": 2000
+      },
+      {
+        "step": 2500,
+        "loss": 0.2821875,
+        "best_step": 2500
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_sst2_s242_k32_adaptive_bf16",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.42103125,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.3758359375,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.3523046875,
+        "best_step": 1500
+      },
+      {
+        "step": 2000,
+        "loss": 0.3465625,
+        "best_step": 2000
+      },
+      {
+        "step": 2500,
+        "loss": 0.341796875,
+        "best_step": 2500
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_wic_s42_direct_K256_k32_top24_tail8_t512_bf16_coverage",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.6688125,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.660375,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.66359375,
+        "best_step": 1000
+      },
+      {
+        "step": 2000,
+        "loss": 0.65128125,
+        "best_step": 2000
+      },
+      {
+        "step": 2500,
+        "loss": 0.658375,
+        "best_step": 2000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_wic_s142_direct_K256_k32_top24_tail8_t512_bf16_paired",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.68465625,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.6809375,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.6876875,
+        "best_step": 1000
+      },
+      {
+        "step": 2000,
+        "loss": 0.6714375,
+        "best_step": 2000
+      },
+      {
+        "step": 2500,
+        "loss": 0.676,
+        "best_step": 2000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_wic_s242_direct_K256_k32_top24_tail8_t512_bf16_paired",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.6814375,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.67546875,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.671375,
+        "best_step": 1500
+      },
+      {
+        "step": 2000,
+        "loss": 0.6744375,
+        "best_step": 1500
+      },
+      {
+        "step": 2500,
+        "loss": 0.6739375,
+        "best_step": 1500
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_copa_s42_direct_K256_k32_top24_tail8_t512_bf16_coverage",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.548046875,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.53828125,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.532421875,
+        "best_step": 1500
+      },
+      {
+        "step": 2000,
+        "loss": 0.53046875,
+        "best_step": 2000
+      },
+      {
+        "step": 2500,
+        "loss": 0.526171875,
+        "best_step": 2500
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_copa_s142_direct_K256_k32_top24_tail8_t512_bf16_paired",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.579296875,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.575,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.567578125,
+        "best_step": 1500
+      },
+      {
+        "step": 2000,
+        "loss": 0.560546875,
+        "best_step": 2000
+      },
+      {
+        "step": 2500,
+        "loss": 0.558203125,
+        "best_step": 2500
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_copa_s242_direct_K256_k32_top24_tail8_t512_bf16_paired",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.584375,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.5796875,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.5734375,
+        "best_step": 1500
+      },
+      {
+        "step": 2000,
+        "loss": 0.57265625,
+        "best_step": 2000
+      },
+      {
+        "step": 2500,
+        "loss": 0.5703125,
+        "best_step": 2500
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_boolq_s42_direct_K256_k32_top24_tail8_t512_bf16_coverage",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.54471875,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.5243125,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.529421875,
+        "best_step": 1000
+      },
+      {
+        "step": 2000,
+        "loss": 0.52965625,
+        "best_step": 1000
+      },
+      {
+        "step": 2500,
+        "loss": 0.52659375,
+        "best_step": 1000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_boolq_s142_direct_K256_k32_top24_tail8_t512_bf16_paired",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.526578125,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.50940625,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.4998125,
+        "best_step": 1500
+      },
+      {
+        "step": 2000,
+        "loss": 0.495125,
+        "best_step": 2000
+      },
+      {
+        "step": 2500,
+        "loss": 0.49315625,
+        "best_step": 2500
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_boolq_s242_direct_K256_k32_top24_tail8_t512_bf16_paired",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.50071875,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.49890625,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.475625,
+        "best_step": 1500
+      },
+      {
+        "step": 2000,
+        "loss": 0.47440625,
+        "best_step": 2000
+      },
+      {
+        "step": 2500,
+        "loss": 0.48234375,
+        "best_step": 2000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_cb_s42_direct_K256_k32_top24_tail8_t512_bf16_coverage",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.3655078125,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.3483984375,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.4206787109375,
+        "best_step": 1000
+      },
+      {
+        "step": 2000,
+        "loss": 0.29635101318359375,
+        "best_step": 2000
+      },
+      {
+        "step": 2500,
+        "loss": 0.6107080078125,
+        "best_step": 2000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_cb_s142_direct_K256_k32_top24_tail8_t512_bf16_paired",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.4242236328125,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.4774560546875,
+        "best_step": 500
+      },
+      {
+        "step": 1500,
+        "loss": 0.6912663269042969,
+        "best_step": 500
+      },
+      {
+        "step": 2000,
+        "loss": 0.5434397888183594,
+        "best_step": 500
+      },
+      {
+        "step": 2500,
+        "loss": 0.6090643501281738,
+        "best_step": 500
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_cb_s242_direct_K256_k32_top24_tail8_t512_bf16_paired",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.432265625,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.875625,
+        "best_step": 500
+      },
+      {
+        "step": 1500,
+        "loss": 0.62078125,
+        "best_step": 500
+      },
+      {
+        "step": 2000,
+        "loss": 0.7778125,
+        "best_step": 500
+      },
+      {
+        "step": 2500,
+        "loss": 0.7809375,
+        "best_step": 500
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_wsc_s42_direct_K256_k32_top24_tail8_t512_bf16_coverage",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.695,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.694375,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.70609375,
+        "best_step": 1000
+      },
+      {
+        "step": 2000,
+        "loss": 0.7015625,
+        "best_step": 1000
+      },
+      {
+        "step": 2500,
+        "loss": 0.69296875,
+        "best_step": 2500
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_wsc_s142_direct_K256_k32_top24_tail8_t512_bf16_paired",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.69609375,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.6828125,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.69671875,
+        "best_step": 1000
+      },
+      {
+        "step": 2000,
+        "loss": 0.681875,
+        "best_step": 2000
+      },
+      {
+        "step": 2500,
+        "loss": 0.68484375,
+        "best_step": 2000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_wsc_s242_direct_K256_k32_top24_tail8_t512_bf16_paired",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.7065625,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.7184375,
+        "best_step": 500
+      },
+      {
+        "step": 1500,
+        "loss": 0.7121875,
+        "best_step": 500
+      },
+      {
+        "step": 2000,
+        "loss": 0.72296875,
+        "best_step": 500
+      },
+      {
+        "step": 2500,
+        "loss": 0.720625,
+        "best_step": 500
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_squad_s42_direct_K256_k32_top24_tail8_t512_bf16_coverage",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.4019765625,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.38190625,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.377625,
+        "best_step": 1500
+      },
+      {
+        "step": 2000,
+        "loss": 0.3715234375,
+        "best_step": 2000
+      },
+      {
+        "step": 2500,
+        "loss": 0.371890625,
+        "best_step": 2000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_squad_s142_direct_K256_k32_top24_tail8_t512_bf16_paired",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.38571875,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.367546875,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.360046875,
+        "best_step": 1500
+      },
+      {
+        "step": 2000,
+        "loss": 0.358890625,
+        "best_step": 2000
+      },
+      {
+        "step": 2500,
+        "loss": 0.356921875,
+        "best_step": 2500
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_squad_s242_direct_K256_k32_top24_tail8_t512_bf16_paired",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.3843515625,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.3674453125,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.363421875,
+        "best_step": 1500
+      },
+      {
+        "step": 2000,
+        "loss": 0.35925,
+        "best_step": 2000
+      },
+      {
+        "step": 2500,
+        "loss": 0.35921875,
+        "best_step": 2500
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_multirc_s42_direct_K256_k32_top24_tail8_t512_bf16_coverage",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.41150894434628976,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.4148078621908127,
+        "best_step": 500
+      },
+      {
+        "step": 1500,
+        "loss": 0.3975126987632509,
+        "best_step": 1500
+      },
+      {
+        "step": 2000,
+        "loss": 0.4183276280918728,
+        "best_step": 1500
+      },
+      {
+        "step": 2500,
+        "loss": 0.42068794169611307,
+        "best_step": 1500
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_multirc_s142_k32_adaptive_bf16",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.4298072193287037,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.4296187789351852,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.4509015118634259,
+        "best_step": 1000
+      },
+      {
+        "step": 2000,
+        "loss": 0.4456931785300926,
+        "best_step": 1000
+      },
+      {
+        "step": 2500,
+        "loss": 0.449768970630787,
+        "best_step": 1000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_multirc_s242_k32_adaptive_bf16",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.5899774239543726,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.6105335076045627,
+        "best_step": 500
+      },
+      {
+        "step": 1500,
+        "loss": 0.5892422172053232,
+        "best_step": 1500
+      },
+      {
+        "step": 2000,
+        "loss": 0.6032854087452472,
+        "best_step": 1500
+      },
+      {
+        "step": 2500,
+        "loss": 0.6101881832224335,
+        "best_step": 1500
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_record_s42_direct_K256_k32_top24_tail8_t512_bf16_coverage",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 2.13375,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 2.12825,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 2.12225,
+        "best_step": 1500
+      },
+      {
+        "step": 2000,
+        "loss": 2.118,
+        "best_step": 2000
+      },
+      {
+        "step": 2500,
+        "loss": 2.117125,
+        "best_step": 2500
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_record_s142_k32_adaptive_bf16",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 2.129375,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 2.1215,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 2.11775,
+        "best_step": 1500
+      },
+      {
+        "step": 2000,
+        "loss": 2.117,
+        "best_step": 2000
+      },
+      {
+        "step": 2500,
+        "loss": 2.118625,
+        "best_step": 2000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_record_s242_k32_adaptive_bf16",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 2.114,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 2.1065,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 2.101375,
+        "best_step": 1500
+      },
+      {
+        "step": 2000,
+        "loss": 2.104625,
+        "best_step": 1500
+      },
+      {
+        "step": 2500,
+        "loss": 2.102,
+        "best_step": 1500
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_drop_s42_direct_K256_k32_top24_tail8_t512_bf16_coverage",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.9685355392156862,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.9563112745098039,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.9444546568627451,
+        "best_step": 1500
+      },
+      {
+        "step": 2000,
+        "loss": 0.9328125,
+        "best_step": 2000
+      },
+      {
+        "step": 2500,
+        "loss": 0.9311121323529412,
+        "best_step": 2500
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_drop_s142_k32_adaptive_bf16",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.7887668077689243,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.7511983316733067,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.7549178286852589,
+        "best_step": 1000
+      },
+      {
+        "step": 2000,
+        "loss": 0.7586684511952191,
+        "best_step": 1000
+      },
+      {
+        "step": 2500,
+        "loss": 0.7672124003984063,
+        "best_step": 1000
+      }
+    ]
+  },
+  {
+    "run_id": "qwen06b_drop_s242_k32_adaptive_bf16",
+    "evaluations": [
+      {
+        "step": 500,
+        "loss": 0.9254907656555773,
+        "best_step": 500
+      },
+      {
+        "step": 1000,
+        "loss": 0.8775226272015656,
+        "best_step": 1000
+      },
+      {
+        "step": 1500,
+        "loss": 0.8458980552837574,
+        "best_step": 1500
+      },
+      {
+        "step": 2000,
+        "loss": 0.8370841487279843,
+        "best_step": 2000
+      },
+      {
+        "step": 2500,
+        "loss": 0.849292135518591,
+        "best_step": 2000
+      }
+    ]
+  }
+]

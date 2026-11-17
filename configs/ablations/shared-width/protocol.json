@@ -1,0 +1,20 @@
+{
+  "model": "facebook/opt-2.7b",
+  "task": "rte",
+  "K": 128,
+  "k": 64,
+  "seeds": [
+    42,
+    142,
+    242,
+    342,
+    442
+  ],
+  "steps": 2500,
+  "training_calls": 40000,
+  "series": {
+    "main_48_plus_16": "Published main-result reference",
+    "prefix_64_plus_0": "Shared-prefix-only experiment"
+  },
+  "comparison_scope": "Reported series at the same maintained and active widths."
+}
